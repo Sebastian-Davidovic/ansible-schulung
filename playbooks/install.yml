@@ -1,0 +1,55 @@
+---
+- hosts: server3
+
+  gather_facts: no
+
+  vars:
+    ftp_config: /etc/vsftpd/vsftpd.conf
+  
+  tasks:
+  - name: mlocate installieren
+    yum:
+      name: mlocate
+  
+  - name: Datenbank erstellen
+    command: updatedb
+    args:
+      creates: /var/lib/mlocate/mlocate.db
+
+  - name: vsftpd installieren
+    yum: name=vsftpd
+
+  - name: vsftpd paket auflisten
+    yum:
+      list: vsftpd
+    register: result
+
+  - name: Paket anzeigen
+    debug: msg={{ result.results[0].nevra }}
+  - fail:
+
+  - name: vsftpd starten und in den Autostart
+    service: name=vsftpd state=started enabled=yes
+
+
+  - name: Configure firewall on RedHat systems
+    firewalld:
+      state: enabled
+      port:  21/tcp
+      immediate: yes
+      permanent: yes
+  
+  - name: FTP Konfig Pfad
+    debug: msg="FTP-Konfig ist {{ ftp_config }}"
+
+  - name: local_umaks auf 077 setzen
+    lineinfile:
+      path: "{{ ftp_config }}"
+      regexp:  '.*local_umask=.*'
+      line: 'local_umask=077' 
+    notify:
+      - restart vsftpd
+
+  handlers:
+    - name: restart vsftpd
+      service: name=vsftpd state=restarted

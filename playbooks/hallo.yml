@@ -1,0 +1,9 @@
+---
+- hosts: all
+
+  gather_facts: yes 
+
+  tasks:
+
+    - name: Hallo Welt {{ ansible_user_id }}
+      debug: msg="Tag auch {{ inventory_hostname }}"

@@ -1,0 +1,22 @@
+---
+- hosts: all
+
+  gather_facts: false
+  
+  tasks:
+    - name: Sag hallo
+      debug: msg="Hallo Ansible!"
+
+    - name: Auslastung Root-FS bestimmen
+      command: df -h /
+      register: df_cmd
+      changed_when: false
+
+    - name: Ausgabe-Format 1
+      debug: msg="{{ df_cmd.stdout }}"
+
+    - name: Ausgabe-Format 2
+      debug: var=df_cmd.stdout_lines
+
+    - name: Komplette Ausgabe
+      debug: var=df_cmd verbosity=1
