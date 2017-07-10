@@ -1,0 +1,360 @@
+2017-07-10 11:34:58,219 p=10707 u=user1 |   [WARNING]: No hosts matched, nothing to do
+
+2017-07-10 11:35:03,426 p=10713 u=user1 |  server1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-07-10 11:35:03,483 p=10713 u=user1 |  server4 | FAILED! => {
+    "changed": false, 
+    "failed": true, 
+    "module_stderr": "Shared connection to 192.168.150.14 closed.\r\n", 
+    "module_stdout": "sudo: Ein Passwort ist notwendig\r\n", 
+    "msg": "MODULE FAILURE", 
+    "rc": 1
+}
+2017-07-10 11:35:03,701 p=10713 u=user1 |  server2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-07-10 11:35:03,702 p=10713 u=user1 |  server3 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-07-10 11:36:20,214 p=10780 u=user1 |  server1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-07-10 11:36:20,278 p=10780 u=user1 |  server4 | FAILED! => {
+    "changed": false, 
+    "failed": true, 
+    "module_stderr": "Shared connection to 192.168.150.14 closed.\r\n", 
+    "module_stdout": "sudo: Ein Passwort ist notwendig\r\n", 
+    "msg": "MODULE FAILURE", 
+    "rc": 1
+}
+2017-07-10 11:36:20,529 p=10780 u=user1 |  server3 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-07-10 11:36:20,573 p=10780 u=user1 |  server2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-07-10 11:37:41,297 p=11039 u=user1 |  ERROR! Extraneous options or arguments
+2017-07-10 11:37:49,017 p=11041 u=user1 |  server1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-07-10 11:37:49,206 p=11041 u=user1 |  server4 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-07-10 11:37:49,231 p=11041 u=user1 |  server3 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-07-10 11:37:49,289 p=11041 u=user1 |  server2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-07-10 11:39:14,171 p=11096 u=user1 |   [ERROR]: User interrupted execution
+
+2017-07-10 11:39:17,874 p=11099 u=user1 |  server1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-07-10 11:39:18,054 p=11099 u=user1 |  server4 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-07-10 11:39:18,205 p=11099 u=user1 |  server2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-07-10 11:39:18,214 p=11099 u=user1 |  server3 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-07-10 11:49:06,021 p=11399 u=user1 |  localhost | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-07-10 11:51:06,559 p=11644 u=user1 |  localhost | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-07-10 11:59:11,072 p=12122 u=user1 |  localhost | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-07-10 11:59:32,787 p=12152 u=user1 |   [WARNING]: Consider using file module with state=touch rather than running touch
+
+2017-07-10 11:59:32,787 p=12152 u=user1 |  localhost | FAILED | rc=1 >>
+touch: '/xyz' kann nicht berührt werden: Keine Berechtigung
+
+2017-07-10 11:59:57,615 p=12182 u=user1 |   [WARNING]: Consider using file module with state=touch rather than running touch
+
+2017-07-10 11:59:57,616 p=12182 u=user1 |  localhost | FAILED | rc=1 >>
+touch: '/xyz' kann nicht berührt werden: Keine Berechtigung
+
+2017-07-10 12:00:23,977 p=12213 u=user1 |   [WARNING]: Consider using file module with state=touch rather than running touch
+
+2017-07-10 12:00:23,978 p=12213 u=user1 |  localhost | SUCCESS | rc=0 >>
+
+
+2017-07-10 12:06:36,281 p=12525 u=user1 |  server1 | SUCCESS | rc=0 >>
+debian-stretch
+
+2017-07-10 12:06:36,432 p=12525 u=user1 |  server4 | SUCCESS | rc=0 >>
+ubuntu-1604
+
+2017-07-10 12:06:36,613 p=12525 u=user1 |  server3 | SUCCESS | rc=0 >>
+centos-7.vhosts.lan
+
+2017-07-10 12:06:36,641 p=12525 u=user1 |  server2 | SUCCESS | rc=0 >>
+opensuse-422
+
+2017-07-10 12:09:20,638 p=12786 u=user1 |  server4 | SUCCESS => {
+    "changed": true, 
+    "comment": "", 
+    "createhome": true, 
+    "group": 1001, 
+    "home": "/home/john", 
+    "name": "john", 
+    "shell": "/bin/bash", 
+    "state": "present", 
+    "system": false, 
+    "uid": 1001
+}
+2017-07-10 12:09:20,735 p=12786 u=user1 |  server1 | SUCCESS => {
+    "changed": true, 
+    "comment": "", 
+    "createhome": true, 
+    "group": 1001, 
+    "home": "/home/john", 
+    "name": "john", 
+    "shell": "/bin/bash", 
+    "state": "present", 
+    "system": false, 
+    "uid": 1001
+}
+2017-07-10 12:09:20,810 p=12786 u=user1 |  server3 | SUCCESS => {
+    "changed": true, 
+    "comment": "", 
+    "createhome": true, 
+    "group": 1001, 
+    "home": "/home/john", 
+    "name": "john", 
+    "shell": "/bin/bash", 
+    "state": "present", 
+    "system": false, 
+    "uid": 1001
+}
+2017-07-10 12:09:20,905 p=12786 u=user1 |  server2 | SUCCESS => {
+    "changed": true, 
+    "comment": "", 
+    "createhome": true, 
+    "group": 100, 
+    "home": "/home/john", 
+    "name": "john", 
+    "shell": "/bin/bash", 
+    "state": "present", 
+    "system": false, 
+    "uid": 1001
+}
+2017-07-10 12:09:42,837 p=12840 u=user1 |  server4 | SUCCESS => {
+    "append": false, 
+    "changed": false, 
+    "comment": "", 
+    "group": 1001, 
+    "home": "/home/john", 
+    "move_home": false, 
+    "name": "john", 
+    "shell": "/bin/bash", 
+    "state": "present", 
+    "uid": 1001
+}
+2017-07-10 12:09:42,909 p=12840 u=user1 |  server1 | SUCCESS => {
+    "append": false, 
+    "changed": false, 
+    "comment": "", 
+    "group": 1001, 
+    "home": "/home/john", 
+    "move_home": false, 
+    "name": "john", 
+    "shell": "/bin/bash", 
+    "state": "present", 
+    "uid": 1001
+}
+2017-07-10 12:09:43,002 p=12840 u=user1 |  server3 | SUCCESS => {
+    "append": false, 
+    "changed": false, 
+    "comment": "", 
+    "group": 1001, 
+    "home": "/home/john", 
+    "move_home": false, 
+    "name": "john", 
+    "shell": "/bin/bash", 
+    "state": "present", 
+    "uid": 1001
+}
+2017-07-10 12:09:43,107 p=12840 u=user1 |  server2 | SUCCESS => {
+    "append": false, 
+    "changed": false, 
+    "comment": "", 
+    "group": 100, 
+    "home": "/home/john", 
+    "move_home": false, 
+    "name": "john", 
+    "shell": "/bin/bash", 
+    "state": "present", 
+    "uid": 1001
+}
+2017-07-10 12:10:41,587 p=12882 u=user1 |  ERROR! Extraneous options or arguments
+2017-07-10 12:10:48,517 p=12885 u=user1 |  server1 | SUCCESS | rc=0 >>
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:100:102:systemd Time Synchronization,,,:/run/systemd:/bin/false
+systemd-network:x:101:103:systemd Network Management,,,:/run/systemd/netif:/bin/false
+systemd-resolve:x:102:104:systemd Resolver,,,:/run/systemd/resolve:/bin/false
+systemd-bus-proxy:x:103:105:systemd Bus Proxy,,,:/run/systemd:/bin/false
+_apt:x:104:65534::/nonexistent:/bin/false
+messagebus:x:105:109::/var/run/dbus:/bin/false
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+user1:x:1000:1000:First User,,,:/home/user1:/bin/bash
+john:x:1001:1001::/home/john:/bin/bash
+
+2017-07-10 12:10:48,621 p=12885 u=user1 |  server4 | SUCCESS | rc=0 >>
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:100:102:systemd Time Synchronization,,,:/run/systemd:/bin/false
+systemd-network:x:101:103:systemd Network Management,,,:/run/systemd/netif:/bin/false
+systemd-resolve:x:102:104:systemd Resolver,,,:/run/systemd/resolve:/bin/false
+systemd-bus-proxy:x:103:105:systemd Bus Proxy,,,:/run/systemd:/bin/false
+syslog:x:104:108::/home/syslog:/bin/false
+_apt:x:105:65534::/nonexistent:/bin/false
+lxd:x:106:65534::/var/lib/lxd/:/bin/false
+messagebus:x:107:111::/var/run/dbus:/bin/false
+uuidd:x:108:112::/run/uuidd:/bin/false
+dnsmasq:x:109:65534:dnsmasq,,,:/var/lib/misc:/bin/false
+sshd:x:110:65534::/var/run/sshd:/usr/sbin/nologin
+user1:x:1000:1000:First User,,,:/home/user1:/bin/bash
+john:x:1001:1001::/home/john:/bin/bash
+
+2017-07-10 12:10:48,809 p=12885 u=user1 |  server3 | SUCCESS | rc=0 >>
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:99:99:Nobody:/:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+polkitd:x:999:998:User for polkitd:/:/sbin/nologin
+avahi:x:70:70:Avahi mDNS/DNS-SD Stack:/var/run/avahi-daemon:/sbin/nologin
+avahi-autoipd:x:170:170:Avahi IPv4LL Stack:/var/lib/avahi-autoipd:/sbin/nologin
+postfix:x:89:89::/var/spool/postfix:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+user1:x:1000:1000:First User:/home/user1:/bin/bash
+tss:x:59:59:Account used by the trousers package to sandbox the tcsd daemon:/dev/null:/sbin/nologin
+systemd-bus-proxy:x:998:996:systemd Bus Proxy:/:/sbin/nologin
+systemd-network:x:997:995:systemd Network Management:/:/sbin/nologin
+john:x:1001:1001::/home/john:/bin/bash
+
+2017-07-10 12:10:48,861 p=12885 u=user1 |  server2 | SUCCESS | rc=0 >>
+bin:x:1:1:bin:/bin:/bin/bash
+daemon:x:2:2:Daemon:/sbin:/bin/bash
+ftp:x:40:49:FTP account:/srv/ftp:/bin/bash
+games:x:12:100:Games account:/var/games:/bin/bash
+lp:x:4:7:Printing daemon:/var/spool/lpd:/bin/bash
+mail:x:8:12:Mailer daemon:/var/spool/clientmqueue:/bin/false
+man:x:13:62:Manual pages viewer:/var/cache/man:/bin/bash
+messagebus:x:499:499:User for D-Bus:/run/dbus:/bin/false
+news:x:9:13:News system:/etc/news:/bin/bash
+nobody:x:65534:65533:nobody:/var/lib/nobody:/bin/bash
+nscd:x:496:495:User for nscd:/run/nscd:/sbin/nologin
+ntp:x:74:490:NTP daemon:/var/lib/ntp:/bin/false
+openslp:x:494:2:openslp daemon:/var/lib/empty:/sbin/nologin
+polkitd:x:497:496:User for polkitd:/var/lib/polkit:/sbin/nologin
+postfix:x:51:51:Postfix Daemon:/var/spool/postfix:/bin/false
+root:x:0:0:root:/root:/bin/bash
+rpc:x:495:65534:user for rpcbind:/var/lib/empty:/sbin/nologin
+sshd:x:498:498:SSH daemon:/var/lib/sshd:/bin/false
+statd:x:490:65534:NFS statd daemon:/var/lib/nfs:/sbin/nologin
+systemd-bus-proxy:x:492:492:systemd Bus Proxy:/:/sbin/nologin
+systemd-timesync:x:491:491:systemd Time Synchronization:/:/sbin/nologin
+uucp:x:10:14:Unix-to-Unix CoPy system:/etc/uucp:/bin/bash
+wwwrun:x:30:8:WWW daemon apache:/var/lib/wwwrun:/bin/false
+user1:x:1000:100:First User:/home/user1:/bin/bash
+john:x:1001:100::/home/john:/bin/bash
+
+2017-07-10 12:10:55,597 p=12939 u=user1 |  server4 | FAILED | rc=1 >>
+cat: '/etc/passwd|': Datei oder Verzeichnis nicht gefunden
+cat: grep: Datei oder Verzeichnis nicht gefunden
+cat: john: Datei oder Verzeichnis nicht gefunden
+
+2017-07-10 12:10:55,657 p=12939 u=user1 |  server1 | FAILED | rc=1 >>
+cat: '/etc/passwd|': Datei oder Verzeichnis nicht gefunden
+cat: grep: Datei oder Verzeichnis nicht gefunden
+cat: john: Datei oder Verzeichnis nicht gefunden
+
+2017-07-10 12:10:55,691 p=12939 u=user1 |  server3 | FAILED | rc=1 >>
+cat: /etc/passwd|: Datei oder Verzeichnis nicht gefunden
+cat: grep: Datei oder Verzeichnis nicht gefunden
+cat: john: Datei oder Verzeichnis nicht gefunden
+
+2017-07-10 12:10:55,828 p=12939 u=user1 |  server2 | FAILED | rc=1 >>
+cat: '/etc/passwd|': Datei oder Verzeichnis nicht gefunden
+cat: grep: Datei oder Verzeichnis nicht gefunden
+cat: john: Datei oder Verzeichnis nicht gefunden
+
+2017-07-10 12:11:20,974 p=12981 u=user1 |  server1 | SUCCESS | rc=0 >>
+john:x:1001:1001::/home/john:/bin/bash
+
+2017-07-10 12:11:20,977 p=12981 u=user1 |  server4 | SUCCESS | rc=0 >>
+john:x:1001:1001::/home/john:/bin/bash
+
+2017-07-10 12:11:21,095 p=12981 u=user1 |  server3 | SUCCESS | rc=0 >>
+john:x:1001:1001::/home/john:/bin/bash
+
+2017-07-10 12:11:21,210 p=12981 u=user1 |  server2 | SUCCESS | rc=0 >>
+john:x:1001:100::/home/john:/bin/bash
+

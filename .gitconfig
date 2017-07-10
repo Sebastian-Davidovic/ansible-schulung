@@ -1,0 +1,12 @@
+~/.gitconfig
+
+[user]
+	        name = First User
+		email = user1@ansible.localdomain
+[color]
+	        ui = auto
+[core]
+	        editor = vim
+		pager = less -R
+[push]
+	        default = matching
