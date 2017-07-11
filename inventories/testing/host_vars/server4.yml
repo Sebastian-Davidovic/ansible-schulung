@@ -1,0 +1,2 @@
+---
+greet: "ich bin die host vars von {{ inventory_hostname }}\n"

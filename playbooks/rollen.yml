@@ -1,0 +1,11 @@
+---
+
+- hosts:
+    - server3
+    - server1
+    - server4
+    - server2
+
+  roles:
+
+    - install_apps

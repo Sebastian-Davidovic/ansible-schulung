@@ -1,0 +1,4 @@
+---
+
+ftp_config: /etc/vsftpd/vsftpd.conf
+locate_db: /var/lib/mlocate/mlocate.db

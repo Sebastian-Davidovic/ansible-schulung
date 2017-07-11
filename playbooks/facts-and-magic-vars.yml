@@ -1,0 +1,19 @@
+---
+- hosts: all
+
+  tasks:
+
+    - name: Test some facts
+      debug:
+        msg: >-
+          {{inventory_hostname}} ({{ansible_host}}) ist ein {{ansible_distribution}},
+          Version {{ansible_distribution_major_version}}
+          ({{ansible_distribution_version}}),
+          Familie {{ansible_os_family}}
+
+    - name: Test some implicit vars
+      debug: 
+        msg: >-
+          Dein Playbook liegt in {{playbook_dir}}, Dein Inventory in {{inventory_dir}}
+      run_once: true
+

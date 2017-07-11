@@ -1,0 +1,3 @@
+---
+ftp_config: /etc/vsftpd.conf
+locate_db:

@@ -1,0 +1,12 @@
+---
+- hosts: all
+
+  gather_facts: yes
+  
+  tasks:
+    - name: Create /etc/motd
+      copy:
+        dest: /etc/motd 
+        content: |
+          {{ greet }}
+          {{ greetall }}
