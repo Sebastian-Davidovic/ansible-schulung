@@ -35035,3 +35035,788 @@ The offending line appears to be:
 2017-07-11 14:09:09,818 p=56683 u=user1 |  server2                    : ok=15   changed=1    unreachable=0    failed=0   
 2017-07-11 14:09:09,818 p=56683 u=user1 |  server3                    : ok=16   changed=1    unreachable=0    failed=0   
 2017-07-11 14:09:09,818 p=56683 u=user1 |  server4                    : ok=15   changed=1    unreachable=0    failed=0   
+2017-07-11 14:29:01,395 p=58140 u=user1 |  PLAY [all] ********************************************************************************************************
+2017-07-11 14:29:01,432 p=58140 u=user1 |  TASK [install_apps : include_vars] ********************************************************************************
+2017-07-11 14:29:01,517 p=58140 u=user1 |  ok: [server3]
+2017-07-11 14:29:01,519 p=58140 u=user1 |  skipping: [server2]
+2017-07-11 14:29:01,524 p=58140 u=user1 |  ok: [server4]
+2017-07-11 14:29:01,549 p=58140 u=user1 |  ok: [server1]
+2017-07-11 14:29:01,561 p=58140 u=user1 |  TASK [install_apps : include_vars] ********************************************************************************
+2017-07-11 14:29:01,617 p=58140 u=user1 |  ok: [server2]
+2017-07-11 14:29:01,637 p=58140 u=user1 |  skipping: [server3]
+2017-07-11 14:29:01,638 p=58140 u=user1 |  skipping: [server4]
+2017-07-11 14:29:01,667 p=58140 u=user1 |  skipping: [server1]
+2017-07-11 14:29:01,672 p=58140 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 14:29:01,757 p=58140 u=user1 |  ok: [server2] => {
+    "msg": "Hallo FTP Server der Familie openSUSE Leap, Config /etc/vsftpd.conf "
+}
+2017-07-11 14:29:01,761 p=58140 u=user1 |  ok: [server3] => {
+    "msg": "Hallo FTP Server der Familie CentOS, Config /etc/vsftpd/vsftpd.conf "
+}
+2017-07-11 14:29:01,778 p=58140 u=user1 |  ok: [server1] => {
+    "msg": "Hallo FTP Server der Familie Debian, Config /etc/vsftpd.conf "
+}
+2017-07-11 14:29:01,779 p=58140 u=user1 |  ok: [server4] => {
+    "msg": "Hallo FTP Server der Familie Ubuntu, Config /etc/vsftpd.conf "
+}
+2017-07-11 14:29:01,787 p=58140 u=user1 |  TASK [install_apps : vsftpd installieren] *************************************************************************
+2017-07-11 14:29:03,022 p=58140 u=user1 |  ok: [server1]
+2017-07-11 14:29:03,195 p=58140 u=user1 |  ok: [server3]
+2017-07-11 14:29:03,298 p=58140 u=user1 |  ok: [server4]
+2017-07-11 14:29:04,364 p=58140 u=user1 |  ok: [server2]
+2017-07-11 14:29:04,369 p=58140 u=user1 |  TASK [install_apps : locate installieren] *************************************************************************
+2017-07-11 14:29:05,836 p=58140 u=user1 |  ok: [server1]
+2017-07-11 14:29:06,437 p=58140 u=user1 |  ok: [server4]
+2017-07-11 14:29:07,266 p=58140 u=user1 |  ok: [server2]
+2017-07-11 14:29:09,844 p=58140 u=user1 |  ok: [server3]
+2017-07-11 14:29:09,849 p=58140 u=user1 |  TASK [install_apps : Datenbank erstellen] *************************************************************************
+2017-07-11 14:29:10,320 p=58140 u=user1 |  ok: [server4]
+2017-07-11 14:29:10,330 p=58140 u=user1 |  ok: [server1]
+2017-07-11 14:29:10,456 p=58140 u=user1 |  ok: [server3]
+2017-07-11 14:29:10,554 p=58140 u=user1 |  ok: [server2]
+2017-07-11 14:29:10,559 p=58140 u=user1 |  TASK [install_apps : Configure firewall on RedHat systems] ********************************************************
+2017-07-11 14:29:10,607 p=58140 u=user1 |  skipping: [server2]
+2017-07-11 14:29:10,628 p=58140 u=user1 |  skipping: [server4]
+2017-07-11 14:29:10,647 p=58140 u=user1 |  skipping: [server1]
+2017-07-11 14:29:11,387 p=58140 u=user1 |  ok: [server3]
+2017-07-11 14:29:11,393 p=58140 u=user1 |  TASK [install_apps : vsftpd starten und in den Autostart setzen] **************************************************
+2017-07-11 14:29:11,851 p=58140 u=user1 |  ok: [server1]
+2017-07-11 14:29:11,890 p=58140 u=user1 |  ok: [server4]
+2017-07-11 14:29:12,017 p=58140 u=user1 |  ok: [server3]
+2017-07-11 14:29:12,119 p=58140 u=user1 |  ok: [server2]
+2017-07-11 14:29:12,124 p=58140 u=user1 |  TASK [install_apps : FTP Prozess überprüfen] **********************************************************************
+2017-07-11 14:29:12,502 p=58140 u=user1 |  ok: [server4]
+2017-07-11 14:29:12,512 p=58140 u=user1 |  ok: [server1]
+2017-07-11 14:29:12,656 p=58140 u=user1 |  ok: [server3]
+2017-07-11 14:29:12,665 p=58140 u=user1 |  ok: [server2]
+2017-07-11 14:29:12,670 p=58140 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 14:29:12,864 p=58140 u=user1 |  ok: [server3] => {
+    "psausgabe.stdout": "root     30786  0.0  0.0  54752   696 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf"
+}
+2017-07-11 14:29:12,864 p=58140 u=user1 |  ok: [server2] => {
+    "psausgabe.stdout": "root      37233  0.0  0.3  21844  3948 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 14:29:12,874 p=58140 u=user1 |  ok: [server4] => {
+    "psausgabe.stdout": "root      14262  0.0  0.2  24048  2392 ?        Ss   13:51   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 14:29:12,876 p=58140 u=user1 |  ok: [server1] => {
+    "psausgabe.stdout": "root      10230  0.0  0.2  28424  2624 ?        Ss   13:51   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 14:29:12,882 p=58140 u=user1 |  TASK [install_apps : local_umaks auf 077 setzen] ******************************************************************
+2017-07-11 14:29:13,311 p=58140 u=user1 |  ok: [server1]
+2017-07-11 14:29:13,319 p=58140 u=user1 |  ok: [server4]
+2017-07-11 14:29:13,386 p=58140 u=user1 |  ok: [server3]
+2017-07-11 14:29:13,543 p=58140 u=user1 |  ok: [server2]
+2017-07-11 14:29:13,548 p=58140 u=user1 |  TASK [install_apps : FTP Prozess überprüfen] **********************************************************************
+2017-07-11 14:29:13,976 p=58140 u=user1 |  ok: [server4]
+2017-07-11 14:29:14,057 p=58140 u=user1 |  ok: [server2]
+2017-07-11 14:29:14,069 p=58140 u=user1 |  ok: [server3]
+2017-07-11 14:29:14,120 p=58140 u=user1 |  ok: [server1]
+2017-07-11 14:29:14,129 p=58140 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 14:29:14,225 p=58140 u=user1 |  ok: [server2] => {
+    "psausgabe.stdout": "root      37233  0.0  0.3  21844  3948 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 14:29:14,232 p=58140 u=user1 |  ok: [server3] => {
+    "psausgabe.stdout": "root     30786  0.0  0.0  54752   696 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf"
+}
+2017-07-11 14:29:14,237 p=58140 u=user1 |  ok: [server4] => {
+    "psausgabe.stdout": "root      14262  0.0  0.2  24048  2392 ?        Ss   13:51   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 14:29:14,251 p=58140 u=user1 |  ok: [server1] => {
+    "psausgabe.stdout": "root      10230  0.0  0.2  28424  2624 ?        Ss   13:51   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 14:29:14,256 p=58140 u=user1 |  TASK [install_apps : Aktiviere Anonymus als User] *****************************************************************
+2017-07-11 14:29:14,697 p=58140 u=user1 |  ok: [server4]
+2017-07-11 14:29:14,735 p=58140 u=user1 |  ok: [server1]
+2017-07-11 14:29:14,736 p=58140 u=user1 |  ok: [server3]
+2017-07-11 14:29:14,957 p=58140 u=user1 |  ok: [server2]
+2017-07-11 14:29:14,962 p=58140 u=user1 |  TASK [install_apps : Überprüfe den Parameter anonymous_enabled] ***************************************************
+2017-07-11 14:29:15,354 p=58140 u=user1 |  ok: [server4]
+2017-07-11 14:29:15,380 p=58140 u=user1 |  ok: [server1]
+2017-07-11 14:29:15,492 p=58140 u=user1 |  ok: [server3]
+2017-07-11 14:29:15,523 p=58140 u=user1 |  ok: [server2]
+2017-07-11 14:29:15,528 p=58140 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 14:29:15,604 p=58140 u=user1 |  ok: [server2] => {
+    "userenableoutput.stdout": "anonymous_enable=YES"
+}
+2017-07-11 14:29:15,619 p=58140 u=user1 |  ok: [server3] => {
+    "userenableoutput.stdout": "anonymous_enable=YES"
+}
+2017-07-11 14:29:15,624 p=58140 u=user1 |  ok: [server1] => {
+    "userenableoutput.stdout": "anonymous_enable=YES"
+}
+2017-07-11 14:29:15,640 p=58140 u=user1 |  ok: [server4] => {
+    "userenableoutput.stdout": "anonymous_enable=YES"
+}
+2017-07-11 14:29:15,651 p=58140 u=user1 |  TASK [install_apps : Grussmeldung hochladen] **********************************************************************
+2017-07-11 14:29:16,163 p=58140 u=user1 |  fatal: [server4]: FAILED! => {"changed": false, "failed": true, "msg": "AnsibleError: template error while templating string: unexpected '}', expected ')'. String: {% for i in range(70 %}={% endfor %}\nHallo auf {{ansible_hostname}}! \n\nEin Viertel Hauptsp. in MB: {{ (ansible_memtotal_mb * 0.25) | int }}\nBitte beachte usnere Nutzungsbedingugnen !!!!\n{% for i in range(70 %}={% endfor %}\n"}
+2017-07-11 14:29:16,164 p=58140 u=user1 |  fatal: [server1]: FAILED! => {"changed": false, "failed": true, "msg": "AnsibleError: template error while templating string: unexpected '}', expected ')'. String: {% for i in range(70 %}={% endfor %}\nHallo auf {{ansible_hostname}}! \n\nEin Viertel Hauptsp. in MB: {{ (ansible_memtotal_mb * 0.25) | int }}\nBitte beachte usnere Nutzungsbedingugnen !!!!\n{% for i in range(70 %}={% endfor %}\n"}
+2017-07-11 14:29:16,264 p=58140 u=user1 |  fatal: [server3]: FAILED! => {"changed": false, "failed": true, "msg": "AnsibleError: template error while templating string: unexpected '}', expected ')'. String: {% for i in range(70 %}={% endfor %}\nHallo auf {{ansible_hostname}}! \n\nEin Viertel Hauptsp. in MB: {{ (ansible_memtotal_mb * 0.25) | int }}\nBitte beachte usnere Nutzungsbedingugnen !!!!\n{% for i in range(70 %}={% endfor %}\n"}
+2017-07-11 14:29:16,347 p=58140 u=user1 |  fatal: [server2]: FAILED! => {"changed": false, "failed": true, "msg": "AnsibleError: template error while templating string: unexpected '}', expected ')'. String: {% for i in range(70 %}={% endfor %}\nHallo auf {{ansible_hostname}}! \n\nEin Viertel Hauptsp. in MB: {{ (ansible_memtotal_mb * 0.25) | int }}\nBitte beachte usnere Nutzungsbedingugnen !!!!\n{% for i in range(70 %}={% endfor %}\n"}
+2017-07-11 14:29:16,349 p=58140 u=user1 |  	to retry, use: --limit @/home/user1/.ansible/retry-files/rollen.retry
+
+2017-07-11 14:29:16,349 p=58140 u=user1 |  PLAY RECAP ********************************************************************************************************
+2017-07-11 14:29:16,350 p=58140 u=user1 |  server1                    : ok=14   changed=0    unreachable=0    failed=1   
+2017-07-11 14:29:16,350 p=58140 u=user1 |  server2                    : ok=14   changed=0    unreachable=0    failed=1   
+2017-07-11 14:29:16,350 p=58140 u=user1 |  server3                    : ok=15   changed=0    unreachable=0    failed=1   
+2017-07-11 14:29:16,350 p=58140 u=user1 |  server4                    : ok=14   changed=0    unreachable=0    failed=1   
+2017-07-11 14:30:26,068 p=58546 u=user1 |  PLAY [all] ********************************************************************************************************
+2017-07-11 14:30:26,105 p=58546 u=user1 |  TASK [install_apps : include_vars] ********************************************************************************
+2017-07-11 14:30:26,160 p=58546 u=user1 |  ok: [server3]
+2017-07-11 14:30:26,163 p=58546 u=user1 |  skipping: [server2]
+2017-07-11 14:30:26,203 p=58546 u=user1 |  ok: [server1]
+2017-07-11 14:30:26,211 p=58546 u=user1 |  ok: [server4]
+2017-07-11 14:30:26,217 p=58546 u=user1 |  TASK [install_apps : include_vars] ********************************************************************************
+2017-07-11 14:30:26,289 p=58546 u=user1 |  skipping: [server3]
+2017-07-11 14:30:26,308 p=58546 u=user1 |  ok: [server2]
+2017-07-11 14:30:26,315 p=58546 u=user1 |  skipping: [server4]
+2017-07-11 14:30:26,336 p=58546 u=user1 |  skipping: [server1]
+2017-07-11 14:30:26,340 p=58546 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 14:30:26,408 p=58546 u=user1 |  ok: [server2] => {
+    "msg": "Hallo FTP Server der Familie openSUSE Leap, Config /etc/vsftpd.conf "
+}
+2017-07-11 14:30:26,426 p=58546 u=user1 |  ok: [server3] => {
+    "msg": "Hallo FTP Server der Familie CentOS, Config /etc/vsftpd/vsftpd.conf "
+}
+2017-07-11 14:30:26,433 p=58546 u=user1 |  ok: [server1] => {
+    "msg": "Hallo FTP Server der Familie Debian, Config /etc/vsftpd.conf "
+}
+2017-07-11 14:30:26,448 p=58546 u=user1 |  ok: [server4] => {
+    "msg": "Hallo FTP Server der Familie Ubuntu, Config /etc/vsftpd.conf "
+}
+2017-07-11 14:30:26,455 p=58546 u=user1 |  TASK [install_apps : vsftpd installieren] *************************************************************************
+2017-07-11 14:30:26,865 p=58546 u=user1 |   [ERROR]: User interrupted execution
+
+2017-07-11 14:30:57,847 p=58585 u=user1 |  PLAY [all] ********************************************************************************************************
+2017-07-11 14:30:57,877 p=58585 u=user1 |  TASK [install_apps : include_vars] ********************************************************************************
+2017-07-11 14:30:57,931 p=58585 u=user1 |  skipping: [server2]
+2017-07-11 14:30:57,936 p=58585 u=user1 |  ok: [server3]
+2017-07-11 14:30:57,982 p=58585 u=user1 |  ok: [server1]
+2017-07-11 14:30:57,994 p=58585 u=user1 |  ok: [server4]
+2017-07-11 14:30:57,999 p=58585 u=user1 |  TASK [install_apps : include_vars] ********************************************************************************
+2017-07-11 14:30:58,077 p=58585 u=user1 |  skipping: [server3]
+2017-07-11 14:30:58,078 p=58585 u=user1 |  ok: [server2]
+2017-07-11 14:30:58,084 p=58585 u=user1 |  skipping: [server4]
+2017-07-11 14:30:58,087 p=58585 u=user1 |  skipping: [server1]
+2017-07-11 14:30:58,092 p=58585 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 14:30:58,186 p=58585 u=user1 |  ok: [server4] => {
+    "msg": "Hallo FTP Server der Familie Ubuntu, Config /etc/vsftpd.conf "
+}
+2017-07-11 14:30:58,188 p=58585 u=user1 |  ok: [server3] => {
+    "msg": "Hallo FTP Server der Familie CentOS, Config /etc/vsftpd/vsftpd.conf "
+}
+2017-07-11 14:30:58,189 p=58585 u=user1 |  ok: [server2] => {
+    "msg": "Hallo FTP Server der Familie openSUSE Leap, Config /etc/vsftpd.conf "
+}
+2017-07-11 14:30:58,201 p=58585 u=user1 |  ok: [server1] => {
+    "msg": "Hallo FTP Server der Familie Debian, Config /etc/vsftpd.conf "
+}
+2017-07-11 14:30:58,211 p=58585 u=user1 |  TASK [install_apps : vsftpd installieren] *************************************************************************
+2017-07-11 14:30:59,445 p=58585 u=user1 |  ok: [server1]
+2017-07-11 14:30:59,594 p=58585 u=user1 |  ok: [server4]
+2017-07-11 14:30:59,749 p=58585 u=user1 |  ok: [server3]
+2017-07-11 14:31:00,344 p=58585 u=user1 |  ok: [server2]
+2017-07-11 14:31:00,348 p=58585 u=user1 |  TASK [install_apps : locate installieren] *************************************************************************
+2017-07-11 14:31:01,872 p=58585 u=user1 |  ok: [server1]
+2017-07-11 14:31:02,364 p=58585 u=user1 |  ok: [server4]
+2017-07-11 14:31:03,180 p=58585 u=user1 |  ok: [server2]
+2017-07-11 14:31:05,725 p=58585 u=user1 |  ok: [server3]
+2017-07-11 14:31:05,730 p=58585 u=user1 |  TASK [install_apps : Datenbank erstellen] *************************************************************************
+2017-07-11 14:31:06,192 p=58585 u=user1 |  ok: [server1]
+2017-07-11 14:31:06,198 p=58585 u=user1 |  ok: [server4]
+2017-07-11 14:31:06,327 p=58585 u=user1 |  ok: [server3]
+2017-07-11 14:31:06,430 p=58585 u=user1 |  ok: [server2]
+2017-07-11 14:31:06,435 p=58585 u=user1 |  TASK [install_apps : Configure firewall on RedHat systems] ********************************************************
+2017-07-11 14:31:06,483 p=58585 u=user1 |  skipping: [server2]
+2017-07-11 14:31:06,506 p=58585 u=user1 |  skipping: [server4]
+2017-07-11 14:31:06,523 p=58585 u=user1 |  skipping: [server1]
+2017-07-11 14:31:07,237 p=58585 u=user1 |  ok: [server3]
+2017-07-11 14:31:07,242 p=58585 u=user1 |  TASK [install_apps : vsftpd starten und in den Autostart setzen] **************************************************
+2017-07-11 14:31:07,714 p=58585 u=user1 |  ok: [server1]
+2017-07-11 14:31:07,772 p=58585 u=user1 |  ok: [server4]
+2017-07-11 14:31:07,870 p=58585 u=user1 |  ok: [server3]
+2017-07-11 14:31:07,928 p=58585 u=user1 |  ok: [server2]
+2017-07-11 14:31:07,934 p=58585 u=user1 |  TASK [install_apps : FTP Prozess überprüfen] **********************************************************************
+2017-07-11 14:31:08,364 p=58585 u=user1 |  ok: [server1]
+2017-07-11 14:31:08,445 p=58585 u=user1 |  ok: [server4]
+2017-07-11 14:31:08,477 p=58585 u=user1 |  ok: [server3]
+2017-07-11 14:31:08,674 p=58585 u=user1 |  ok: [server2]
+2017-07-11 14:31:08,679 p=58585 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 14:31:08,740 p=58585 u=user1 |  ok: [server2] => {
+    "psausgabe.stdout": "root      37233  0.0  0.3  21844  3948 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 14:31:08,756 p=58585 u=user1 |  ok: [server3] => {
+    "psausgabe.stdout": "root     30786  0.0  0.0  54752   696 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf"
+}
+2017-07-11 14:31:08,774 p=58585 u=user1 |  ok: [server4] => {
+    "psausgabe.stdout": "root      14262  0.0  0.2  24048  2392 ?        Ss   13:51   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 14:31:08,791 p=58585 u=user1 |  ok: [server1] => {
+    "psausgabe.stdout": "root      10230  0.0  0.2  28424  2624 ?        Ss   13:51   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 14:31:08,797 p=58585 u=user1 |  TASK [install_apps : local_umaks auf 077 setzen] ******************************************************************
+2017-07-11 14:31:09,299 p=58585 u=user1 |  ok: [server1]
+2017-07-11 14:31:09,333 p=58585 u=user1 |  ok: [server4]
+2017-07-11 14:31:09,450 p=58585 u=user1 |  ok: [server3]
+2017-07-11 14:31:09,534 p=58585 u=user1 |  ok: [server2]
+2017-07-11 14:31:09,543 p=58585 u=user1 |  TASK [install_apps : FTP Prozess überprüfen] **********************************************************************
+2017-07-11 14:31:10,087 p=58585 u=user1 |  ok: [server1]
+2017-07-11 14:31:10,091 p=58585 u=user1 |  ok: [server4]
+2017-07-11 14:31:10,128 p=58585 u=user1 |  ok: [server3]
+2017-07-11 14:31:10,305 p=58585 u=user1 |  ok: [server2]
+2017-07-11 14:31:10,310 p=58585 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 14:31:10,360 p=58585 u=user1 |  ok: [server2] => {
+    "psausgabe.stdout": "root      37233  0.0  0.3  21844  3948 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 14:31:10,390 p=58585 u=user1 |  ok: [server4] => {
+    "psausgabe.stdout": "root      14262  0.0  0.2  24048  2392 ?        Ss   13:51   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 14:31:10,391 p=58585 u=user1 |  ok: [server3] => {
+    "psausgabe.stdout": "root     30786  0.0  0.0  54752   696 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf"
+}
+2017-07-11 14:31:10,408 p=58585 u=user1 |  ok: [server1] => {
+    "psausgabe.stdout": "root      10230  0.0  0.2  28424  2624 ?        Ss   13:51   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 14:31:10,413 p=58585 u=user1 |  TASK [install_apps : Aktiviere Anonymus als User] *****************************************************************
+2017-07-11 14:31:10,823 p=58585 u=user1 |  ok: [server4]
+2017-07-11 14:31:10,900 p=58585 u=user1 |  ok: [server1]
+2017-07-11 14:31:10,960 p=58585 u=user1 |  ok: [server3]
+2017-07-11 14:31:11,057 p=58585 u=user1 |  ok: [server2]
+2017-07-11 14:31:11,064 p=58585 u=user1 |  TASK [install_apps : Überprüfe den Parameter anonymous_enabled] ***************************************************
+2017-07-11 14:31:11,459 p=58585 u=user1 |  ok: [server4]
+2017-07-11 14:31:11,461 p=58585 u=user1 |  ok: [server1]
+2017-07-11 14:31:11,482 p=58585 u=user1 |  ok: [server3]
+2017-07-11 14:31:11,617 p=58585 u=user1 |  ok: [server2]
+2017-07-11 14:31:11,622 p=58585 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 14:31:11,680 p=58585 u=user1 |  ok: [server3] => {
+    "userenableoutput.stdout": "anonymous_enable=YES"
+}
+2017-07-11 14:31:11,681 p=58585 u=user1 |  ok: [server2] => {
+    "userenableoutput.stdout": "anonymous_enable=YES"
+}
+2017-07-11 14:31:11,703 p=58585 u=user1 |  ok: [server4] => {
+    "userenableoutput.stdout": "anonymous_enable=YES"
+}
+2017-07-11 14:31:11,720 p=58585 u=user1 |  ok: [server1] => {
+    "userenableoutput.stdout": "anonymous_enable=YES"
+}
+2017-07-11 14:31:11,726 p=58585 u=user1 |  TASK [install_apps : Grussmeldung hochladen] **********************************************************************
+2017-07-11 14:31:12,979 p=58585 u=user1 |  changed: [server1]
+2017-07-11 14:31:12,997 p=58585 u=user1 |  changed: [server4]
+2017-07-11 14:31:13,174 p=58585 u=user1 |  changed: [server3]
+2017-07-11 14:31:13,460 p=58585 u=user1 |  changed: [server2]
+2017-07-11 14:31:13,463 p=58585 u=user1 |  PLAY RECAP ********************************************************************************************************
+2017-07-11 14:31:13,463 p=58585 u=user1 |  server1                    : ok=15   changed=1    unreachable=0    failed=0   
+2017-07-11 14:31:13,463 p=58585 u=user1 |  server2                    : ok=15   changed=1    unreachable=0    failed=0   
+2017-07-11 14:31:13,463 p=58585 u=user1 |  server3                    : ok=16   changed=1    unreachable=0    failed=0   
+2017-07-11 14:31:13,463 p=58585 u=user1 |  server4                    : ok=15   changed=1    unreachable=0    failed=0   
+2017-07-11 15:01:12,804 p=60331 u=user1 |  PLAY [all] ********************************************************************************************************
+2017-07-11 15:01:12,839 p=60331 u=user1 |  TASK [install_apps : include_vars] ********************************************************************************
+2017-07-11 15:01:12,953 p=60331 u=user1 |  skipping: [server2]
+2017-07-11 15:01:13,008 p=60331 u=user1 |  ok: [server3]
+2017-07-11 15:01:13,028 p=60331 u=user1 |  ok: [server4]
+2017-07-11 15:01:13,062 p=60331 u=user1 |  ok: [server1]
+2017-07-11 15:01:13,110 p=60331 u=user1 |  TASK [install_apps : include_vars] ********************************************************************************
+2017-07-11 15:01:13,218 p=60331 u=user1 |  skipping: [server3]
+2017-07-11 15:01:13,255 p=60331 u=user1 |  skipping: [server4]
+2017-07-11 15:01:13,271 p=60331 u=user1 |  skipping: [server1]
+2017-07-11 15:01:13,285 p=60331 u=user1 |  ok: [server2]
+2017-07-11 15:01:13,306 p=60331 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 15:01:13,423 p=60331 u=user1 |  ok: [server2] => {
+    "msg": "Hallo FTP Server der Familie openSUSE Leap, Config /etc/vsftpd.conf "
+}
+2017-07-11 15:01:13,485 p=60331 u=user1 |  ok: [server4] => {
+    "msg": "Hallo FTP Server der Familie Ubuntu, Config /etc/vsftpd.conf "
+}
+2017-07-11 15:01:13,512 p=60331 u=user1 |  ok: [server1] => {
+    "msg": "Hallo FTP Server der Familie Debian, Config /etc/vsftpd.conf "
+}
+2017-07-11 15:01:13,528 p=60331 u=user1 |  ok: [server3] => {
+    "msg": "Hallo FTP Server der Familie CentOS, Config /etc/vsftpd/vsftpd.conf "
+}
+2017-07-11 15:01:13,557 p=60331 u=user1 |  TASK [install_apps : vsftpd installieren] *************************************************************************
+2017-07-11 15:01:15,179 p=60331 u=user1 |  ok: [server1]
+2017-07-11 15:01:15,595 p=60331 u=user1 |  ok: [server3]
+2017-07-11 15:01:15,740 p=60331 u=user1 |  ok: [server4]
+2017-07-11 15:01:19,783 p=60331 u=user1 |  ok: [server2]
+2017-07-11 15:01:19,817 p=60331 u=user1 |  TASK [install_apps : locate installieren] *************************************************************************
+2017-07-11 15:01:21,234 p=60331 u=user1 |  ok: [server1]
+2017-07-11 15:01:22,058 p=60331 u=user1 |  ok: [server4]
+2017-07-11 15:01:22,980 p=60331 u=user1 |  ok: [server2]
+2017-07-11 15:01:25,489 p=60331 u=user1 |  ok: [server3]
+2017-07-11 15:01:25,507 p=60331 u=user1 |  TASK [install_apps : Datenbank erstellen] *************************************************************************
+2017-07-11 15:01:25,991 p=60331 u=user1 |  ok: [server4]
+2017-07-11 15:01:26,085 p=60331 u=user1 |  ok: [server1]
+2017-07-11 15:01:26,118 p=60331 u=user1 |  ok: [server3]
+2017-07-11 15:01:26,236 p=60331 u=user1 |  ok: [server2]
+2017-07-11 15:01:26,261 p=60331 u=user1 |  TASK [install_apps : Configure firewall on RedHat systems] ********************************************************
+2017-07-11 15:01:26,330 p=60331 u=user1 |  skipping: [server2]
+2017-07-11 15:01:26,411 p=60331 u=user1 |  skipping: [server4]
+2017-07-11 15:01:26,492 p=60331 u=user1 |  skipping: [server1]
+2017-07-11 15:01:27,148 p=60331 u=user1 |  ok: [server3]
+2017-07-11 15:01:27,168 p=60331 u=user1 |  TASK [install_apps : vsftpd starten und in den Autostart setzen] **************************************************
+2017-07-11 15:01:27,770 p=60331 u=user1 |  ok: [server1]
+2017-07-11 15:01:27,805 p=60331 u=user1 |  ok: [server4]
+2017-07-11 15:01:27,874 p=60331 u=user1 |  ok: [server3]
+2017-07-11 15:01:27,968 p=60331 u=user1 |  ok: [server2]
+2017-07-11 15:01:27,993 p=60331 u=user1 |  TASK [install_apps : FTP Prozess überprüfen] **********************************************************************
+2017-07-11 15:01:28,417 p=60331 u=user1 |  ok: [server4]
+2017-07-11 15:01:28,444 p=60331 u=user1 |  ok: [server1]
+2017-07-11 15:01:28,562 p=60331 u=user1 |  ok: [server3]
+2017-07-11 15:01:28,580 p=60331 u=user1 |  ok: [server2]
+2017-07-11 15:01:28,598 p=60331 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 15:01:28,653 p=60331 u=user1 |  ok: [server2] => {
+    "psausgabe.stdout": "root      37233  0.0  0.3  21844  3948 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 15:01:28,693 p=60331 u=user1 |  ok: [server4] => {
+    "psausgabe.stdout": "root      14262  0.0  0.2  24048  2392 ?        Ss   13:51   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 15:01:28,718 p=60331 u=user1 |  ok: [server1] => {
+    "psausgabe.stdout": "root      10230  0.0  0.2  28424  2624 ?        Ss   13:51   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 15:01:28,733 p=60331 u=user1 |  ok: [server3] => {
+    "psausgabe.stdout": "root     30786  0.0  0.0  54752   696 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf"
+}
+2017-07-11 15:01:28,752 p=60331 u=user1 |  TASK [install_apps : local_umaks auf 077 setzen] ******************************************************************
+2017-07-11 15:01:29,208 p=60331 u=user1 |  ok: [server1]
+2017-07-11 15:01:29,241 p=60331 u=user1 |  ok: [server4]
+2017-07-11 15:01:29,280 p=60331 u=user1 |  ok: [server3]
+2017-07-11 15:01:29,427 p=60331 u=user1 |  ok: [server2]
+2017-07-11 15:01:29,447 p=60331 u=user1 |  TASK [install_apps : FTP Prozess überprüfen] **********************************************************************
+2017-07-11 15:01:30,171 p=60331 u=user1 |  ok: [server4]
+2017-07-11 15:01:30,289 p=60331 u=user1 |  ok: [server1]
+2017-07-11 15:01:30,334 p=60331 u=user1 |  ok: [server3]
+2017-07-11 15:01:30,518 p=60331 u=user1 |  ok: [server2]
+2017-07-11 15:01:30,557 p=60331 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 15:01:30,705 p=60331 u=user1 |  ok: [server3] => {
+    "psausgabe.stdout": "root     30786  0.0  0.0  54752   696 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf"
+}
+2017-07-11 15:01:30,777 p=60331 u=user1 |  ok: [server1] => {
+    "psausgabe.stdout": "root      10230  0.0  0.2  28424  2624 ?        Ss   13:51   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 15:01:30,843 p=60331 u=user1 |  ok: [server4] => {
+    "psausgabe.stdout": "root      14262  0.0  0.2  24048  2392 ?        Ss   13:51   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 15:01:30,864 p=60331 u=user1 |  ok: [server2] => {
+    "psausgabe.stdout": "root      37233  0.0  0.3  21844  3948 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 15:01:30,896 p=60331 u=user1 |  TASK [install_apps : Aktiviere Anonymus als User] *****************************************************************
+2017-07-11 15:01:31,527 p=60331 u=user1 |  ok: [server1]
+2017-07-11 15:01:31,584 p=60331 u=user1 |  ok: [server4]
+2017-07-11 15:01:31,602 p=60331 u=user1 |  ok: [server3]
+2017-07-11 15:01:31,686 p=60331 u=user1 |  ok: [server2]
+2017-07-11 15:01:31,705 p=60331 u=user1 |  TASK [install_apps : Überprüfe den Parameter anonymous_enabled] ***************************************************
+2017-07-11 15:01:32,064 p=60331 u=user1 |  ok: [server1]
+2017-07-11 15:01:32,109 p=60331 u=user1 |  ok: [server4]
+2017-07-11 15:01:32,200 p=60331 u=user1 |  ok: [server3]
+2017-07-11 15:01:32,311 p=60331 u=user1 |  ok: [server2]
+2017-07-11 15:01:32,330 p=60331 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 15:01:32,407 p=60331 u=user1 |  ok: [server2] => {
+    "userenableoutput.stdout": "anonymous_enable=YES"
+}
+2017-07-11 15:01:32,436 p=60331 u=user1 |  ok: [server1] => {
+    "userenableoutput.stdout": "anonymous_enable=YES"
+}
+2017-07-11 15:01:32,449 p=60331 u=user1 |  ok: [server3] => {
+    "userenableoutput.stdout": "anonymous_enable=YES"
+}
+2017-07-11 15:01:32,463 p=60331 u=user1 |  ok: [server4] => {
+    "userenableoutput.stdout": "anonymous_enable=YES"
+}
+2017-07-11 15:01:32,481 p=60331 u=user1 |  TASK [install_apps : Grussmeldung hochladen] **********************************************************************
+2017-07-11 15:01:33,656 p=60331 u=user1 |  ok: [server1]
+2017-07-11 15:01:33,714 p=60331 u=user1 |  ok: [server4]
+2017-07-11 15:01:33,857 p=60331 u=user1 |  ok: [server3]
+2017-07-11 15:01:34,182 p=60331 u=user1 |  ok: [server2]
+2017-07-11 15:01:34,200 p=60331 u=user1 |  PLAY RECAP ********************************************************************************************************
+2017-07-11 15:01:34,200 p=60331 u=user1 |  server1                    : ok=15   changed=0    unreachable=0    failed=0   
+2017-07-11 15:01:34,200 p=60331 u=user1 |  server2                    : ok=15   changed=0    unreachable=0    failed=0   
+2017-07-11 15:01:34,200 p=60331 u=user1 |  server3                    : ok=16   changed=0    unreachable=0    failed=0   
+2017-07-11 15:01:34,200 p=60331 u=user1 |  server4                    : ok=15   changed=0    unreachable=0    failed=0   
+2017-07-11 15:03:37,984 p=60826 u=user1 |  PLAY [all] ********************************************************************************************************
+2017-07-11 15:03:38,048 p=60826 u=user1 |  TASK [install_apps : include_vars] ********************************************************************************
+2017-07-11 15:03:38,146 p=60826 u=user1 |  skipping: [server2]
+2017-07-11 15:03:38,219 p=60826 u=user1 |  ok: [server4]
+2017-07-11 15:03:38,250 p=60826 u=user1 |  ok: [server1]
+2017-07-11 15:03:38,272 p=60826 u=user1 |  ok: [server3]
+2017-07-11 15:03:38,304 p=60826 u=user1 |  TASK [install_apps : include_vars] ********************************************************************************
+2017-07-11 15:03:38,411 p=60826 u=user1 |  skipping: [server3]
+2017-07-11 15:03:38,451 p=60826 u=user1 |  skipping: [server4]
+2017-07-11 15:03:38,470 p=60826 u=user1 |  skipping: [server1]
+2017-07-11 15:03:38,484 p=60826 u=user1 |  ok: [server2]
+2017-07-11 15:03:38,502 p=60826 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 15:03:38,608 p=60826 u=user1 |  ok: [server3] => {
+    "msg": "Hallo FTP Server der Familie CentOS, Config /etc/vsftpd/vsftpd.conf "
+}
+2017-07-11 15:03:38,654 p=60826 u=user1 |  ok: [server1] => {
+    "msg": "Hallo FTP Server der Familie Debian, Config /etc/vsftpd.conf "
+}
+2017-07-11 15:03:38,669 p=60826 u=user1 |  ok: [server4] => {
+    "msg": "Hallo FTP Server der Familie Ubuntu, Config /etc/vsftpd.conf "
+}
+2017-07-11 15:03:38,689 p=60826 u=user1 |  ok: [server2] => {
+    "msg": "Hallo FTP Server der Familie openSUSE Leap, Config /etc/vsftpd.conf "
+}
+2017-07-11 15:03:38,711 p=60826 u=user1 |  TASK [install_apps : vsftpd installieren] *************************************************************************
+2017-07-11 15:03:40,162 p=60826 u=user1 |  ok: [server1]
+2017-07-11 15:03:40,674 p=60826 u=user1 |  ok: [server3]
+2017-07-11 15:03:40,695 p=60826 u=user1 |  ok: [server4]
+2017-07-11 15:03:41,600 p=60826 u=user1 |  ok: [server2]
+2017-07-11 15:03:41,625 p=60826 u=user1 |  TASK [install_apps : locate installieren] *************************************************************************
+2017-07-11 15:03:43,166 p=60826 u=user1 |  ok: [server1]
+2017-07-11 15:03:43,673 p=60826 u=user1 |  ok: [server4]
+2017-07-11 15:03:44,693 p=60826 u=user1 |  ok: [server2]
+2017-07-11 15:03:47,167 p=60826 u=user1 |  ok: [server3]
+2017-07-11 15:03:47,186 p=60826 u=user1 |  TASK [install_apps : Datenbank erstellen] *************************************************************************
+2017-07-11 15:03:47,666 p=60826 u=user1 |  ok: [server1]
+2017-07-11 15:03:47,697 p=60826 u=user1 |  ok: [server4]
+2017-07-11 15:03:47,831 p=60826 u=user1 |  ok: [server3]
+2017-07-11 15:03:47,983 p=60826 u=user1 |  ok: [server2]
+2017-07-11 15:03:48,006 p=60826 u=user1 |  TASK [install_apps : Configure firewall on RedHat systems] ********************************************************
+2017-07-11 15:03:48,060 p=60826 u=user1 |  skipping: [server2]
+2017-07-11 15:03:48,129 p=60826 u=user1 |  skipping: [server4]
+2017-07-11 15:03:48,180 p=60826 u=user1 |  skipping: [server1]
+2017-07-11 15:03:48,859 p=60826 u=user1 |  ok: [server3]
+2017-07-11 15:03:48,879 p=60826 u=user1 |  TASK [install_apps : vsftpd starten und in den Autostart setzen] **************************************************
+2017-07-11 15:03:49,565 p=60826 u=user1 |  ok: [server1]
+2017-07-11 15:03:49,676 p=60826 u=user1 |  ok: [server3]
+2017-07-11 15:03:49,707 p=60826 u=user1 |  ok: [server4]
+2017-07-11 15:03:49,927 p=60826 u=user1 |  ok: [server2]
+2017-07-11 15:03:50,018 p=60826 u=user1 |  TASK [install_apps : FTP Prozess überprüfen] **********************************************************************
+2017-07-11 15:03:50,964 p=60826 u=user1 |  ok: [server3]
+2017-07-11 15:03:51,057 p=60826 u=user1 |  ok: [server1]
+2017-07-11 15:03:51,123 p=60826 u=user1 |  ok: [server4]
+2017-07-11 15:03:51,164 p=60826 u=user1 |  ok: [server2]
+2017-07-11 15:03:51,203 p=60826 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 15:03:51,328 p=60826 u=user1 |  ok: [server2] => {
+    "psausgabe.stdout": "root      37233  0.0  0.3  21844  3948 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 15:03:51,388 p=60826 u=user1 |  ok: [server4] => {
+    "psausgabe.stdout": "root      14262  0.0  0.2  24048  2392 ?        Ss   13:51   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 15:03:51,412 p=60826 u=user1 |  ok: [server1] => {
+    "psausgabe.stdout": "root      10230  0.0  0.2  28424  2624 ?        Ss   13:51   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 15:03:51,431 p=60826 u=user1 |  ok: [server3] => {
+    "psausgabe.stdout": "root     30786  0.0  0.0  54752   696 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf"
+}
+2017-07-11 15:03:51,476 p=60826 u=user1 |  TASK [install_apps : local_umaks auf 077 setzen] ******************************************************************
+2017-07-11 15:03:52,039 p=60826 u=user1 |  ok: [server1]
+2017-07-11 15:03:52,086 p=60826 u=user1 |  ok: [server4]
+2017-07-11 15:03:52,266 p=60826 u=user1 |  ok: [server3]
+2017-07-11 15:03:52,376 p=60826 u=user1 |  ok: [server2]
+2017-07-11 15:03:52,397 p=60826 u=user1 |  TASK [install_apps : FTP Prozess überprüfen] **********************************************************************
+2017-07-11 15:03:52,793 p=60826 u=user1 |  ok: [server4]
+2017-07-11 15:03:52,825 p=60826 u=user1 |  ok: [server1]
+2017-07-11 15:03:52,858 p=60826 u=user1 |  ok: [server3]
+2017-07-11 15:03:53,017 p=60826 u=user1 |  ok: [server2]
+2017-07-11 15:03:53,036 p=60826 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 15:03:53,108 p=60826 u=user1 |  ok: [server2] => {
+    "psausgabe.stdout": "root      37233  0.0  0.3  21844  3948 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 15:03:53,146 p=60826 u=user1 |  ok: [server4] => {
+    "psausgabe.stdout": "root      14262  0.0  0.2  24048  2392 ?        Ss   13:51   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 15:03:53,161 p=60826 u=user1 |  ok: [server1] => {
+    "psausgabe.stdout": "root      10230  0.0  0.2  28424  2624 ?        Ss   13:51   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 15:03:53,177 p=60826 u=user1 |  ok: [server3] => {
+    "psausgabe.stdout": "root     30786  0.0  0.0  54752   696 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf"
+}
+2017-07-11 15:03:53,199 p=60826 u=user1 |  TASK [install_apps : Aktiviere Anonymus als User] *****************************************************************
+2017-07-11 15:03:53,614 p=60826 u=user1 |  ok: [server4]
+2017-07-11 15:03:53,663 p=60826 u=user1 |  ok: [server3]
+2017-07-11 15:03:53,686 p=60826 u=user1 |  ok: [server1]
+2017-07-11 15:03:53,845 p=60826 u=user1 |  ok: [server2]
+2017-07-11 15:03:53,869 p=60826 u=user1 |  TASK [install_apps : Überprüfe den Parameter anonymous_enabled] ***************************************************
+2017-07-11 15:03:54,400 p=60826 u=user1 |  ok: [server1]
+2017-07-11 15:03:54,440 p=60826 u=user1 |  ok: [server4]
+2017-07-11 15:03:54,458 p=60826 u=user1 |  ok: [server3]
+2017-07-11 15:03:54,506 p=60826 u=user1 |  ok: [server2]
+2017-07-11 15:03:54,523 p=60826 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 15:03:54,596 p=60826 u=user1 |  ok: [server2] => {
+    "userenableoutput.stdout": "anonymous_enable=YES"
+}
+2017-07-11 15:03:54,630 p=60826 u=user1 |  ok: [server4] => {
+    "userenableoutput.stdout": "anonymous_enable=YES"
+}
+2017-07-11 15:03:54,679 p=60826 u=user1 |  ok: [server1] => {
+    "userenableoutput.stdout": "anonymous_enable=YES"
+}
+2017-07-11 15:03:54,695 p=60826 u=user1 |  ok: [server3] => {
+    "userenableoutput.stdout": "anonymous_enable=YES"
+}
+2017-07-11 15:03:54,715 p=60826 u=user1 |  TASK [install_apps : Grussmeldung hochladen] **********************************************************************
+2017-07-11 15:03:56,135 p=60826 u=user1 |  ok: [server4]
+2017-07-11 15:03:56,164 p=60826 u=user1 |  ok: [server1]
+2017-07-11 15:03:56,235 p=60826 u=user1 |  ok: [server3]
+2017-07-11 15:03:56,584 p=60826 u=user1 |  ok: [server2]
+2017-07-11 15:03:56,603 p=60826 u=user1 |  PLAY RECAP ********************************************************************************************************
+2017-07-11 15:03:56,603 p=60826 u=user1 |  server1                    : ok=15   changed=0    unreachable=0    failed=0   
+2017-07-11 15:03:56,603 p=60826 u=user1 |  server2                    : ok=15   changed=0    unreachable=0    failed=0   
+2017-07-11 15:03:56,604 p=60826 u=user1 |  server3                    : ok=16   changed=0    unreachable=0    failed=0   
+2017-07-11 15:03:56,604 p=60826 u=user1 |  server4                    : ok=15   changed=0    unreachable=0    failed=0   
+2017-07-11 15:15:45,787 p=62163 u=user1 |  ERROR! You must specify a playbook file to run
+2017-07-11 15:15:54,738 p=62169 u=user1 |  ERROR! conflicting action statements: shell, user
+
+The error appears to have been in '/home/user1/ansible/roles/install_apps/tasks/main.yml': line 80, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: FTP user anlegen
+  ^ here
+
+
+The error appears to have been in '/home/user1/ansible/roles/install_apps/tasks/main.yml': line 80, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: FTP user anlegen
+  ^ here
+
+2017-07-11 15:17:09,352 p=62383 u=user1 |  PLAY [all] ********************************************************************************************************
+2017-07-11 15:17:09,391 p=62383 u=user1 |  TASK [install_apps : FTP user anlegen] ****************************************************************************
+2017-07-11 15:17:10,320 p=62383 u=user1 |  changed: [server1] => (item=harry)
+2017-07-11 15:17:10,436 p=62383 u=user1 |  changed: [server4] => (item=harry)
+2017-07-11 15:17:10,486 p=62383 u=user1 |  changed: [server3] => (item=harry)
+2017-07-11 15:17:10,491 p=62383 u=user1 |  changed: [server2] => (item=harry)
+2017-07-11 15:17:10,871 p=62383 u=user1 |  changed: [server4] => (item=duke)
+2017-07-11 15:17:10,977 p=62383 u=user1 |  changed: [server3] => (item=duke)
+2017-07-11 15:17:11,035 p=62383 u=user1 |  changed: [server1] => (item=duke)
+2017-07-11 15:17:11,200 p=62383 u=user1 |  changed: [server2] => (item=duke)
+2017-07-11 15:17:11,298 p=62383 u=user1 |  changed: [server4] => (item=horst)
+2017-07-11 15:17:11,516 p=62383 u=user1 |  changed: [server3] => (item=horst)
+2017-07-11 15:17:11,625 p=62383 u=user1 |  changed: [server1] => (item=horst)
+2017-07-11 15:17:11,794 p=62383 u=user1 |  changed: [server2] => (item=horst)
+2017-07-11 15:17:11,797 p=62383 u=user1 |  PLAY RECAP ********************************************************************************************************
+2017-07-11 15:17:11,797 p=62383 u=user1 |  server1                    : ok=1    changed=1    unreachable=0    failed=0   
+2017-07-11 15:17:11,797 p=62383 u=user1 |  server2                    : ok=1    changed=1    unreachable=0    failed=0   
+2017-07-11 15:17:11,797 p=62383 u=user1 |  server3                    : ok=1    changed=1    unreachable=0    failed=0   
+2017-07-11 15:17:11,797 p=62383 u=user1 |  server4                    : ok=1    changed=1    unreachable=0    failed=0   
+2017-07-11 15:20:11,089 p=62489 u=user1 |  PLAY [all] ********************************************************************************************************
+2017-07-11 15:20:11,123 p=62489 u=user1 |  TASK [install_apps : FTP user anlegen] ****************************************************************************
+2017-07-11 15:20:11,822 p=62489 u=user1 |  ok: [server1] => (item=harry)
+2017-07-11 15:20:12,149 p=62489 u=user1 |  ok: [server4] => (item=harry)
+2017-07-11 15:20:12,231 p=62489 u=user1 |  ok: [server2] => (item=harry)
+2017-07-11 15:20:12,241 p=62489 u=user1 |  ok: [server3] => (item=harry)
+2017-07-11 15:20:12,249 p=62489 u=user1 |  ok: [server1] => (item=duke)
+2017-07-11 15:20:12,543 p=62489 u=user1 |  ok: [server4] => (item=duke)
+2017-07-11 15:20:12,665 p=62489 u=user1 |  ok: [server1] => (item=horst)
+2017-07-11 15:20:12,768 p=62489 u=user1 |  ok: [server3] => (item=duke)
+2017-07-11 15:20:12,851 p=62489 u=user1 |  ok: [server2] => (item=duke)
+2017-07-11 15:20:12,972 p=62489 u=user1 |  ok: [server4] => (item=horst)
+2017-07-11 15:20:13,204 p=62489 u=user1 |  ok: [server3] => (item=horst)
+2017-07-11 15:20:13,337 p=62489 u=user1 |  ok: [server2] => (item=horst)
+2017-07-11 15:20:13,339 p=62489 u=user1 |  PLAY RECAP ********************************************************************************************************
+2017-07-11 15:20:13,340 p=62489 u=user1 |  server1                    : ok=1    changed=0    unreachable=0    failed=0   
+2017-07-11 15:20:13,340 p=62489 u=user1 |  server2                    : ok=1    changed=0    unreachable=0    failed=0   
+2017-07-11 15:20:13,340 p=62489 u=user1 |  server3                    : ok=1    changed=0    unreachable=0    failed=0   
+2017-07-11 15:20:13,340 p=62489 u=user1 |  server4                    : ok=1    changed=0    unreachable=0    failed=0   
+2017-07-11 15:20:28,982 p=62589 u=user1 |  PLAY [all] ********************************************************************************************************
+2017-07-11 15:20:29,021 p=62589 u=user1 |  TASK [install_apps : FTP user anlegen] ****************************************************************************
+2017-07-11 15:20:29,614 p=62589 u=user1 |  ok: [server1] => (item=harry)
+2017-07-11 15:20:29,705 p=62589 u=user1 |  ok: [server4] => (item=harry)
+2017-07-11 15:20:29,861 p=62589 u=user1 |  ok: [server3] => (item=harry)
+2017-07-11 15:20:29,909 p=62589 u=user1 |  ok: [server2] => (item=harry)
+2017-07-11 15:20:30,021 p=62589 u=user1 |  ok: [server1] => (item=duke)
+2017-07-11 15:20:30,162 p=62589 u=user1 |  ok: [server4] => (item=duke)
+2017-07-11 15:20:30,358 p=62589 u=user1 |  ok: [server3] => (item=duke)
+2017-07-11 15:20:30,373 p=62589 u=user1 |  ok: [server1] => (item=horst)
+2017-07-11 15:20:30,550 p=62589 u=user1 |  ok: [server2] => (item=duke)
+2017-07-11 15:20:30,667 p=62589 u=user1 |  ok: [server4] => (item=horst)
+2017-07-11 15:20:30,833 p=62589 u=user1 |  ok: [server3] => (item=horst)
+2017-07-11 15:20:31,014 p=62589 u=user1 |  ok: [server2] => (item=horst)
+2017-07-11 15:20:31,018 p=62589 u=user1 |  TASK [install_apps : etc/shells anpassen] *************************************************************************
+2017-07-11 15:20:31,551 p=62589 u=user1 |  changed: [server1]
+2017-07-11 15:20:31,591 p=62589 u=user1 |  changed: [server4]
+2017-07-11 15:20:31,675 p=62589 u=user1 |  changed: [server3]
+2017-07-11 15:20:31,815 p=62589 u=user1 |  ok: [server2]
+2017-07-11 15:20:31,834 p=62589 u=user1 |  PLAY RECAP ********************************************************************************************************
+2017-07-11 15:20:31,834 p=62589 u=user1 |  server1                    : ok=2    changed=1    unreachable=0    failed=0   
+2017-07-11 15:20:31,847 p=62589 u=user1 |  server2                    : ok=2    changed=0    unreachable=0    failed=0   
+2017-07-11 15:20:31,848 p=62589 u=user1 |  server3                    : ok=2    changed=1    unreachable=0    failed=0   
+2017-07-11 15:20:31,848 p=62589 u=user1 |  server4                    : ok=2    changed=1    unreachable=0    failed=0   
+2017-07-11 15:33:15,229 p=63189 u=user1 |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/home/user1/ansible/roles/install_apps/tasks/main.yml': line 87, column 23, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  with_items:
+    - name: harry pass: "{{ftp_pass}}"
+                      ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes.  Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2017-07-11 15:33:27,487 p=63198 u=user1 |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/home/user1/ansible/roles/install_apps/tasks/main.yml': line 87, column 23, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  with_items:
+    - name: harry pass: "{{ftp_pass}}"
+                      ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes.  Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2017-07-11 15:34:00,611 p=63204 u=user1 |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/home/user1/ansible/roles/install_apps/tasks/main.yml': line 87, column 23, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  with_items:
+    - name: harry pass: {{ftp_pass}}
+                      ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes.  Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2017-07-11 15:34:57,059 p=63415 u=user1 |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/home/user1/ansible/roles/install_apps/tasks/main.yml': line 88, column 14, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    - name: harry
+      pass: {{ftp_pass}}
+             ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes.  Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2017-07-11 15:35:20,296 p=63421 u=user1 |  PLAY [all] **********************************************************************************************************************************************************************
+2017-07-11 15:35:20,330 p=63421 u=user1 |  TASK [install_apps : FTP user anlegen] ******************************************************************************************************************************************
+2017-07-11 15:35:21,160 p=63421 u=user1 |  ok: [server1] => (item={u'name': u'harry', u'pass': u'$6$j40ivtFilH4ccwE$C9vUXkHmnM4ZSGNieNRR.A9ZyYwEFDaWsy/ju7YJX0tgG/4uRk9Uh.OqO//CkObxoV5nJXNhy5V54iBqNgf.y.'})
+2017-07-11 15:35:21,494 p=63421 u=user1 |  ok: [server4] => (item={u'name': u'harry', u'pass': u'$6$j40ivtFilH4ccwE$C9vUXkHmnM4ZSGNieNRR.A9ZyYwEFDaWsy/ju7YJX0tgG/4uRk9Uh.OqO//CkObxoV5nJXNhy5V54iBqNgf.y.'})
+2017-07-11 15:35:21,547 p=63421 u=user1 |  ok: [server2] => (item={u'name': u'harry', u'pass': u'$6$j40ivtFilH4ccwE$C9vUXkHmnM4ZSGNieNRR.A9ZyYwEFDaWsy/ju7YJX0tgG/4uRk9Uh.OqO//CkObxoV5nJXNhy5V54iBqNgf.y.'})
+2017-07-11 15:35:21,592 p=63421 u=user1 |  ok: [server1] => (item={u'name': u'duke', u'pass': u'$6$j40ivtFilH4ccwE$C9vUXkHmnM4ZSGNieNRR.A9ZyYwEFDaWsy/ju7YJX0tgG/4uRk9Uh.OqO//CkObxoV5nJXNhy5V54iBqNgf.y.'})
+2017-07-11 15:35:21,717 p=63421 u=user1 |  ok: [server3] => (item={u'name': u'harry', u'pass': u'$6$j40ivtFilH4ccwE$C9vUXkHmnM4ZSGNieNRR.A9ZyYwEFDaWsy/ju7YJX0tgG/4uRk9Uh.OqO//CkObxoV5nJXNhy5V54iBqNgf.y.'})
+2017-07-11 15:35:22,034 p=63421 u=user1 |  ok: [server1] => (item={u'name': u'horst', u'pass': u'$6$j40ivtFilH4ccwE$C9vUXkHmnM4ZSGNieNRR.A9ZyYwEFDaWsy/ju7YJX0tgG/4uRk9Uh.OqO//CkObxoV5nJXNhy5V54iBqNgf.y.'})
+2017-07-11 15:35:22,041 p=63421 u=user1 |  ok: [server4] => (item={u'name': u'duke', u'pass': u'$6$j40ivtFilH4ccwE$C9vUXkHmnM4ZSGNieNRR.A9ZyYwEFDaWsy/ju7YJX0tgG/4uRk9Uh.OqO//CkObxoV5nJXNhy5V54iBqNgf.y.'})
+2017-07-11 15:35:22,154 p=63421 u=user1 |  ok: [server3] => (item={u'name': u'duke', u'pass': u'$6$j40ivtFilH4ccwE$C9vUXkHmnM4ZSGNieNRR.A9ZyYwEFDaWsy/ju7YJX0tgG/4uRk9Uh.OqO//CkObxoV5nJXNhy5V54iBqNgf.y.'})
+2017-07-11 15:35:22,223 p=63421 u=user1 |  ok: [server2] => (item={u'name': u'duke', u'pass': u'$6$j40ivtFilH4ccwE$C9vUXkHmnM4ZSGNieNRR.A9ZyYwEFDaWsy/ju7YJX0tgG/4uRk9Uh.OqO//CkObxoV5nJXNhy5V54iBqNgf.y.'})
+2017-07-11 15:35:22,392 p=63421 u=user1 |  ok: [server4] => (item={u'name': u'horst', u'pass': u'$6$j40ivtFilH4ccwE$C9vUXkHmnM4ZSGNieNRR.A9ZyYwEFDaWsy/ju7YJX0tgG/4uRk9Uh.OqO//CkObxoV5nJXNhy5V54iBqNgf.y.'})
+2017-07-11 15:35:22,595 p=63421 u=user1 |  ok: [server3] => (item={u'name': u'horst', u'pass': u'$6$j40ivtFilH4ccwE$C9vUXkHmnM4ZSGNieNRR.A9ZyYwEFDaWsy/ju7YJX0tgG/4uRk9Uh.OqO//CkObxoV5nJXNhy5V54iBqNgf.y.'})
+2017-07-11 15:35:22,711 p=63421 u=user1 |  ok: [server2] => (item={u'name': u'horst', u'pass': u'$6$j40ivtFilH4ccwE$C9vUXkHmnM4ZSGNieNRR.A9ZyYwEFDaWsy/ju7YJX0tgG/4uRk9Uh.OqO//CkObxoV5nJXNhy5V54iBqNgf.y.'})
+2017-07-11 15:35:22,749 p=63421 u=user1 |  TASK [install_apps : etc/shells anpassen] ***************************************************************************************************************************************
+2017-07-11 15:35:23,238 p=63421 u=user1 |  ok: [server1]
+2017-07-11 15:35:23,282 p=63421 u=user1 |  ok: [server4]
+2017-07-11 15:35:23,402 p=63421 u=user1 |  ok: [server3]
+2017-07-11 15:35:23,515 p=63421 u=user1 |  ok: [server2]
+2017-07-11 15:35:23,534 p=63421 u=user1 |  PLAY RECAP **********************************************************************************************************************************************************************
+2017-07-11 15:35:23,534 p=63421 u=user1 |  server1                    : ok=2    changed=0    unreachable=0    failed=0   
+2017-07-11 15:35:23,534 p=63421 u=user1 |  server2                    : ok=2    changed=0    unreachable=0    failed=0   
+2017-07-11 15:35:23,534 p=63421 u=user1 |  server3                    : ok=2    changed=0    unreachable=0    failed=0   
+2017-07-11 15:35:23,535 p=63421 u=user1 |  server4                    : ok=2    changed=0    unreachable=0    failed=0   
+2017-07-11 15:39:10,407 p=63621 u=user1 |  PLAY [all] **********************************************************************************************************************************************************************
+2017-07-11 15:39:10,444 p=63621 u=user1 |  TASK [install_apps : FTP user anlegen] ******************************************************************************************************************************************
+2017-07-11 15:39:10,649 p=63621 u=user1 |  TASK [install_apps : etc/shells anpassen] ***************************************************************************************************************************************
+2017-07-11 15:39:11,304 p=63621 u=user1 |  ok: [server1]
+2017-07-11 15:39:11,444 p=63621 u=user1 |  ok: [server4]
+2017-07-11 15:39:11,612 p=63621 u=user1 |  ok: [server3]
+2017-07-11 15:39:11,639 p=63621 u=user1 |  ok: [server2]
+2017-07-11 15:39:11,666 p=63621 u=user1 |  PLAY RECAP **********************************************************************************************************************************************************************
+2017-07-11 15:39:11,667 p=63621 u=user1 |  server1                    : ok=1    changed=0    unreachable=0    failed=0   
+2017-07-11 15:39:11,667 p=63621 u=user1 |  server2                    : ok=1    changed=0    unreachable=0    failed=0   
+2017-07-11 15:39:11,667 p=63621 u=user1 |  server3                    : ok=1    changed=0    unreachable=0    failed=0   
+2017-07-11 15:39:11,667 p=63621 u=user1 |  server4                    : ok=1    changed=0    unreachable=0    failed=0   
+2017-07-11 15:42:10,344 p=63945 u=user1 |   [ERROR]: User interrupted execution
+
+2017-07-11 15:42:14,325 p=63950 u=user1 |  PLAY [all] **********************************************************************************************************************************************************************
+2017-07-11 15:42:14,358 p=63950 u=user1 |  PLAY RECAP **********************************************************************************************************************************************************************
+2017-07-11 15:42:16,392 p=63957 u=user1 |  PLAY [all] **********************************************************************************************************************************************************************
+2017-07-11 15:42:16,436 p=63957 u=user1 |  TASK [install_apps : FTP user anlegen] ******************************************************************************************************************************************
+2017-07-11 15:42:17,291 p=63957 u=user1 |  ok: [server1] => (item={u'name': u'harry', u'pass': u'$6$j40ivtFilH4ccwE$C9vUXkHmnM4ZSGNieNRR.A9ZyYwEFDaWsy/ju7YJX0tgG/4uRk9Uh.OqO//CkObxoV5nJXNhy5V54iBqNgf.y.'})
+2017-07-11 15:42:17,319 p=63957 u=user1 |  ok: [server4] => (item={u'name': u'harry', u'pass': u'$6$j40ivtFilH4ccwE$C9vUXkHmnM4ZSGNieNRR.A9ZyYwEFDaWsy/ju7YJX0tgG/4uRk9Uh.OqO//CkObxoV5nJXNhy5V54iBqNgf.y.'})
+2017-07-11 15:42:17,511 p=63957 u=user1 |  ok: [server2] => (item={u'name': u'harry', u'pass': u'$6$j40ivtFilH4ccwE$C9vUXkHmnM4ZSGNieNRR.A9ZyYwEFDaWsy/ju7YJX0tgG/4uRk9Uh.OqO//CkObxoV5nJXNhy5V54iBqNgf.y.'})
+2017-07-11 15:42:17,672 p=63957 u=user1 |  ok: [server1] => (item={u'name': u'duke', u'pass': u'$6$j40ivtFilH4ccwE$C9vUXkHmnM4ZSGNieNRR.A9ZyYwEFDaWsy/ju7YJX0tgG/4uRk9Uh.OqO//CkObxoV5nJXNhy5V54iBqNgf.y.'})
+2017-07-11 15:42:17,811 p=63957 u=user1 |  ok: [server4] => (item={u'name': u'duke', u'pass': u'$6$j40ivtFilH4ccwE$C9vUXkHmnM4ZSGNieNRR.A9ZyYwEFDaWsy/ju7YJX0tgG/4uRk9Uh.OqO//CkObxoV5nJXNhy5V54iBqNgf.y.'})
+2017-07-11 15:42:18,013 p=63957 u=user1 |  ok: [server3] => (item={u'name': u'harry', u'pass': u'$6$j40ivtFilH4ccwE$C9vUXkHmnM4ZSGNieNRR.A9ZyYwEFDaWsy/ju7YJX0tgG/4uRk9Uh.OqO//CkObxoV5nJXNhy5V54iBqNgf.y.'})
+2017-07-11 15:42:18,158 p=63957 u=user1 |  ok: [server1] => (item={u'name': u'horst', u'pass': u'$6$j40ivtFilH4ccwE$C9vUXkHmnM4ZSGNieNRR.A9ZyYwEFDaWsy/ju7YJX0tgG/4uRk9Uh.OqO//CkObxoV5nJXNhy5V54iBqNgf.y.'})
+2017-07-11 15:42:18,228 p=63957 u=user1 |  ok: [server2] => (item={u'name': u'duke', u'pass': u'$6$j40ivtFilH4ccwE$C9vUXkHmnM4ZSGNieNRR.A9ZyYwEFDaWsy/ju7YJX0tgG/4uRk9Uh.OqO//CkObxoV5nJXNhy5V54iBqNgf.y.'})
+2017-07-11 15:42:18,339 p=63957 u=user1 |  ok: [server4] => (item={u'name': u'horst', u'pass': u'$6$j40ivtFilH4ccwE$C9vUXkHmnM4ZSGNieNRR.A9ZyYwEFDaWsy/ju7YJX0tgG/4uRk9Uh.OqO//CkObxoV5nJXNhy5V54iBqNgf.y.'})
+2017-07-11 15:42:18,489 p=63957 u=user1 |  ok: [server3] => (item={u'name': u'duke', u'pass': u'$6$j40ivtFilH4ccwE$C9vUXkHmnM4ZSGNieNRR.A9ZyYwEFDaWsy/ju7YJX0tgG/4uRk9Uh.OqO//CkObxoV5nJXNhy5V54iBqNgf.y.'})
+2017-07-11 15:42:18,708 p=63957 u=user1 |  ok: [server2] => (item={u'name': u'horst', u'pass': u'$6$j40ivtFilH4ccwE$C9vUXkHmnM4ZSGNieNRR.A9ZyYwEFDaWsy/ju7YJX0tgG/4uRk9Uh.OqO//CkObxoV5nJXNhy5V54iBqNgf.y.'})
+2017-07-11 15:42:18,807 p=63957 u=user1 |  ok: [server3] => (item={u'name': u'horst', u'pass': u'$6$j40ivtFilH4ccwE$C9vUXkHmnM4ZSGNieNRR.A9ZyYwEFDaWsy/ju7YJX0tgG/4uRk9Uh.OqO//CkObxoV5nJXNhy5V54iBqNgf.y.'})
+2017-07-11 15:42:18,812 p=63957 u=user1 |  TASK [install_apps : etc/shells anpassen] ***************************************************************************************************************************************
+2017-07-11 15:42:19,315 p=63957 u=user1 |  ok: [server4]
+2017-07-11 15:42:19,345 p=63957 u=user1 |  ok: [server1]
+2017-07-11 15:42:19,475 p=63957 u=user1 |  ok: [server3]
+2017-07-11 15:42:19,593 p=63957 u=user1 |  ok: [server2]
+2017-07-11 15:42:19,611 p=63957 u=user1 |  PLAY RECAP **********************************************************************************************************************************************************************
+2017-07-11 15:42:19,611 p=63957 u=user1 |  server1                    : ok=2    changed=0    unreachable=0    failed=0   
+2017-07-11 15:42:19,611 p=63957 u=user1 |  server2                    : ok=2    changed=0    unreachable=0    failed=0   
+2017-07-11 15:42:19,612 p=63957 u=user1 |  server3                    : ok=2    changed=0    unreachable=0    failed=0   
+2017-07-11 15:42:19,612 p=63957 u=user1 |  server4                    : ok=2    changed=0    unreachable=0    failed=0   
+2017-07-11 15:45:04,071 p=64160 u=user1 |  PLAY [all] **********************************************************************************************************************************************************************
+2017-07-11 15:45:04,111 p=64160 u=user1 |  TASK [install_apps : FTP user anlegen] ******************************************************************************************************************************************
+2017-07-11 15:45:04,943 p=64160 u=user1 |  changed: [server1] => (item={u'name': u'harry', u'pass': u'$6$qyouBmW1/L15jKm$AAopPf7TXbhO1vZ/S8L9glyxItHsXqV3ytDWF3pITSUQ2d2H8LeHR31D7EEy0Qa2UkZJvJPT.Ev1/qLYATHhh1'})
+2017-07-11 15:45:05,066 p=64160 u=user1 |  changed: [server4] => (item={u'name': u'harry', u'pass': u'$6$qyouBmW1/L15jKm$AAopPf7TXbhO1vZ/S8L9glyxItHsXqV3ytDWF3pITSUQ2d2H8LeHR31D7EEy0Qa2UkZJvJPT.Ev1/qLYATHhh1'})
+2017-07-11 15:45:05,325 p=64160 u=user1 |  changed: [server3] => (item={u'name': u'harry', u'pass': u'$6$qyouBmW1/L15jKm$AAopPf7TXbhO1vZ/S8L9glyxItHsXqV3ytDWF3pITSUQ2d2H8LeHR31D7EEy0Qa2UkZJvJPT.Ev1/qLYATHhh1'})
+2017-07-11 15:45:05,357 p=64160 u=user1 |  changed: [server2] => (item={u'name': u'harry', u'pass': u'$6$qyouBmW1/L15jKm$AAopPf7TXbhO1vZ/S8L9glyxItHsXqV3ytDWF3pITSUQ2d2H8LeHR31D7EEy0Qa2UkZJvJPT.Ev1/qLYATHhh1'})
+2017-07-11 15:45:05,504 p=64160 u=user1 |  changed: [server1] => (item={u'name': u'duke', u'pass': u'$6$qyouBmW1/L15jKm$AAopPf7TXbhO1vZ/S8L9glyxItHsXqV3ytDWF3pITSUQ2d2H8LeHR31D7EEy0Qa2UkZJvJPT.Ev1/qLYATHhh1'})
+2017-07-11 15:45:05,574 p=64160 u=user1 |  changed: [server4] => (item={u'name': u'duke', u'pass': u'$6$qyouBmW1/L15jKm$AAopPf7TXbhO1vZ/S8L9glyxItHsXqV3ytDWF3pITSUQ2d2H8LeHR31D7EEy0Qa2UkZJvJPT.Ev1/qLYATHhh1'})
+2017-07-11 15:45:05,938 p=64160 u=user1 |  changed: [server4] => (item={u'name': u'horst', u'pass': u'$6$qyouBmW1/L15jKm$AAopPf7TXbhO1vZ/S8L9glyxItHsXqV3ytDWF3pITSUQ2d2H8LeHR31D7EEy0Qa2UkZJvJPT.Ev1/qLYATHhh1'})
+2017-07-11 15:45:06,044 p=64160 u=user1 |  changed: [server3] => (item={u'name': u'duke', u'pass': u'$6$qyouBmW1/L15jKm$AAopPf7TXbhO1vZ/S8L9glyxItHsXqV3ytDWF3pITSUQ2d2H8LeHR31D7EEy0Qa2UkZJvJPT.Ev1/qLYATHhh1'})
+2017-07-11 15:45:06,044 p=64160 u=user1 |  changed: [server1] => (item={u'name': u'horst', u'pass': u'$6$qyouBmW1/L15jKm$AAopPf7TXbhO1vZ/S8L9glyxItHsXqV3ytDWF3pITSUQ2d2H8LeHR31D7EEy0Qa2UkZJvJPT.Ev1/qLYATHhh1'})
+2017-07-11 15:45:06,053 p=64160 u=user1 |  changed: [server2] => (item={u'name': u'duke', u'pass': u'$6$qyouBmW1/L15jKm$AAopPf7TXbhO1vZ/S8L9glyxItHsXqV3ytDWF3pITSUQ2d2H8LeHR31D7EEy0Qa2UkZJvJPT.Ev1/qLYATHhh1'})
+2017-07-11 15:45:06,368 p=64160 u=user1 |  changed: [server3] => (item={u'name': u'horst', u'pass': u'$6$qyouBmW1/L15jKm$AAopPf7TXbhO1vZ/S8L9glyxItHsXqV3ytDWF3pITSUQ2d2H8LeHR31D7EEy0Qa2UkZJvJPT.Ev1/qLYATHhh1'})
+2017-07-11 15:45:06,503 p=64160 u=user1 |  changed: [server2] => (item={u'name': u'horst', u'pass': u'$6$qyouBmW1/L15jKm$AAopPf7TXbhO1vZ/S8L9glyxItHsXqV3ytDWF3pITSUQ2d2H8LeHR31D7EEy0Qa2UkZJvJPT.Ev1/qLYATHhh1'})
+2017-07-11 15:45:06,507 p=64160 u=user1 |  TASK [install_apps : etc/shells anpassen] ***************************************************************************************************************************************
+2017-07-11 15:45:07,038 p=64160 u=user1 |  ok: [server1]
+2017-07-11 15:45:07,073 p=64160 u=user1 |  ok: [server4]
+2017-07-11 15:45:07,157 p=64160 u=user1 |  ok: [server3]
+2017-07-11 15:45:07,259 p=64160 u=user1 |  ok: [server2]
+2017-07-11 15:45:07,279 p=64160 u=user1 |  PLAY RECAP **********************************************************************************************************************************************************************
+2017-07-11 15:45:07,280 p=64160 u=user1 |  server1                    : ok=2    changed=1    unreachable=0    failed=0   
+2017-07-11 15:45:07,280 p=64160 u=user1 |  server2                    : ok=2    changed=1    unreachable=0    failed=0   
+2017-07-11 15:45:07,280 p=64160 u=user1 |  server3                    : ok=2    changed=1    unreachable=0    failed=0   
+2017-07-11 15:45:07,280 p=64160 u=user1 |  server4                    : ok=2    changed=1    unreachable=0    failed=0   

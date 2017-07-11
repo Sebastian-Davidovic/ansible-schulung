@@ -1,2 +1,10 @@
 ---
-greetall : "Hallo ich bin eine Allgemeine Hallo Nachricht\n"
+ftp_users:
+    - name: harry
+      pass: "{{ftp_pass}}"
+    - name: duke
+      pass: "{{ftp_pass}}"
+    - name: horst
+      pass: "{{ftp_pass}}"
+
+

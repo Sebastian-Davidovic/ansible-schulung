@@ -77,4 +77,17 @@
     # Willkommen auf dem unserem FTP-Server.
     # Halte Dich an die Nutzungsbedingungen!!!
 
+- name: FTP user anlegen
+  tags: user
+  user:
+    name: "{{ item.name }}"
+    password: "{{item.pass}}"
+    shell: /bin/false
+  with_items: "{{ ftp_users }}"
+
+- name: etc/shells anpassen
+  tags: user
+  lineinfile:
+    path: /etc/shells
+    line: /bin/false
 

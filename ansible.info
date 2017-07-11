@@ -1,0 +1,4 @@
+aptitude -y install whois
+mkpasswd -m sha-512 geheim1
+
+

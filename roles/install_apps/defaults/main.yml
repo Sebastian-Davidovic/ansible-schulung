@@ -1,2 +1,5 @@
 ---
 ftp_umask: "077"
+#ftp_pass: $6$j40ivtFilH4ccwE$C9vUXkHmnM4ZSGNieNRR.A9ZyYwEFDaWsy/ju7YJX0tgG/4uRk9Uh.OqO//CkObxoV5nJXNhy5V54iBqNgf.y.
+ftp_pass: $6$qyouBmW1/L15jKm$AAopPf7TXbhO1vZ/S8L9glyxItHsXqV3ytDWF3pITSUQ2d2H8LeHR31D7EEy0Qa2UkZJvJPT.Ev1/qLYATHhh1
+ftp_users: []

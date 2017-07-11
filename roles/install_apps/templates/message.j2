@@ -1,3 +1,7 @@
+{% for i in range(70) %}={% endfor %}
+
 Hallo auf {{ansible_hostname}}! 
 
+Ein Viertel Hauptsp. in MB: {{ (ansible_memtotal_mb * 0.25) | int }}
 Bitte beachte usnere Nutzungsbedingugnen !!!!
+{% for i in range(70) %}={% endfor %}
