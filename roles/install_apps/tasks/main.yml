@@ -51,3 +51,30 @@
 
 - debug: var=psausgabe.stdout
 
+- name: Aktiviere Anonymus als User
+  lineinfile:
+    path: "{{ ftp_config }}"
+    regexp: '^anonymous_enable=.*'
+    line: 'anonymous_enable=YES'
+  notify:
+      - restart vsftpd
+- name: Überprüfe den Parameter anonymous_enabled
+  shell: |
+   find /etc -name "*ftp*conf" | xargs grep -i anon.*en.*= | egrep -v '^$|#'
+  register: userenableoutput
+  changed_when: false
+
+- debug: var=userenableoutput.stdout
+
+- name: Grussmeldung hochladen
+  #copy:
+  template:
+    src: message.j2
+    dest: "{{ftp_anon_path}}/.message"
+    #content: |
+    # Hallo!
+    # 
+    # Willkommen auf dem unserem FTP-Server.
+    # Halte Dich an die Nutzungsbedingungen!!!
+
+

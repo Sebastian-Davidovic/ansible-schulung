@@ -1,10 +1,6 @@
 ---
 
-- hosts:
-    - server3
-    - server1
-    - server4
-    - server2
+- hosts: all
 
   roles:
 

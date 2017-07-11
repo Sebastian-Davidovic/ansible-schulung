@@ -32864,3 +32864,2174 @@ The offending line appears to be:
 2017-07-11 12:25:05,440 p=48035 u=user1 |  server2                    : ok=11   changed=1    unreachable=0    failed=0   
 2017-07-11 12:25:05,440 p=48035 u=user1 |  server3                    : ok=12   changed=0    unreachable=0    failed=0   
 2017-07-11 12:25:05,440 p=48035 u=user1 |  server4                    : ok=11   changed=0    unreachable=0    failed=0   
+2017-07-11 13:24:12,232 p=50607 u=user1 |  PLAY [all] ********************************************************************************************************
+2017-07-11 13:24:12,261 p=50607 u=user1 |  TASK [install_apps : include_vars] ********************************************************************************
+2017-07-11 13:24:12,391 p=50607 u=user1 |  skipping: [server2]
+2017-07-11 13:24:12,393 p=50607 u=user1 |  ok: [server3]
+2017-07-11 13:24:12,400 p=50607 u=user1 |  ok: [server4]
+2017-07-11 13:24:12,429 p=50607 u=user1 |  ok: [server1]
+2017-07-11 13:24:12,434 p=50607 u=user1 |  TASK [install_apps : include_vars] ********************************************************************************
+2017-07-11 13:24:12,501 p=50607 u=user1 |  skipping: [server3]
+2017-07-11 13:24:12,507 p=50607 u=user1 |  ok: [server2]
+2017-07-11 13:24:12,507 p=50607 u=user1 |  skipping: [server4]
+2017-07-11 13:24:12,524 p=50607 u=user1 |  skipping: [server1]
+2017-07-11 13:24:12,529 p=50607 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 13:24:12,612 p=50607 u=user1 |  ok: [server4] => {
+    "msg": "Hallo FTP Server der Familie Ubuntu, Config /etc/vsftpd.conf "
+}
+2017-07-11 13:24:12,619 p=50607 u=user1 |  ok: [server2] => {
+    "msg": "Hallo FTP Server der Familie openSUSE Leap, Config /etc/vsftpd.conf "
+}
+2017-07-11 13:24:12,624 p=50607 u=user1 |  ok: [server1] => {
+    "msg": "Hallo FTP Server der Familie Debian, Config /etc/vsftpd.conf "
+}
+2017-07-11 13:24:12,627 p=50607 u=user1 |  ok: [server3] => {
+    "msg": "Hallo FTP Server der Familie CentOS, Config /etc/vsftpd/vsftpd.conf "
+}
+2017-07-11 13:24:12,632 p=50607 u=user1 |  TASK [install_apps : vsftpd installieren] *************************************************************************
+2017-07-11 13:24:14,062 p=50607 u=user1 |  ok: [server1]
+2017-07-11 13:24:14,333 p=50607 u=user1 |  ok: [server4]
+2017-07-11 13:24:14,478 p=50607 u=user1 |  ok: [server3]
+2017-07-11 13:24:15,836 p=50607 u=user1 |  ok: [server2]
+2017-07-11 13:24:15,842 p=50607 u=user1 |  TASK [install_apps : locate installieren] *************************************************************************
+2017-07-11 13:24:17,264 p=50607 u=user1 |  ok: [server1]
+2017-07-11 13:24:17,993 p=50607 u=user1 |  ok: [server4]
+2017-07-11 13:24:18,810 p=50607 u=user1 |  ok: [server2]
+2017-07-11 13:24:21,387 p=50607 u=user1 |  ok: [server3]
+2017-07-11 13:24:21,391 p=50607 u=user1 |  TASK [install_apps : Datenbank erstellen] *************************************************************************
+2017-07-11 13:24:21,870 p=50607 u=user1 |  ok: [server4]
+2017-07-11 13:24:21,878 p=50607 u=user1 |  changed: [server1]
+2017-07-11 13:24:21,942 p=50607 u=user1 |  ok: [server3]
+2017-07-11 13:24:22,139 p=50607 u=user1 |  changed: [server2]
+2017-07-11 13:24:22,144 p=50607 u=user1 |  TASK [install_apps : Configure firewall on RedHat systems] ********************************************************
+2017-07-11 13:24:22,175 p=50607 u=user1 |  skipping: [server2]
+2017-07-11 13:24:22,204 p=50607 u=user1 |  skipping: [server4]
+2017-07-11 13:24:22,261 p=50607 u=user1 |  skipping: [server1]
+2017-07-11 13:24:23,000 p=50607 u=user1 |  ok: [server3]
+2017-07-11 13:24:23,006 p=50607 u=user1 |  TASK [install_apps : vsftpd starten und in den Autostart setzen] **************************************************
+2017-07-11 13:24:23,574 p=50607 u=user1 |  ok: [server1]
+2017-07-11 13:24:23,595 p=50607 u=user1 |  ok: [server4]
+2017-07-11 13:24:23,621 p=50607 u=user1 |  ok: [server3]
+2017-07-11 13:24:23,791 p=50607 u=user1 |  ok: [server2]
+2017-07-11 13:24:23,796 p=50607 u=user1 |  TASK [install_apps : FTP Prozess überprüfen] **********************************************************************
+2017-07-11 13:24:24,187 p=50607 u=user1 |  ok: [server4]
+2017-07-11 13:24:24,188 p=50607 u=user1 |  ok: [server1]
+2017-07-11 13:24:24,267 p=50607 u=user1 |  ok: [server3]
+2017-07-11 13:24:24,388 p=50607 u=user1 |  ok: [server2]
+2017-07-11 13:24:24,393 p=50607 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 13:24:24,433 p=50607 u=user1 |  ok: [server2] => {
+    "psausgabe.stdout": "root      31805  0.0  0.3  21844  3864 ?        Ss   12:21   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:24:24,463 p=50607 u=user1 |  ok: [server4] => {
+    "psausgabe.stdout": "root      12266  0.0  0.2  24048  2360 ?        Ss   12:21   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:24:24,466 p=50607 u=user1 |  ok: [server3] => {
+    "psausgabe.stdout": "root     28815  0.0  0.0  54752   564 ?        Ss   12:21   0:00 /usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf"
+}
+2017-07-11 13:24:24,481 p=50607 u=user1 |  ok: [server1] => {
+    "psausgabe.stdout": "root       8597  0.0  0.2  28424  2608 ?        Ss   12:21   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:24:24,488 p=50607 u=user1 |  TASK [install_apps : local_umaks auf 057 setzen] ******************************************************************
+2017-07-11 13:24:24,961 p=50607 u=user1 |  ok: [server1]
+2017-07-11 13:24:24,967 p=50607 u=user1 |  ok: [server4]
+2017-07-11 13:24:25,040 p=50607 u=user1 |  ok: [server3]
+2017-07-11 13:24:25,143 p=50607 u=user1 |  ok: [server2]
+2017-07-11 13:24:25,149 p=50607 u=user1 |  TASK [install_apps : FTP Prozess überprüfen] **********************************************************************
+2017-07-11 13:24:25,525 p=50607 u=user1 |  ok: [server1]
+2017-07-11 13:24:25,527 p=50607 u=user1 |  ok: [server4]
+2017-07-11 13:24:25,651 p=50607 u=user1 |  ok: [server3]
+2017-07-11 13:24:25,721 p=50607 u=user1 |  ok: [server2]
+2017-07-11 13:24:25,725 p=50607 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 13:24:25,760 p=50607 u=user1 |  ok: [server2] => {
+    "psausgabe.stdout": "root      31805  0.0  0.3  21844  3864 ?        Ss   12:21   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:24:25,804 p=50607 u=user1 |  ok: [server3] => {
+    "psausgabe.stdout": "root     28815  0.0  0.0  54752   564 ?        Ss   12:21   0:00 /usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf"
+}
+2017-07-11 13:24:25,818 p=50607 u=user1 |  ok: [server1] => {
+    "psausgabe.stdout": "root       8597  0.0  0.2  28424  2608 ?        Ss   12:21   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:24:25,825 p=50607 u=user1 |  ok: [server4] => {
+    "psausgabe.stdout": "root      12266  0.0  0.2  24048  2360 ?        Ss   12:21   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:24:25,827 p=50607 u=user1 |  PLAY RECAP ********************************************************************************************************
+2017-07-11 13:24:25,827 p=50607 u=user1 |  server1                    : ok=11   changed=1    unreachable=0    failed=0   
+2017-07-11 13:24:25,828 p=50607 u=user1 |  server2                    : ok=11   changed=1    unreachable=0    failed=0   
+2017-07-11 13:24:25,828 p=50607 u=user1 |  server3                    : ok=12   changed=0    unreachable=0    failed=0   
+2017-07-11 13:24:25,828 p=50607 u=user1 |  server4                    : ok=11   changed=0    unreachable=0    failed=0   
+2017-07-11 13:31:40,149 p=51191 u=user1 |   [ERROR]: Unable to build command: this task 'find' has extra params, which is only allowed in the following
+modules: command, win_command, shell, win_shell, script, include, include_vars, add_host, group_by, set_fact, raw,
+meta
+
+2017-07-11 13:32:55,300 p=51191 u=user1 |  server1 | FAILED | rc=2 >>
+grep: /etc/vsftp.conf: Datei oder Verzeichnis nicht gefunden
+
+2017-07-11 13:32:55,438 p=51191 u=user1 |  server4 | FAILED | rc=2 >>
+grep: /etc/vsftp.conf: Datei oder Verzeichnis nicht gefunden
+
+2017-07-11 13:32:55,600 p=51191 u=user1 |  server2 | FAILED | rc=2 >>
+grep: /etc/vsftp.conf: Datei oder Verzeichnis nicht gefunden
+
+2017-07-11 13:32:55,627 p=51191 u=user1 |  server3 | FAILED | rc=2 >>
+grep: /etc/vsftp.conf: Datei oder Verzeichnis nicht gefunden
+
+2017-07-11 13:33:20,388 p=51191 u=user1 |  server1 | FAILED | rc=2 >>
+grep: /etc/vsftp.conf: Datei oder Verzeichnis nicht gefunden
+
+2017-07-11 13:33:20,445 p=51191 u=user1 |  server4 | FAILED | rc=2 >>
+grep: /etc/vsftp.conf: Datei oder Verzeichnis nicht gefunden
+
+2017-07-11 13:33:20,565 p=51191 u=user1 |  server3 | FAILED | rc=2 >>
+grep: /etc/vsftp.conf: Datei oder Verzeichnis nicht gefunden
+
+2017-07-11 13:33:20,613 p=51191 u=user1 |  server2 | FAILED | rc=2 >>
+grep: /etc/vsftp.conf: Datei oder Verzeichnis nicht gefunden
+
+2017-07-11 13:33:25,998 p=51191 u=user1 |  server4 | FAILED | rc=1 >>
+
+
+2017-07-11 13:33:26,035 p=51191 u=user1 |  server1 | FAILED | rc=1 >>
+
+
+2017-07-11 13:33:26,089 p=51191 u=user1 |  server3 | FAILED | rc=2 >>
+grep: /etc/vsftpd.conf: Datei oder Verzeichnis nicht gefunden
+
+2017-07-11 13:33:26,181 p=51191 u=user1 |  server2 | SUCCESS | rc=0 >>
+# anonymus FTP server.
+# Anonymus FTP user Settings
+# Default umask for anonymus users is 077. You may wish to change this to 022,
+# Uncomment this to enable anonymus FTP users to perform other write operations
+
+2017-07-11 13:33:59,868 p=51191 u=user1 |  server1 | FAILED | rc=2 >>
+grep: /etc/vsftpd/vsftpd.conf: Datei oder Verzeichnis nicht gefunden
+
+2017-07-11 13:33:59,898 p=51191 u=user1 |  server4 | FAILED | rc=2 >>
+grep: /etc/vsftpd/vsftpd.conf: Datei oder Verzeichnis nicht gefunden
+
+2017-07-11 13:33:59,992 p=51191 u=user1 |  server3 | FAILED | rc=1 >>
+
+
+2017-07-11 13:34:00,102 p=51191 u=user1 |  server2 | FAILED | rc=2 >>
+grep: /etc/vsftpd/vsftpd.conf: Datei oder Verzeichnis nicht gefunden
+
+2017-07-11 13:34:23,989 p=51191 u=user1 |  server1 | SUCCESS | rc=0 >>
+# Example config file /etc/vsftpd.conf
+#
+# The default compiled in settings are fairly paranoid. This sample file
+# loosens things up a bit, to make the ftp daemon more usable.
+# Please see vsftpd.conf.5 for all compiled in defaults.
+#
+# READ THIS: This example file is NOT an exhaustive list of vsftpd options.
+# Please read the vsftpd.conf.5 manual page to get a full idea of vsftpd's
+# capabilities.
+#
+#
+# Run standalone?  vsftpd can run either from an inetd or as a standalone
+# daemon started from an initscript.
+listen=NO
+#
+# This directive enables listening on IPv6 sockets. By default, listening
+# on the IPv6 "any" address (::) will accept connections from both IPv6
+# and IPv4 clients. It is not necessary to listen on *both* IPv4 and IPv6
+# sockets. If you want that (perhaps because you want to listen on specific
+# addresses) then you must run two copies of vsftpd with two configuration
+# files.
+listen_ipv6=YES
+#
+# Allow anonymous FTP? (Disabled by default).
+anonymous_enable=NO
+#
+# Uncomment this to allow local users to log in.
+local_enable=YES
+#
+# Uncomment this to enable any form of FTP write command.
+#write_enable=YES
+#
+# Default umask for local users is 077. You may wish to change this to 022,
+# if your users expect that (022 is used by most other ftpd's)
+local_umask=057
+#
+# Uncomment this to allow the anonymous FTP user to upload files. This only
+# has an effect if the above global write enable is activated. Also, you will
+# obviously need to create a directory writable by the FTP user.
+#anon_upload_enable=YES
+#
+# Uncomment this if you want the anonymous FTP user to be able to create
+# new directories.
+#anon_mkdir_write_enable=YES
+#
+# Activate directory messages - messages given to remote users when they
+# go into a certain directory.
+dirmessage_enable=YES
+#
+# If enabled, vsftpd will display directory listings with the time
+# in  your  local  time  zone.  The default is to display GMT. The
+# times returned by the MDTM FTP command are also affected by this
+# option.
+use_localtime=YES
+#
+# Activate logging of uploads/downloads.
+xferlog_enable=YES
+#
+# Make sure PORT transfer connections originate from port 20 (ftp-data).
+connect_from_port_20=YES
+#
+# If you want, you can arrange for uploaded anonymous files to be owned by
+# a different user. Note! Using "root" for uploaded files is not
+# recommended!
+#chown_uploads=YES
+#chown_username=whoever
+#
+# You may override where the log file goes if you like. The default is shown
+# below.
+#xferlog_file=/var/log/vsftpd.log
+#
+# If you want, you can have your log file in standard ftpd xferlog format.
+# Note that the default log file location is /var/log/xferlog in this case.
+#xferlog_std_format=YES
+#
+# You may change the default value for timing out an idle session.
+#idle_session_timeout=600
+#
+# You may change the default value for timing out a data connection.
+#data_connection_timeout=120
+#
+# It is recommended that you define on your system a unique user which the
+# ftp server can use as a totally isolated and unprivileged user.
+#nopriv_user=ftpsecure
+#
+# Enable this and the server will recognise asynchronous ABOR requests. Not
+# recommended for security (the code is non-trivial). Not enabling it,
+# however, may confuse older FTP clients.
+#async_abor_enable=YES
+#
+# By default the server will pretend to allow ASCII mode but in fact ignore
+# the request. Turn on the below options to have the server actually do ASCII
+# mangling on files when in ASCII mode.
+# Beware that on some FTP servers, ASCII support allows a denial of service
+# attack (DoS) via the command "SIZE /big/file" in ASCII mode. vsftpd
+# predicted this attack and has always been safe, reporting the size of the
+# raw file.
+# ASCII mangling is a horrible feature of the protocol.
+#ascii_upload_enable=YES
+#ascii_download_enable=YES
+#
+# You may fully customise the login banner string:
+#ftpd_banner=Welcome to blah FTP service.
+#
+# You may specify a file of disallowed anonymous e-mail addresses. Apparently
+# useful for combatting certain DoS attacks.
+#deny_email_enable=YES
+# (default follows)
+#banned_email_file=/etc/vsftpd.banned_emails
+#
+# You may restrict local users to their home directories.  See the FAQ for
+# the possible risks in this before using chroot_local_user or
+# chroot_list_enable below.
+#chroot_local_user=YES
+#
+# You may specify an explicit list of local users to chroot() to their home
+# directory. If chroot_local_user is YES, then this list becomes a list of
+# users to NOT chroot().
+# (Warning! chroot'ing can be very dangerous. If using chroot, make sure that
+# the user does not have write access to the top level directory within the
+# chroot)
+#chroot_local_user=YES
+#chroot_list_enable=YES
+# (default follows)
+#chroot_list_file=/etc/vsftpd.chroot_list
+#
+# You may activate the "-R" option to the builtin ls. This is disabled by
+# default to avoid remote users being able to cause excessive I/O on large
+# sites. However, some broken FTP clients such as "ncftp" and "mirror" assume
+# the presence of the "-R" option, so there is a strong case for enabling it.
+#ls_recurse_enable=YES
+#
+# Customization
+#
+# Some of vsftpd's settings don't fit the filesystem layout by
+# default.
+#
+# This option should be the name of a directory which is empty.  Also, the
+# directory should not be writable by the ftp user. This directory is used
+# as a secure chroot() jail at times vsftpd does not require filesystem
+# access.
+secure_chroot_dir=/var/run/vsftpd/empty
+#
+# This string is the name of the PAM service vsftpd will use.
+pam_service_name=vsftpd
+#
+# This option specifies the location of the RSA certificate to use for SSL
+# encrypted connections.
+rsa_cert_file=/etc/ssl/certs/ssl-cert-snakeoil.pem
+rsa_private_key_file=/etc/ssl/private/ssl-cert-snakeoil.key
+ssl_enable=NO
+
+#
+# Uncomment this to indicate that vsftpd use a utf8 filesystem.
+#utf8_filesystem=YES
+
+2017-07-11 13:34:24,014 p=51191 u=user1 |  server4 | SUCCESS | rc=0 >>
+# Example config file /etc/vsftpd.conf
+#
+# The default compiled in settings are fairly paranoid. This sample file
+# loosens things up a bit, to make the ftp daemon more usable.
+# Please see vsftpd.conf.5 for all compiled in defaults.
+#
+# READ THIS: This example file is NOT an exhaustive list of vsftpd options.
+# Please read the vsftpd.conf.5 manual page to get a full idea of vsftpd's
+# capabilities.
+#
+#
+# Run standalone?  vsftpd can run either from an inetd or as a standalone
+# daemon started from an initscript.
+listen=NO
+#
+# This directive enables listening on IPv6 sockets. By default, listening
+# on the IPv6 "any" address (::) will accept connections from both IPv6
+# and IPv4 clients. It is not necessary to listen on *both* IPv4 and IPv6
+# sockets. If you want that (perhaps because you want to listen on specific
+# addresses) then you must run two copies of vsftpd with two configuration
+# files.
+listen_ipv6=YES
+#
+# Allow anonymous FTP? (Disabled by default).
+anonymous_enable=NO
+#
+# Uncomment this to allow local users to log in.
+local_enable=YES
+#
+# Uncomment this to enable any form of FTP write command.
+#write_enable=YES
+#
+# Default umask for local users is 077. You may wish to change this to 022,
+# if your users expect that (022 is used by most other ftpd's)
+local_umask=057
+#
+# Uncomment this to allow the anonymous FTP user to upload files. This only
+# has an effect if the above global write enable is activated. Also, you will
+# obviously need to create a directory writable by the FTP user.
+#anon_upload_enable=YES
+#
+# Uncomment this if you want the anonymous FTP user to be able to create
+# new directories.
+#anon_mkdir_write_enable=YES
+#
+# Activate directory messages - messages given to remote users when they
+# go into a certain directory.
+dirmessage_enable=YES
+#
+# If enabled, vsftpd will display directory listings with the time
+# in  your  local  time  zone.  The default is to display GMT. The
+# times returned by the MDTM FTP command are also affected by this
+# option.
+use_localtime=YES
+#
+# Activate logging of uploads/downloads.
+xferlog_enable=YES
+#
+# Make sure PORT transfer connections originate from port 20 (ftp-data).
+connect_from_port_20=YES
+#
+# If you want, you can arrange for uploaded anonymous files to be owned by
+# a different user. Note! Using "root" for uploaded files is not
+# recommended!
+#chown_uploads=YES
+#chown_username=whoever
+#
+# You may override where the log file goes if you like. The default is shown
+# below.
+#xferlog_file=/var/log/vsftpd.log
+#
+# If you want, you can have your log file in standard ftpd xferlog format.
+# Note that the default log file location is /var/log/xferlog in this case.
+#xferlog_std_format=YES
+#
+# You may change the default value for timing out an idle session.
+#idle_session_timeout=600
+#
+# You may change the default value for timing out a data connection.
+#data_connection_timeout=120
+#
+# It is recommended that you define on your system a unique user which the
+# ftp server can use as a totally isolated and unprivileged user.
+#nopriv_user=ftpsecure
+#
+# Enable this and the server will recognise asynchronous ABOR requests. Not
+# recommended for security (the code is non-trivial). Not enabling it,
+# however, may confuse older FTP clients.
+#async_abor_enable=YES
+#
+# By default the server will pretend to allow ASCII mode but in fact ignore
+# the request. Turn on the below options to have the server actually do ASCII
+# mangling on files when in ASCII mode.
+# Beware that on some FTP servers, ASCII support allows a denial of service
+# attack (DoS) via the command "SIZE /big/file" in ASCII mode. vsftpd
+# predicted this attack and has always been safe, reporting the size of the
+# raw file.
+# ASCII mangling is a horrible feature of the protocol.
+#ascii_upload_enable=YES
+#ascii_download_enable=YES
+#
+# You may fully customise the login banner string:
+#ftpd_banner=Welcome to blah FTP service.
+#
+# You may specify a file of disallowed anonymous e-mail addresses. Apparently
+# useful for combatting certain DoS attacks.
+#deny_email_enable=YES
+# (default follows)
+#banned_email_file=/etc/vsftpd.banned_emails
+#
+# You may restrict local users to their home directories.  See the FAQ for
+# the possible risks in this before using chroot_local_user or
+# chroot_list_enable below.
+#chroot_local_user=YES
+#
+# You may specify an explicit list of local users to chroot() to their home
+# directory. If chroot_local_user is YES, then this list becomes a list of
+# users to NOT chroot().
+# (Warning! chroot'ing can be very dangerous. If using chroot, make sure that
+# the user does not have write access to the top level directory within the
+# chroot)
+#chroot_local_user=YES
+#chroot_list_enable=YES
+# (default follows)
+#chroot_list_file=/etc/vsftpd.chroot_list
+#
+# You may activate the "-R" option to the builtin ls. This is disabled by
+# default to avoid remote users being able to cause excessive I/O on large
+# sites. However, some broken FTP clients such as "ncftp" and "mirror" assume
+# the presence of the "-R" option, so there is a strong case for enabling it.
+#ls_recurse_enable=YES
+#
+# Customization
+#
+# Some of vsftpd's settings don't fit the filesystem layout by
+# default.
+#
+# This option should be the name of a directory which is empty.  Also, the
+# directory should not be writable by the ftp user. This directory is used
+# as a secure chroot() jail at times vsftpd does not require filesystem
+# access.
+secure_chroot_dir=/var/run/vsftpd/empty
+#
+# This string is the name of the PAM service vsftpd will use.
+pam_service_name=vsftpd
+#
+# This option specifies the location of the RSA certificate to use for SSL
+# encrypted connections.
+rsa_cert_file=/etc/ssl/certs/ssl-cert-snakeoil.pem
+rsa_private_key_file=/etc/ssl/private/ssl-cert-snakeoil.key
+ssl_enable=NO
+
+#
+# Uncomment this to indicate that vsftpd use a utf8 filesystem.
+#utf8_filesystem=YES
+
+2017-07-11 13:34:24,106 p=51191 u=user1 |  server3 | FAILED | rc=1 >>
+cat: /etc/vsftpd.conf: Datei oder Verzeichnis nicht gefunden
+
+2017-07-11 13:34:24,214 p=51191 u=user1 |  server2 | SUCCESS | rc=0 >>
+# Example config file /etc/vsftpd.conf
+#
+# The default compiled in settings are fairly paranoid. This sample file
+# loosens things up a bit, to make the ftp daemon more usable.
+# Please see vsftpd.conf.5 for all compiled in defaults.
+#
+# If you do not change anything here you will have a minimum setup for an
+# anonymus FTP server.
+#
+# READ THIS: This example file is NOT an exhaustive list of vsftpd options.
+# Please read the vsftpd.conf.5 manual page to get a full idea of vsftpd's
+# capabilities.
+#
+# ################
+# General Settings
+# ################
+#
+# Uncomment this to enable any form of FTP write command.
+write_enable=NO
+#
+# Activate directory messages - messages given to remote users when they
+# go into a certain directory.
+dirmessage_enable=YES
+#
+# It is recommended that you define on your system a unique user which the
+# ftp server can use as a totally isolated and unprivileged user.
+nopriv_user=ftpsecure
+#
+# You may fully customise the login banner string:
+#ftpd_banner=Welcome to blah FTP service.
+#
+# You may activate the "-R" option to the builtin ls. This is disabled by
+# default to avoid remote users being able to cause excessive I/O on large
+# sites. However, some broken FTP clients such as "ncftp" and "mirror" assume
+# the presence of the "-R" option, so there is a strong case for enabling it.
+#ls_recurse_enable=YES
+#
+# You may specify a file of disallowed anonymous e-mail addresses. Apparently
+# useful for combatting certain DoS attacks.
+#deny_email_enable=YES
+# (default follows)
+#banned_email_file=/etc/vsftpd.banned_emails
+#
+# If  enabled,  all  user  and  group  information in
+# directory listings will be displayed as "ftp".
+#hide_ids=YES
+#
+# #######################
+# Local FTP user Settings
+# #######################
+#
+# Uncomment this to allow local users to log in.
+local_enable=YES
+#
+# Default umask for local users is 077. You may wish to change this to 022,
+# if your users expect that (022 is used by most other ftpd's)
+local_umask=057
+#
+# You may specify an explicit list of local users to chroot() to their home
+# directory. If chroot_local_user is YES, then this list becomes a list of
+# users to NOT chroot().
+#chroot_local_user=YES
+#chroot_list_enable=YES
+# (default follows)
+#chroot_list_file=/etc/vsftpd.chroot_list
+#
+# Performs chroot with original (non-root) credentials. This is usefull on nfs with squash_root,
+# where root becomes nobody and would need -x access.
+#allow_root_squashed_chroot=YES
+#
+# The maximum data transfer rate permitted, in bytes per second, for
+# local authenticated users. The default is 0 (unlimited).
+#local_max_rate=7200
+#
+# ##########################
+# Anonymus FTP user Settings
+# ##########################
+#
+# Allow anonymous FTP? (Beware - allowed by default if you comment this out).
+anonymous_enable=YES
+#
+# The maximum data transfer rate permitted, in bytes per second, for anonymous
+# authenticated users. The default is 0 (unlimited).
+#anon_max_rate=7200
+#
+# Anonymous users will only be allowed to download files which are
+# world readable.
+anon_world_readable_only=YES
+#
+# Default umask for anonymus users is 077. You may wish to change this to 022,
+# if your users expect that (022 is used by most other ftpd's)
+#anon_umask=022
+#
+# Uncomment this to allow the anonymous FTP user to upload files. This only
+# has an effect if the above global write enable is activated. Also, you will
+# obviously need to create a directory writable by the FTP user.
+#anon_upload_enable=YES
+#
+# Uncomment this if you want the anonymous FTP user to be able to create
+# new directories.
+#anon_mkdir_write_enable=YES
+#
+# Uncomment this to enable anonymus FTP users to perform other write operations
+# like deletion and renaming.
+#anon_other_write_enable=YES
+#
+# If you want, you can arrange for uploaded anonymous files to be owned by
+# a different user. Note! Using "root" for uploaded files is not
+# recommended!
+#chown_uploads=YES
+#chown_username=whoever
+#
+# ############
+# Log Settings
+# ############
+#
+# Log to the syslog daemon instead of using an logfile.
+syslog_enable=YES
+#
+# Uncomment this to log all FTP requests and responses.
+#log_ftp_protocol=YES
+#
+# Activate logging of uploads/downloads.
+#xferlog_enable=YES
+#
+# You may override where the log file goes if you like. The default is shown
+# below.
+#
+#vsftpd_log_file=/var/log/vsftpd.log
+#
+# If you want, you can have your log file in standard ftpd xferlog format.
+# Note that the default log file location is /var/log/xferlog in this case.
+#xferlog_std_format=YES
+#
+# You may override where the log file goes if you like. The default is shown
+# below.
+#xferlog_file=/var/log/vsftpd.log
+#
+# Enable this to have booth logfiles. Standard xferlog and vsftpd's own style log.
+#dual_log_enable=YES
+#
+# Uncomment this to enable session status information in the system process listing.
+#setproctitle_enable=YES
+#
+# #################
+# Transfer Settings
+# #################
+#
+# Make sure PORT transfer connections originate from port 20 (ftp-data).
+connect_from_port_20=YES
+#
+# You may change the default value for timing out an idle session.
+#idle_session_timeout=600
+#
+# You may change the default value for timing out a data connection.
+#data_connection_timeout=120
+#
+# Enable this and the server will recognise asynchronous ABOR requests. Not
+# recommended for security (the code is non-trivial). Not enabling it,
+# however, may confuse older FTP clients.
+#async_abor_enable=YES
+#
+# By default the server will pretend to allow ASCII mode but in fact ignore
+# the request. Turn on the below options to have the server actually do ASCII
+# mangling on files when in ASCII mode.
+# Beware that on some FTP servers, ASCII support allows a denial of service
+# attack (DoS) via the command "SIZE /big/file" in ASCII mode. vsftpd
+# predicted this attack and has always been safe, reporting the size of the
+# raw file.
+# ASCII mangling is a horrible feature of the protocol.
+ascii_upload_enable=YES
+#ascii_download_enable=YES
+#
+# Set to NO if you want to disallow the  PASV  method of obtaining a data
+# connection.
+#pasv_enable=NO
+#
+# PAM setting. Do NOT change this unless you know what you do!
+pam_service_name=vsftpd
+#
+# When "listen" directive is enabled, vsftpd runs in standalone mode and
+# listens on IPv4 sockets. This directive cannot be used in conjunction
+# with the listen_ipv6 directive.
+listen=NO
+#
+# This directive enables listening on IPv6 sockets. To listen on IPv4 and IPv6
+# sockets, you must run two copies of vsftpd with two configuration files.
+# Make sure, that one of the listen options is commented !!
+listen_ipv6=YES
+#
+# Set to ssl_enable=YES if you want to enable SSL
+ssl_enable=NO
+#
+# Limit passive ports to this range to assis firewalling
+pasv_min_port=30000
+pasv_max_port=30100
+
+### security features that are incompatible with some other settings. ###
+
+# isolate_network ensures the vsftpd subprocess is started in own network
+# namespace (see CLONE_NEWNET in clone(2)). It however disables the
+# authentication methods needs the network access (LDAP, NIS, ...).
+#isolate_network=NO
+
+# seccomp_sanbox add an aditional security layer limiting the number of a
+# syscalls can be performed via vsftpd. However it might happen that a
+# whitelist don't allow a legitimate call (usually indirectly triggered by
+# third-party library like pam, or openssl) and the process is being killed by kernel.
+#
+# Therefor if your server dies on common situations (file download, upload),
+# uncomment following line and don't forget to open  bug at
+# https://bugzilla.novell.com
+#seccomp_sandbox=NO
+
+2017-07-11 13:34:30,518 p=51191 u=user1 |  server1 | FAILED | rc=2 >>
+grep: Die Option »--i« ist nicht eindeutig; möglich wären: '--include' '--invert-match' '--initial-tab' '--ignore-case'
+Aufruf: grep [OPTION]... MUSTER [DATEI]...
+„grep --help“ liefert weitere Informationen.
+
+2017-07-11 13:34:30,597 p=51191 u=user1 |  server4 | FAILED | rc=2 >>
+grep: Die Option »--i« ist nicht eindeutig; möglich wären: '--include' '--invert-match' '--initial-tab' '--ignore-case'
+Aufruf: grep [OPTION]… MUSTER [DATEI]…
+„grep --help“ liefert weitere Informationen.
+cat: Schreibfehler: Datenübergabe unterbrochen (broken pipe)
+
+2017-07-11 13:34:30,661 p=51191 u=user1 |  server3 | FAILED | rc=2 >>
+cat: /etc/vsftpd.conf: Datei oder Verzeichnis nicht gefunden
+grep: Die Option »--i« ist nicht eindeutig; möglich wären: '--include' '--invert-match' '--initial-tab' '--ignore-case'
+Aufruf: grep [OPTION]... MUSTER [DATEI]...
+„grep --help“ liefert weitere Informationen.
+
+2017-07-11 13:34:30,763 p=51191 u=user1 |  server2 | FAILED | rc=2 >>
+grep: Die Option »--i« ist nicht eindeutig; möglich wären: '--include' '--invert-match' '--initial-tab' '--ignore-case'
+Aufruf: grep [OPTION]... MUSTER [DATEI]...
+„grep --help“ liefert weitere Informationen.
+
+2017-07-11 13:34:33,681 p=51191 u=user1 |  server1 | SUCCESS | rc=0 >>
+# The default compiled in settings are fairly paranoid. This sample file
+# Allow anonymous FTP? (Disabled by default).
+anonymous_enable=NO
+# Uncomment this to allow the anonymous FTP user to upload files. This only
+#anon_upload_enable=YES
+# Uncomment this if you want the anonymous FTP user to be able to create
+#anon_mkdir_write_enable=YES
+# If you want, you can arrange for uploaded anonymous files to be owned by
+# You may specify a file of disallowed anonymous e-mail addresses. Apparently
+
+2017-07-11 13:34:33,713 p=51191 u=user1 |  server3 | FAILED | rc=1 >>
+cat: /etc/vsftpd.conf: Datei oder Verzeichnis nicht gefunden
+
+2017-07-11 13:34:33,716 p=51191 u=user1 |  server4 | SUCCESS | rc=0 >>
+# The default compiled in settings are fairly paranoid. This sample file
+# Allow anonymous FTP? (Disabled by default).
+anonymous_enable=NO
+# Uncomment this to allow the anonymous FTP user to upload files. This only
+#anon_upload_enable=YES
+# Uncomment this if you want the anonymous FTP user to be able to create
+#anon_mkdir_write_enable=YES
+# If you want, you can arrange for uploaded anonymous files to be owned by
+# You may specify a file of disallowed anonymous e-mail addresses. Apparently
+
+2017-07-11 13:34:33,872 p=51191 u=user1 |  server2 | SUCCESS | rc=0 >>
+# The default compiled in settings are fairly paranoid. This sample file
+# anonymus FTP server.
+# You may specify a file of disallowed anonymous e-mail addresses. Apparently
+# Anonymus FTP user Settings
+# Allow anonymous FTP? (Beware - allowed by default if you comment this out).
+anonymous_enable=YES
+# The maximum data transfer rate permitted, in bytes per second, for anonymous
+#anon_max_rate=7200
+# Anonymous users will only be allowed to download files which are
+anon_world_readable_only=YES
+# Default umask for anonymus users is 077. You may wish to change this to 022,
+#anon_umask=022
+# Uncomment this to allow the anonymous FTP user to upload files. This only
+#anon_upload_enable=YES
+# Uncomment this if you want the anonymous FTP user to be able to create
+#anon_mkdir_write_enable=YES
+# Uncomment this to enable anonymus FTP users to perform other write operations
+#anon_other_write_enable=YES
+# If you want, you can arrange for uploaded anonymous files to be owned by
+
+2017-07-11 13:34:47,317 p=51191 u=user1 |  server1 | FAILED | rc=2 >>
+grep: /etc/vsftpd/vsftpd.conf: Datei oder Verzeichnis nicht gefunden
+
+2017-07-11 13:34:47,347 p=51191 u=user1 |  server4 | FAILED | rc=2 >>
+grep: /etc/vsftpd/vsftpd.conf: Datei oder Verzeichnis nicht gefunden
+
+2017-07-11 13:34:47,411 p=51191 u=user1 |  server3 | SUCCESS | rc=0 >>
+# Allow anonymous FTP? (Beware - allowed by default if you comment this out).
+anonymous_enable=YES
+# Uncomment this to allow the anonymous FTP user to upload files. This only
+# Uncomment this if you want the anonymous FTP user to be able to create
+# If you want, you can arrange for uploaded anonymous files to be owned by
+# You may specify a file of disallowed anonymous e-mail addresses. Apparently
+
+2017-07-11 13:34:47,495 p=51191 u=user1 |  server2 | FAILED | rc=2 >>
+grep: /etc/vsftpd/vsftpd.conf: Datei oder Verzeichnis nicht gefunden
+
+2017-07-11 13:36:46,510 p=51191 u=user1 |  server1 | FAILED! => {
+    "changed": false, 
+    "failed": true, 
+    "msg": "missing required arguments: paths"
+}
+2017-07-11 13:36:46,642 p=51191 u=user1 |  server4 | FAILED! => {
+    "changed": false, 
+    "failed": true, 
+    "msg": "missing required arguments: paths"
+}
+2017-07-11 13:36:46,802 p=51191 u=user1 |  server3 | FAILED! => {
+    "changed": false, 
+    "failed": true, 
+    "msg": "missing required arguments: paths"
+}
+2017-07-11 13:36:46,811 p=51191 u=user1 |  server2 | FAILED! => {
+    "changed": false, 
+    "failed": true, 
+    "msg": "missing required arguments: paths"
+}
+2017-07-11 13:37:38,884 p=51191 u=user1 |  server1 | FAILED | rc=2 >>
+[Errno 2] Datei oder Verzeichnis nicht gefunden
+
+2017-07-11 13:37:38,892 p=51191 u=user1 |  server4 | FAILED | rc=2 >>
+[Errno 2] Datei oder Verzeichnis nicht gefunden
+
+2017-07-11 13:37:38,997 p=51191 u=user1 |  server3 | FAILED | rc=2 >>
+[Errno 2] Datei oder Verzeichnis nicht gefunden
+
+2017-07-11 13:37:39,139 p=51191 u=user1 |  server2 | FAILED | rc=2 >>
+[Errno 2] Datei oder Verzeichnis nicht gefunden
+
+2017-07-11 13:37:45,637 p=51191 u=user1 |  server4 | FAILED | rc=2 >>
+[Errno 2] Datei oder Verzeichnis nicht gefunden
+
+2017-07-11 13:37:45,638 p=51191 u=user1 |  server1 | FAILED | rc=2 >>
+[Errno 2] Datei oder Verzeichnis nicht gefunden
+
+2017-07-11 13:37:45,643 p=51191 u=user1 |  server3 | FAILED | rc=2 >>
+[Errno 2] Datei oder Verzeichnis nicht gefunden
+
+2017-07-11 13:37:45,831 p=51191 u=user1 |  server2 | FAILED | rc=2 >>
+[Errno 2] Datei oder Verzeichnis nicht gefunden
+
+2017-07-11 13:38:47,947 p=51847 u=user1 |   [ERROR]: Unable to build command: failed at splitting arguments, either an unbalanced jinja2 block or quotes:
+find /etc -name "*ftp*conf
+
+2017-07-11 13:38:53,005 p=51847 u=user1 |  server1 | SUCCESS | rc=0 >>
+/etc/vsftpd.conf
+
+2017-07-11 13:38:53,147 p=51847 u=user1 |  server4 | SUCCESS | rc=0 >>
+/etc/vsftpd.conf
+
+2017-07-11 13:38:53,252 p=51847 u=user1 |  server3 | SUCCESS | rc=0 >>
+/etc/vsftpd/vsftpd.conf
+
+2017-07-11 13:38:53,301 p=51847 u=user1 |  server2 | SUCCESS | rc=0 >>
+/etc/vsftpd.conf
+
+2017-07-11 13:39:05,598 p=51847 u=user1 |  server1 | FAILED | rc=1 >>
+find: Der Pfad muss vor dem Ausdruck stehen: |
+Try 'find --help' for more information.
+
+2017-07-11 13:39:05,689 p=51847 u=user1 |  server4 | FAILED | rc=1 >>
+find: Der Pfad muss vor dem Ausdruck stehen: |
+Aufruf: find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec|time] [Pfad...] [Suchkriterium]
+
+2017-07-11 13:39:05,754 p=51847 u=user1 |  server3 | FAILED | rc=1 >>
+find: Der Pfad muß vor dem Suchkriterium stehen: |
+Aufruf: find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec] [Pfad...] [Suchkriterium]
+
+2017-07-11 13:39:05,881 p=51847 u=user1 |  server2 | FAILED | rc=1 >>
+find: paths must precede expression: |
+Usage: find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec] [path...] [expression]
+
+2017-07-11 13:39:08,322 p=51847 u=user1 |  server1 | FAILED | rc=1 >>
+find: Der Pfad muss vor dem Ausdruck stehen: |
+Try 'find --help' for more information.
+
+2017-07-11 13:39:08,346 p=51847 u=user1 |  server4 | FAILED | rc=1 >>
+find: Der Pfad muss vor dem Ausdruck stehen: |
+Aufruf: find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec|time] [Pfad...] [Suchkriterium]
+
+2017-07-11 13:39:08,373 p=51847 u=user1 |  server3 | FAILED | rc=1 >>
+find: Der Pfad muß vor dem Suchkriterium stehen: |
+Aufruf: find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec] [Pfad...] [Suchkriterium]
+
+2017-07-11 13:39:08,528 p=51847 u=user1 |  server2 | FAILED | rc=1 >>
+find: paths must precede expression: |
+Usage: find [-H] [-L] [-P] [-Olevel] [-D help|tree|search|stat|rates|opt|exec] [path...] [expression]
+
+2017-07-11 13:39:26,502 p=51847 u=user1 |  server1 | SUCCESS | rc=0 >>
+# Allow anonymous FTP? (Disabled by default).
+anonymous_enable=NO
+# Uncomment this to allow the anonymous FTP user to upload files. This only
+#anon_upload_enable=YES
+# Uncomment this if you want the anonymous FTP user to be able to create
+#anon_mkdir_write_enable=YES
+# If you want, you can arrange for uploaded anonymous files to be owned by
+# You may specify a file of disallowed anonymous e-mail addresses. Apparently
+
+2017-07-11 13:39:26,551 p=51847 u=user1 |  server4 | SUCCESS | rc=0 >>
+# Allow anonymous FTP? (Disabled by default).
+anonymous_enable=NO
+# Uncomment this to allow the anonymous FTP user to upload files. This only
+#anon_upload_enable=YES
+# Uncomment this if you want the anonymous FTP user to be able to create
+#anon_mkdir_write_enable=YES
+# If you want, you can arrange for uploaded anonymous files to be owned by
+# You may specify a file of disallowed anonymous e-mail addresses. Apparently
+
+2017-07-11 13:39:26,596 p=51847 u=user1 |  server3 | SUCCESS | rc=0 >>
+# Allow anonymous FTP? (Beware - allowed by default if you comment this out).
+anonymous_enable=YES
+# Uncomment this to allow the anonymous FTP user to upload files. This only
+# When SELinux is enforcing check for SE bool allow_ftpd_anon_write, allow_ftpd_full_access
+#anon_upload_enable=YES
+# Uncomment this if you want the anonymous FTP user to be able to create
+#anon_mkdir_write_enable=YES
+# If you want, you can arrange for uploaded anonymous files to be owned by
+# You may specify a file of disallowed anonymous e-mail addresses. Apparently
+
+2017-07-11 13:39:26,739 p=51847 u=user1 |  server2 | SUCCESS | rc=0 >>
+# anonymus FTP server.
+# You may specify a file of disallowed anonymous e-mail addresses. Apparently
+# Anonymus FTP user Settings
+# Allow anonymous FTP? (Beware - allowed by default if you comment this out).
+anonymous_enable=YES
+# The maximum data transfer rate permitted, in bytes per second, for anonymous
+#anon_max_rate=7200
+# Anonymous users will only be allowed to download files which are
+anon_world_readable_only=YES
+# Default umask for anonymus users is 077. You may wish to change this to 022,
+#anon_umask=022
+# Uncomment this to allow the anonymous FTP user to upload files. This only
+#anon_upload_enable=YES
+# Uncomment this if you want the anonymous FTP user to be able to create
+#anon_mkdir_write_enable=YES
+# Uncomment this to enable anonymus FTP users to perform other write operations
+#anon_other_write_enable=YES
+# If you want, you can arrange for uploaded anonymous files to be owned by
+
+2017-07-11 13:39:32,394 p=51847 u=user1 |  server1 | SUCCESS | rc=0 >>
+anonymous_enable=NO
+#anon_upload_enable=YES
+#anon_mkdir_write_enable=YES
+
+2017-07-11 13:39:32,420 p=51847 u=user1 |  server4 | SUCCESS | rc=0 >>
+anonymous_enable=NO
+#anon_upload_enable=YES
+#anon_mkdir_write_enable=YES
+
+2017-07-11 13:39:32,494 p=51847 u=user1 |  server3 | SUCCESS | rc=0 >>
+anonymous_enable=YES
+#anon_upload_enable=YES
+#anon_mkdir_write_enable=YES
+
+2017-07-11 13:39:32,622 p=51847 u=user1 |  server2 | SUCCESS | rc=0 >>
+anonymous_enable=YES
+#anon_max_rate=7200
+anon_world_readable_only=YES
+#anon_umask=022
+#anon_upload_enable=YES
+#anon_mkdir_write_enable=YES
+#anon_other_write_enable=YES
+
+2017-07-11 13:39:48,687 p=51847 u=user1 |  server1 | SUCCESS | rc=0 >>
+anonymous_enable=NO
+
+2017-07-11 13:39:48,703 p=51847 u=user1 |  server4 | SUCCESS | rc=0 >>
+anonymous_enable=NO
+
+2017-07-11 13:39:48,803 p=51847 u=user1 |  server3 | SUCCESS | rc=0 >>
+anonymous_enable=YES
+
+2017-07-11 13:39:48,900 p=51847 u=user1 |  server2 | SUCCESS | rc=0 >>
+anonymous_enable=YES
+anon_world_readable_only=YES
+
+2017-07-11 13:42:57,001 p=52305 u=user1 |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/home/user1/ansible/roles/install_apps/tasks/main.yml': line 64, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  find /etc -name "*ftp*conf" | xargs grep -i anon.*en.*= | egrep -v '^$|#'
+  register: userenableoutput
+  ^ here
+
+2017-07-11 13:43:10,625 p=52308 u=user1 |  PLAY [all] ********************************************************************************************************
+2017-07-11 13:43:10,654 p=52308 u=user1 |  TASK [install_apps : include_vars] ********************************************************************************
+2017-07-11 13:43:10,718 p=52308 u=user1 |  ok: [server3]
+2017-07-11 13:43:10,728 p=52308 u=user1 |  skipping: [server2]
+2017-07-11 13:43:10,743 p=52308 u=user1 |  ok: [server1]
+2017-07-11 13:43:10,770 p=52308 u=user1 |  ok: [server4]
+2017-07-11 13:43:10,774 p=52308 u=user1 |  TASK [install_apps : include_vars] ********************************************************************************
+2017-07-11 13:43:10,834 p=52308 u=user1 |  skipping: [server3]
+2017-07-11 13:43:10,839 p=52308 u=user1 |  ok: [server2]
+2017-07-11 13:43:10,853 p=52308 u=user1 |  skipping: [server4]
+2017-07-11 13:43:10,865 p=52308 u=user1 |  skipping: [server1]
+2017-07-11 13:43:10,871 p=52308 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 13:43:10,938 p=52308 u=user1 |  ok: [server3] => {
+    "msg": "Hallo FTP Server der Familie CentOS, Config /etc/vsftpd/vsftpd.conf "
+}
+2017-07-11 13:43:10,939 p=52308 u=user1 |  ok: [server2] => {
+    "msg": "Hallo FTP Server der Familie openSUSE Leap, Config /etc/vsftpd.conf "
+}
+2017-07-11 13:43:10,945 p=52308 u=user1 |  ok: [server4] => {
+    "msg": "Hallo FTP Server der Familie Ubuntu, Config /etc/vsftpd.conf "
+}
+2017-07-11 13:43:10,955 p=52308 u=user1 |  ok: [server1] => {
+    "msg": "Hallo FTP Server der Familie Debian, Config /etc/vsftpd.conf "
+}
+2017-07-11 13:43:10,962 p=52308 u=user1 |  TASK [install_apps : vsftpd installieren] *************************************************************************
+2017-07-11 13:43:12,037 p=52308 u=user1 |  ok: [server1]
+2017-07-11 13:43:12,393 p=52308 u=user1 |  ok: [server3]
+2017-07-11 13:43:12,475 p=52308 u=user1 |  ok: [server4]
+2017-07-11 13:43:13,714 p=52308 u=user1 |  ok: [server2]
+2017-07-11 13:43:13,718 p=52308 u=user1 |  TASK [install_apps : locate installieren] *************************************************************************
+2017-07-11 13:43:15,193 p=52308 u=user1 |  ok: [server1]
+2017-07-11 13:43:15,682 p=52308 u=user1 |  ok: [server4]
+2017-07-11 13:43:16,577 p=52308 u=user1 |  ok: [server2]
+2017-07-11 13:43:19,210 p=52308 u=user1 |  ok: [server3]
+2017-07-11 13:43:19,215 p=52308 u=user1 |  TASK [install_apps : Datenbank erstellen] *************************************************************************
+2017-07-11 13:43:19,695 p=52308 u=user1 |  ok: [server4]
+2017-07-11 13:43:19,706 p=52308 u=user1 |  changed: [server1]
+2017-07-11 13:43:19,824 p=52308 u=user1 |  ok: [server3]
+2017-07-11 13:43:19,961 p=52308 u=user1 |  changed: [server2]
+2017-07-11 13:43:19,966 p=52308 u=user1 |  TASK [install_apps : Configure firewall on RedHat systems] ********************************************************
+2017-07-11 13:43:19,999 p=52308 u=user1 |  skipping: [server2]
+2017-07-11 13:43:20,027 p=52308 u=user1 |  skipping: [server4]
+2017-07-11 13:43:20,079 p=52308 u=user1 |  skipping: [server1]
+2017-07-11 13:43:20,781 p=52308 u=user1 |  ok: [server3]
+2017-07-11 13:43:20,786 p=52308 u=user1 |  TASK [install_apps : vsftpd starten und in den Autostart setzen] **************************************************
+2017-07-11 13:43:21,297 p=52308 u=user1 |  ok: [server4]
+2017-07-11 13:43:21,302 p=52308 u=user1 |  ok: [server1]
+2017-07-11 13:43:21,374 p=52308 u=user1 |  ok: [server3]
+2017-07-11 13:43:21,531 p=52308 u=user1 |  ok: [server2]
+2017-07-11 13:43:21,536 p=52308 u=user1 |  TASK [install_apps : FTP Prozess überprüfen] **********************************************************************
+2017-07-11 13:43:21,965 p=52308 u=user1 |  ok: [server4]
+2017-07-11 13:43:22,015 p=52308 u=user1 |  ok: [server1]
+2017-07-11 13:43:22,137 p=52308 u=user1 |  ok: [server3]
+2017-07-11 13:43:22,180 p=52308 u=user1 |  ok: [server2]
+2017-07-11 13:43:22,185 p=52308 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 13:43:22,263 p=52308 u=user1 |  ok: [server2] => {
+    "psausgabe.stdout": "root      31805  0.0  0.3  21844  3864 ?        Ss   12:21   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:43:22,276 p=52308 u=user1 |  ok: [server4] => {
+    "psausgabe.stdout": "root      12266  0.0  0.2  24048  2360 ?        Ss   12:21   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:43:22,277 p=52308 u=user1 |  ok: [server3] => {
+    "psausgabe.stdout": "root     28815  0.0  0.0  54752   564 ?        Ss   12:21   0:00 /usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf"
+}
+2017-07-11 13:43:22,298 p=52308 u=user1 |  ok: [server1] => {
+    "psausgabe.stdout": "root       8597  0.0  0.2  28424  2608 ?        Ss   12:21   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:43:22,306 p=52308 u=user1 |  TASK [install_apps : local_umaks auf 077 setzen] ******************************************************************
+2017-07-11 13:43:23,021 p=52308 u=user1 |  changed: [server1]
+2017-07-11 13:43:23,071 p=52308 u=user1 |  changed: [server4]
+2017-07-11 13:43:23,244 p=52308 u=user1 |  changed: [server3]
+2017-07-11 13:43:23,278 p=52308 u=user1 |  changed: [server2]
+2017-07-11 13:43:23,279 p=52308 u=user1 |  RUNNING HANDLER [install_apps : restart vsftpd] *******************************************************************
+2017-07-11 13:43:23,634 p=52308 u=user1 |  changed: [server1]
+2017-07-11 13:43:23,797 p=52308 u=user1 |  changed: [server4]
+2017-07-11 13:43:23,808 p=52308 u=user1 |  changed: [server3]
+2017-07-11 13:43:23,998 p=52308 u=user1 |  changed: [server2]
+2017-07-11 13:43:24,002 p=52308 u=user1 |  TASK [install_apps : FTP Prozess überprüfen] **********************************************************************
+2017-07-11 13:43:24,380 p=52308 u=user1 |  ok: [server1]
+2017-07-11 13:43:24,394 p=52308 u=user1 |  ok: [server4]
+2017-07-11 13:43:24,558 p=52308 u=user1 |  ok: [server3]
+2017-07-11 13:43:24,618 p=52308 u=user1 |  ok: [server2]
+2017-07-11 13:43:24,623 p=52308 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 13:43:24,702 p=52308 u=user1 |  ok: [server2] => {
+    "psausgabe.stdout": "root      37233  1.5  0.3  21844  3948 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:43:24,714 p=52308 u=user1 |  ok: [server3] => {
+    "psausgabe.stdout": "root     30786  0.0  0.0  54752   564 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf"
+}
+2017-07-11 13:43:24,719 p=52308 u=user1 |  ok: [server4] => {
+    "psausgabe.stdout": "root      13390  0.0  0.2  24048  2472 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:43:24,743 p=52308 u=user1 |  ok: [server1] => {
+    "psausgabe.stdout": "root       9465  0.0  0.2  28424  2864 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:43:24,748 p=52308 u=user1 |  TASK [install_apps : Ativiere Anonymus als User] ******************************************************************
+2017-07-11 13:43:25,123 p=52308 u=user1 |  fatal: [server1]: FAILED! => {"changed": false, "failed": true, "msg": "Destination { ftp_config }} does not exist !", "rc": 257}
+2017-07-11 13:43:25,134 p=52308 u=user1 |  fatal: [server4]: FAILED! => {"changed": false, "failed": true, "msg": "Destination { ftp_config }} does not exist !", "rc": 257}
+2017-07-11 13:43:25,250 p=52308 u=user1 |  fatal: [server3]: FAILED! => {"changed": false, "failed": true, "msg": "Destination { ftp_config }} does not exist !", "rc": 257}
+2017-07-11 13:43:25,347 p=52308 u=user1 |  fatal: [server2]: FAILED! => {"changed": false, "failed": true, "msg": "Destination { ftp_config }} does not exist !", "rc": 257}
+2017-07-11 13:43:25,350 p=52308 u=user1 |  	to retry, use: --limit @/home/user1/.ansible/retry-files/rollen.retry
+
+2017-07-11 13:43:25,350 p=52308 u=user1 |  PLAY RECAP ********************************************************************************************************
+2017-07-11 13:43:25,350 p=52308 u=user1 |  server1                    : ok=12   changed=3    unreachable=0    failed=1   
+2017-07-11 13:43:25,350 p=52308 u=user1 |  server2                    : ok=12   changed=3    unreachable=0    failed=1   
+2017-07-11 13:43:25,350 p=52308 u=user1 |  server3                    : ok=13   changed=2    unreachable=0    failed=1   
+2017-07-11 13:43:25,351 p=52308 u=user1 |  server4                    : ok=12   changed=2    unreachable=0    failed=1   
+2017-07-11 13:44:08,886 p=52674 u=user1 |  ERROR! You must specify a playbook file to run
+2017-07-11 13:44:59,072 p=52678 u=user1 |  PLAY [all] ********************************************************************************************************
+2017-07-11 13:44:59,151 p=52678 u=user1 |  PLAY RECAP ********************************************************************************************************
+2017-07-11 13:45:11,537 p=52685 u=user1 |  PLAY [all] ********************************************************************************************************
+2017-07-11 13:45:11,570 p=52685 u=user1 |  PLAY RECAP ********************************************************************************************************
+2017-07-11 13:45:24,349 p=52693 u=user1 |  PLAY [all] ********************************************************************************************************
+2017-07-11 13:45:24,379 p=52693 u=user1 |  PLAY RECAP ********************************************************************************************************
+2017-07-11 13:45:56,407 p=52700 u=user1 |  PLAY [all] ********************************************************************************************************
+2017-07-11 13:45:56,442 p=52700 u=user1 |  TASK [install_apps : Aktiviere Anonymus als User] *****************************************************************
+2017-07-11 13:45:56,490 p=52700 u=user1 |  fatal: [server2]: FAILED! => {"failed": true, "msg": "the field 'args' has an invalid value, which appears to include a variable that is undefined. The error was: 'ftp_config' is undefined\n\nThe error appears to have been in '/home/user1/ansible/roles/install_apps/tasks/main.yml': line 54, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: Aktiviere Anonymus als User\n  ^ here\n"}
+2017-07-11 13:45:56,505 p=52700 u=user1 |  fatal: [server3]: FAILED! => {"failed": true, "msg": "the field 'args' has an invalid value, which appears to include a variable that is undefined. The error was: 'ftp_config' is undefined\n\nThe error appears to have been in '/home/user1/ansible/roles/install_apps/tasks/main.yml': line 54, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: Aktiviere Anonymus als User\n  ^ here\n"}
+2017-07-11 13:45:56,506 p=52700 u=user1 |  fatal: [server1]: FAILED! => {"failed": true, "msg": "the field 'args' has an invalid value, which appears to include a variable that is undefined. The error was: 'ftp_config' is undefined\n\nThe error appears to have been in '/home/user1/ansible/roles/install_apps/tasks/main.yml': line 54, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: Aktiviere Anonymus als User\n  ^ here\n"}
+2017-07-11 13:45:56,521 p=52700 u=user1 |  fatal: [server4]: FAILED! => {"failed": true, "msg": "the field 'args' has an invalid value, which appears to include a variable that is undefined. The error was: 'ftp_config' is undefined\n\nThe error appears to have been in '/home/user1/ansible/roles/install_apps/tasks/main.yml': line 54, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: Aktiviere Anonymus als User\n  ^ here\n"}
+2017-07-11 13:45:56,527 p=52700 u=user1 |  	to retry, use: --limit @/home/user1/.ansible/retry-files/rollen.retry
+
+2017-07-11 13:45:56,527 p=52700 u=user1 |  PLAY RECAP ********************************************************************************************************
+2017-07-11 13:45:56,527 p=52700 u=user1 |  server1                    : ok=0    changed=0    unreachable=0    failed=1   
+2017-07-11 13:45:56,527 p=52700 u=user1 |  server2                    : ok=0    changed=0    unreachable=0    failed=1   
+2017-07-11 13:45:56,528 p=52700 u=user1 |  server3                    : ok=0    changed=0    unreachable=0    failed=1   
+2017-07-11 13:45:56,528 p=52700 u=user1 |  server4                    : ok=0    changed=0    unreachable=0    failed=1   
+2017-07-11 13:46:47,478 p=52952 u=user1 |  PLAY [all] ********************************************************************************************************
+2017-07-11 13:46:47,514 p=52952 u=user1 |  TASK [install_apps : include_vars] ********************************************************************************
+2017-07-11 13:46:47,569 p=52952 u=user1 |  skipping: [server2]
+2017-07-11 13:46:47,585 p=52952 u=user1 |  ok: [server4]
+2017-07-11 13:46:47,620 p=52952 u=user1 |  ok: [server3]
+2017-07-11 13:46:47,621 p=52952 u=user1 |  ok: [server1]
+2017-07-11 13:46:47,626 p=52952 u=user1 |  TASK [install_apps : include_vars] ********************************************************************************
+2017-07-11 13:46:47,677 p=52952 u=user1 |  skipping: [server3]
+2017-07-11 13:46:47,688 p=52952 u=user1 |  ok: [server2]
+2017-07-11 13:46:47,707 p=52952 u=user1 |  skipping: [server1]
+2017-07-11 13:46:47,711 p=52952 u=user1 |  skipping: [server4]
+2017-07-11 13:46:47,716 p=52952 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 13:46:47,792 p=52952 u=user1 |  ok: [server2] => {
+    "msg": "Hallo FTP Server der Familie openSUSE Leap, Config /etc/vsftpd.conf "
+}
+2017-07-11 13:46:47,796 p=52952 u=user1 |  ok: [server3] => {
+    "msg": "Hallo FTP Server der Familie CentOS, Config /etc/vsftpd/vsftpd.conf "
+}
+2017-07-11 13:46:47,802 p=52952 u=user1 |  ok: [server4] => {
+    "msg": "Hallo FTP Server der Familie Ubuntu, Config /etc/vsftpd.conf "
+}
+2017-07-11 13:46:47,822 p=52952 u=user1 |  ok: [server1] => {
+    "msg": "Hallo FTP Server der Familie Debian, Config /etc/vsftpd.conf "
+}
+2017-07-11 13:46:47,826 p=52952 u=user1 |  TASK [install_apps : vsftpd installieren] *************************************************************************
+2017-07-11 13:46:48,835 p=52952 u=user1 |  ok: [server1]
+2017-07-11 13:46:49,307 p=52952 u=user1 |  ok: [server4]
+2017-07-11 13:46:49,312 p=52952 u=user1 |  ok: [server3]
+2017-07-11 13:46:50,088 p=52952 u=user1 |  ok: [server2]
+2017-07-11 13:46:50,092 p=52952 u=user1 |  TASK [install_apps : locate installieren] *************************************************************************
+2017-07-11 13:46:51,707 p=52952 u=user1 |  ok: [server1]
+2017-07-11 13:46:52,083 p=52952 u=user1 |  ok: [server4]
+2017-07-11 13:46:52,883 p=52952 u=user1 |  ok: [server2]
+2017-07-11 13:46:55,573 p=52952 u=user1 |  ok: [server3]
+2017-07-11 13:46:55,579 p=52952 u=user1 |  TASK [install_apps : Datenbank erstellen] *************************************************************************
+2017-07-11 13:46:56,081 p=52952 u=user1 |  changed: [server1]
+2017-07-11 13:46:56,100 p=52952 u=user1 |  ok: [server4]
+2017-07-11 13:46:56,214 p=52952 u=user1 |  ok: [server3]
+2017-07-11 13:46:56,321 p=52952 u=user1 |  changed: [server2]
+2017-07-11 13:46:56,332 p=52952 u=user1 |  TASK [install_apps : Configure firewall on RedHat systems] ********************************************************
+2017-07-11 13:46:56,412 p=52952 u=user1 |  skipping: [server2]
+2017-07-11 13:46:56,443 p=52952 u=user1 |  skipping: [server4]
+2017-07-11 13:46:56,452 p=52952 u=user1 |  skipping: [server1]
+2017-07-11 13:46:57,156 p=52952 u=user1 |  ok: [server3]
+2017-07-11 13:46:57,161 p=52952 u=user1 |  TASK [install_apps : vsftpd starten und in den Autostart setzen] **************************************************
+2017-07-11 13:46:57,650 p=52952 u=user1 |  ok: [server4]
+2017-07-11 13:46:57,656 p=52952 u=user1 |  ok: [server1]
+2017-07-11 13:46:57,803 p=52952 u=user1 |  ok: [server3]
+2017-07-11 13:46:57,899 p=52952 u=user1 |  ok: [server2]
+2017-07-11 13:46:57,904 p=52952 u=user1 |  TASK [install_apps : FTP Prozess überprüfen] **********************************************************************
+2017-07-11 13:46:58,333 p=52952 u=user1 |  ok: [server4]
+2017-07-11 13:46:58,428 p=52952 u=user1 |  ok: [server1]
+2017-07-11 13:46:58,454 p=52952 u=user1 |  ok: [server2]
+2017-07-11 13:46:58,458 p=52952 u=user1 |  ok: [server3]
+2017-07-11 13:46:58,463 p=52952 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 13:46:58,531 p=52952 u=user1 |  ok: [server2] => {
+    "psausgabe.stdout": "root      37233  0.0  0.3  21844  3948 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:46:58,540 p=52952 u=user1 |  ok: [server3] => {
+    "psausgabe.stdout": "root     30786  0.0  0.0  54752   564 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf"
+}
+2017-07-11 13:46:58,550 p=52952 u=user1 |  ok: [server4] => {
+    "psausgabe.stdout": "root      13390  0.0  0.2  24048  2472 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:46:58,578 p=52952 u=user1 |  ok: [server1] => {
+    "psausgabe.stdout": "root       9465  0.0  0.2  28424  2864 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:46:58,587 p=52952 u=user1 |  TASK [install_apps : local_umaks auf 077 setzen] ******************************************************************
+2017-07-11 13:46:59,127 p=52952 u=user1 |  ok: [server4]
+2017-07-11 13:46:59,145 p=52952 u=user1 |  ok: [server1]
+2017-07-11 13:46:59,273 p=52952 u=user1 |  ok: [server3]
+2017-07-11 13:46:59,362 p=52952 u=user1 |  ok: [server2]
+2017-07-11 13:46:59,367 p=52952 u=user1 |  TASK [install_apps : FTP Prozess überprüfen] **********************************************************************
+2017-07-11 13:46:59,758 p=52952 u=user1 |  ok: [server4]
+2017-07-11 13:46:59,761 p=52952 u=user1 |  ok: [server1]
+2017-07-11 13:46:59,877 p=52952 u=user1 |  ok: [server3]
+2017-07-11 13:46:59,951 p=52952 u=user1 |  ok: [server2]
+2017-07-11 13:46:59,964 p=52952 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 13:47:00,004 p=52952 u=user1 |  ok: [server2] => {
+    "psausgabe.stdout": "root      37233  0.0  0.3  21844  3948 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:47:00,033 p=52952 u=user1 |  ok: [server3] => {
+    "psausgabe.stdout": "root     30786  0.0  0.0  54752   564 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf"
+}
+2017-07-11 13:47:00,061 p=52952 u=user1 |  ok: [server4] => {
+    "psausgabe.stdout": "root      13390  0.0  0.2  24048  2472 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:47:00,064 p=52952 u=user1 |  ok: [server1] => {
+    "psausgabe.stdout": "root       9465  0.0  0.2  28424  2864 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:47:00,069 p=52952 u=user1 |  TASK [install_apps : Aktiviere Anonymus als User] *****************************************************************
+2017-07-11 13:47:00,467 p=52952 u=user1 |  fatal: [server4]: FAILED! => {"changed": false, "failed": true, "module_stderr": "Shared connection to 192.168.150.14 closed.\r\n", "module_stdout": "\r\nTraceback (most recent call last):\r\n  File \"/tmp/ansible_QxorMY/ansible_module_lineinfile.py\", line 470, in <module>\r\n    main()\r\n  File \"/tmp/ansible_QxorMY/ansible_module_lineinfile.py\", line 462, in main\r\n    ins_aft, ins_bef, create, backup, backrefs)\r\n  File \"/tmp/ansible_QxorMY/ansible_module_lineinfile.py\", line 261, in present\r\n    bre_m = re.compile(to_bytes(regexp, errors='surrogate_or_strict'))\r\n  File \"/usr/lib/python2.7/re.py\", line 194, in compile\r\n    return _compile(pattern, flags)\r\n  File \"/usr/lib/python2.7/re.py\", line 251, in _compile\r\n    raise error, v # invalid expression\r\nsre_constants.error: nothing to repeat\r\n", "msg": "MODULE FAILURE", "rc": 0}
+2017-07-11 13:47:00,470 p=52952 u=user1 |  fatal: [server1]: FAILED! => {"changed": false, "failed": true, "module_stderr": "Shared connection to 192.168.150.11 closed.\r\n", "module_stdout": "Traceback (most recent call last):\r\n  File \"/tmp/ansible_r6XaUw/ansible_module_lineinfile.py\", line 470, in <module>\r\n    main()\r\n  File \"/tmp/ansible_r6XaUw/ansible_module_lineinfile.py\", line 462, in main\r\n    ins_aft, ins_bef, create, backup, backrefs)\r\n  File \"/tmp/ansible_r6XaUw/ansible_module_lineinfile.py\", line 261, in present\r\n    bre_m = re.compile(to_bytes(regexp, errors='surrogate_or_strict'))\r\n  File \"/usr/lib/python2.7/re.py\", line 194, in compile\r\n    return _compile(pattern, flags)\r\n  File \"/usr/lib/python2.7/re.py\", line 251, in _compile\r\n    raise error, v # invalid expression\r\nsre_constants.error: nothing to repeat\r\n", "msg": "MODULE FAILURE", "rc": 0}
+2017-07-11 13:47:00,571 p=52952 u=user1 |  fatal: [server3]: FAILED! => {"changed": false, "failed": true, "module_stderr": "Shared connection to 192.168.150.13 closed.\r\n", "module_stdout": "Traceback (most recent call last):\r\n  File \"/tmp/ansible_MgTACh/ansible_module_lineinfile.py\", line 470, in <module>\r\n    main()\r\n  File \"/tmp/ansible_MgTACh/ansible_module_lineinfile.py\", line 462, in main\r\n    ins_aft, ins_bef, create, backup, backrefs)\r\n  File \"/tmp/ansible_MgTACh/ansible_module_lineinfile.py\", line 261, in present\r\n    bre_m = re.compile(to_bytes(regexp, errors='surrogate_or_strict'))\r\n  File \"/usr/lib64/python2.7/re.py\", line 190, in compile\r\n    return _compile(pattern, flags)\r\n  File \"/usr/lib64/python2.7/re.py\", line 242, in _compile\r\n    raise error, v # invalid expression\r\nsre_constants.error: nothing to repeat\r\n", "msg": "MODULE FAILURE", "rc": 0}
+2017-07-11 13:47:00,675 p=52952 u=user1 |  fatal: [server2]: FAILED! => {"changed": false, "failed": true, "module_stderr": "Shared connection to 192.168.150.12 closed.\r\n", "module_stdout": "Traceback (most recent call last):\r\n  File \"/tmp/ansible_ng0HGg/ansible_module_lineinfile.py\", line 470, in <module>\r\n    main()\r\n  File \"/tmp/ansible_ng0HGg/ansible_module_lineinfile.py\", line 462, in main\r\n    ins_aft, ins_bef, create, backup, backrefs)\r\n  File \"/tmp/ansible_ng0HGg/ansible_module_lineinfile.py\", line 261, in present\r\n    bre_m = re.compile(to_bytes(regexp, errors='surrogate_or_strict'))\r\n  File \"/usr/lib64/python2.7/re.py\", line 194, in compile\r\n    return _compile(pattern, flags)\r\n  File \"/usr/lib64/python2.7/re.py\", line 251, in _compile\r\n    raise error, v # invalid expression\r\nsre_constants.error: nothing to repeat\r\n", "msg": "MODULE FAILURE", "rc": 0}
+2017-07-11 13:47:00,679 p=52952 u=user1 |  	to retry, use: --limit @/home/user1/.ansible/retry-files/rollen.retry
+
+2017-07-11 13:47:00,679 p=52952 u=user1 |  PLAY RECAP ********************************************************************************************************
+2017-07-11 13:47:00,679 p=52952 u=user1 |  server1                    : ok=11   changed=1    unreachable=0    failed=1   
+2017-07-11 13:47:00,680 p=52952 u=user1 |  server2                    : ok=11   changed=1    unreachable=0    failed=1   
+2017-07-11 13:47:00,680 p=52952 u=user1 |  server3                    : ok=12   changed=0    unreachable=0    failed=1   
+2017-07-11 13:47:00,680 p=52952 u=user1 |  server4                    : ok=11   changed=0    unreachable=0    failed=1   
+2017-07-11 13:47:35,146 p=53281 u=user1 |  PLAY [all] ********************************************************************************************************
+2017-07-11 13:47:35,177 p=53281 u=user1 |  TASK [install_apps : include_vars] ********************************************************************************
+2017-07-11 13:47:35,239 p=53281 u=user1 |  skipping: [server2]
+2017-07-11 13:47:35,267 p=53281 u=user1 |  ok: [server1]
+2017-07-11 13:47:35,269 p=53281 u=user1 |  ok: [server3]
+2017-07-11 13:47:35,284 p=53281 u=user1 |  ok: [server4]
+2017-07-11 13:47:35,289 p=53281 u=user1 |  TASK [install_apps : include_vars] ********************************************************************************
+2017-07-11 13:47:35,343 p=53281 u=user1 |  skipping: [server3]
+2017-07-11 13:47:35,344 p=53281 u=user1 |  ok: [server2]
+2017-07-11 13:47:35,349 p=53281 u=user1 |  skipping: [server4]
+2017-07-11 13:47:35,375 p=53281 u=user1 |  skipping: [server1]
+2017-07-11 13:47:35,381 p=53281 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 13:47:35,438 p=53281 u=user1 |  ok: [server2] => {
+    "msg": "Hallo FTP Server der Familie openSUSE Leap, Config /etc/vsftpd.conf "
+}
+2017-07-11 13:47:35,448 p=53281 u=user1 |  ok: [server3] => {
+    "msg": "Hallo FTP Server der Familie CentOS, Config /etc/vsftpd/vsftpd.conf "
+}
+2017-07-11 13:47:35,457 p=53281 u=user1 |  ok: [server4] => {
+    "msg": "Hallo FTP Server der Familie Ubuntu, Config /etc/vsftpd.conf "
+}
+2017-07-11 13:47:35,467 p=53281 u=user1 |  ok: [server1] => {
+    "msg": "Hallo FTP Server der Familie Debian, Config /etc/vsftpd.conf "
+}
+2017-07-11 13:47:35,472 p=53281 u=user1 |  TASK [install_apps : vsftpd installieren] *************************************************************************
+2017-07-11 13:47:36,357 p=53281 u=user1 |  ok: [server1]
+2017-07-11 13:47:36,463 p=53281 u=user1 |  ok: [server3]
+2017-07-11 13:47:36,646 p=53281 u=user1 |  ok: [server4]
+2017-07-11 13:47:37,544 p=53281 u=user1 |  ok: [server2]
+2017-07-11 13:47:37,549 p=53281 u=user1 |  TASK [install_apps : locate installieren] *************************************************************************
+2017-07-11 13:47:38,873 p=53281 u=user1 |  ok: [server1]
+2017-07-11 13:47:39,568 p=53281 u=user1 |  ok: [server4]
+2017-07-11 13:47:40,636 p=53281 u=user1 |  ok: [server2]
+2017-07-11 13:47:43,030 p=53281 u=user1 |  ok: [server3]
+2017-07-11 13:47:43,034 p=53281 u=user1 |  TASK [install_apps : Datenbank erstellen] *************************************************************************
+2017-07-11 13:47:43,598 p=53281 u=user1 |  changed: [server1]
+2017-07-11 13:47:43,606 p=53281 u=user1 |  ok: [server4]
+2017-07-11 13:47:43,655 p=53281 u=user1 |  ok: [server3]
+2017-07-11 13:47:43,828 p=53281 u=user1 |  changed: [server2]
+2017-07-11 13:47:43,834 p=53281 u=user1 |  TASK [install_apps : Configure firewall on RedHat systems] ********************************************************
+2017-07-11 13:47:43,911 p=53281 u=user1 |  skipping: [server2]
+2017-07-11 13:47:43,922 p=53281 u=user1 |  skipping: [server4]
+2017-07-11 13:47:43,973 p=53281 u=user1 |  skipping: [server1]
+2017-07-11 13:47:44,702 p=53281 u=user1 |  ok: [server3]
+2017-07-11 13:47:44,706 p=53281 u=user1 |  TASK [install_apps : vsftpd starten und in den Autostart setzen] **************************************************
+2017-07-11 13:47:45,482 p=53281 u=user1 |  ok: [server1]
+2017-07-11 13:47:45,502 p=53281 u=user1 |  ok: [server4]
+2017-07-11 13:47:45,639 p=53281 u=user1 |  ok: [server3]
+2017-07-11 13:47:45,668 p=53281 u=user1 |  ok: [server2]
+2017-07-11 13:47:45,673 p=53281 u=user1 |  TASK [install_apps : FTP Prozess überprüfen] **********************************************************************
+2017-07-11 13:47:46,168 p=53281 u=user1 |  ok: [server1]
+2017-07-11 13:47:46,227 p=53281 u=user1 |  ok: [server4]
+2017-07-11 13:47:46,350 p=53281 u=user1 |  ok: [server2]
+2017-07-11 13:47:46,353 p=53281 u=user1 |  ok: [server3]
+2017-07-11 13:47:46,358 p=53281 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 13:47:46,567 p=53281 u=user1 |  ok: [server1] => {
+    "psausgabe.stdout": "root       9465  0.0  0.2  28424  2864 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:47:46,568 p=53281 u=user1 |  ok: [server2] => {
+    "psausgabe.stdout": "root      37233  0.0  0.3  21844  3948 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:47:46,573 p=53281 u=user1 |  ok: [server3] => {
+    "psausgabe.stdout": "root     30786  0.0  0.0  54752   564 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf"
+}
+2017-07-11 13:47:46,575 p=53281 u=user1 |  ok: [server4] => {
+    "psausgabe.stdout": "root      13390  0.0  0.2  24048  2472 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:47:46,581 p=53281 u=user1 |  TASK [install_apps : local_umaks auf 077 setzen] ******************************************************************
+2017-07-11 13:47:47,005 p=53281 u=user1 |  ok: [server1]
+2017-07-11 13:47:47,008 p=53281 u=user1 |  ok: [server4]
+2017-07-11 13:47:47,176 p=53281 u=user1 |  ok: [server3]
+2017-07-11 13:47:47,266 p=53281 u=user1 |  ok: [server2]
+2017-07-11 13:47:47,271 p=53281 u=user1 |  TASK [install_apps : FTP Prozess überprüfen] **********************************************************************
+2017-07-11 13:47:47,749 p=53281 u=user1 |  ok: [server4]
+2017-07-11 13:47:47,751 p=53281 u=user1 |  ok: [server1]
+2017-07-11 13:47:47,760 p=53281 u=user1 |  ok: [server3]
+2017-07-11 13:47:47,844 p=53281 u=user1 |  ok: [server2]
+2017-07-11 13:47:47,849 p=53281 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 13:47:47,916 p=53281 u=user1 |  ok: [server2] => {
+    "psausgabe.stdout": "root      37233  0.0  0.3  21844  3948 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:47:47,935 p=53281 u=user1 |  ok: [server3] => {
+    "psausgabe.stdout": "root     30786  0.0  0.0  54752   564 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf"
+}
+2017-07-11 13:47:47,937 p=53281 u=user1 |  ok: [server4] => {
+    "psausgabe.stdout": "root      13390  0.0  0.2  24048  2472 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:47:47,954 p=53281 u=user1 |  ok: [server1] => {
+    "psausgabe.stdout": "root       9465  0.0  0.2  28424  2864 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:47:47,963 p=53281 u=user1 |  TASK [install_apps : Aktiviere Anonymus als User] *****************************************************************
+2017-07-11 13:47:48,329 p=53281 u=user1 |  fatal: [server1]: FAILED! => {"changed": false, "failed": true, "module_stderr": "Shared connection to 192.168.150.11 closed.\r\n", "module_stdout": "Traceback (most recent call last):\r\n  File \"/tmp/ansible_0ETGr9/ansible_module_lineinfile.py\", line 470, in <module>\r\n    main()\r\n  File \"/tmp/ansible_0ETGr9/ansible_module_lineinfile.py\", line 462, in main\r\n    ins_aft, ins_bef, create, backup, backrefs)\r\n  File \"/tmp/ansible_0ETGr9/ansible_module_lineinfile.py\", line 261, in present\r\n    bre_m = re.compile(to_bytes(regexp, errors='surrogate_or_strict'))\r\n  File \"/usr/lib/python2.7/re.py\", line 194, in compile\r\n    return _compile(pattern, flags)\r\n  File \"/usr/lib/python2.7/re.py\", line 251, in _compile\r\n    raise error, v # invalid expression\r\nsre_constants.error: nothing to repeat\r\n", "msg": "MODULE FAILURE", "rc": 0}
+2017-07-11 13:47:48,403 p=53281 u=user1 |  fatal: [server4]: FAILED! => {"changed": false, "failed": true, "module_stderr": "Shared connection to 192.168.150.14 closed.\r\n", "module_stdout": "\r\nTraceback (most recent call last):\r\n  File \"/tmp/ansible_mUYHLq/ansible_module_lineinfile.py\", line 470, in <module>\r\n    main()\r\n  File \"/tmp/ansible_mUYHLq/ansible_module_lineinfile.py\", line 462, in main\r\n    ins_aft, ins_bef, create, backup, backrefs)\r\n  File \"/tmp/ansible_mUYHLq/ansible_module_lineinfile.py\", line 261, in present\r\n    bre_m = re.compile(to_bytes(regexp, errors='surrogate_or_strict'))\r\n  File \"/usr/lib/python2.7/re.py\", line 194, in compile\r\n    return _compile(pattern, flags)\r\n  File \"/usr/lib/python2.7/re.py\", line 251, in _compile\r\n    raise error, v # invalid expression\r\nsre_constants.error: nothing to repeat\r\n", "msg": "MODULE FAILURE", "rc": 0}
+2017-07-11 13:47:48,524 p=53281 u=user1 |  fatal: [server3]: FAILED! => {"changed": false, "failed": true, "module_stderr": "Shared connection to 192.168.150.13 closed.\r\n", "module_stdout": "Traceback (most recent call last):\r\n  File \"/tmp/ansible_8lwHdv/ansible_module_lineinfile.py\", line 470, in <module>\r\n    main()\r\n  File \"/tmp/ansible_8lwHdv/ansible_module_lineinfile.py\", line 462, in main\r\n    ins_aft, ins_bef, create, backup, backrefs)\r\n  File \"/tmp/ansible_8lwHdv/ansible_module_lineinfile.py\", line 261, in present\r\n    bre_m = re.compile(to_bytes(regexp, errors='surrogate_or_strict'))\r\n  File \"/usr/lib64/python2.7/re.py\", line 190, in compile\r\n    return _compile(pattern, flags)\r\n  File \"/usr/lib64/python2.7/re.py\", line 242, in _compile\r\n    raise error, v # invalid expression\r\nsre_constants.error: nothing to repeat\r\n", "msg": "MODULE FAILURE", "rc": 0}
+2017-07-11 13:47:48,571 p=53281 u=user1 |  fatal: [server2]: FAILED! => {"changed": false, "failed": true, "module_stderr": "Shared connection to 192.168.150.12 closed.\r\n", "module_stdout": "Traceback (most recent call last):\r\n  File \"/tmp/ansible_Ve8gOs/ansible_module_lineinfile.py\", line 470, in <module>\r\n    main()\r\n  File \"/tmp/ansible_Ve8gOs/ansible_module_lineinfile.py\", line 462, in main\r\n    ins_aft, ins_bef, create, backup, backrefs)\r\n  File \"/tmp/ansible_Ve8gOs/ansible_module_lineinfile.py\", line 261, in present\r\n    bre_m = re.compile(to_bytes(regexp, errors='surrogate_or_strict'))\r\n  File \"/usr/lib64/python2.7/re.py\", line 194, in compile\r\n    return _compile(pattern, flags)\r\n  File \"/usr/lib64/python2.7/re.py\", line 251, in _compile\r\n    raise error, v # invalid expression\r\nsre_constants.error: nothing to repeat\r\n", "msg": "MODULE FAILURE", "rc": 0}
+2017-07-11 13:47:48,573 p=53281 u=user1 |  	to retry, use: --limit @/home/user1/.ansible/retry-files/rollen.retry
+
+2017-07-11 13:47:48,574 p=53281 u=user1 |  PLAY RECAP ********************************************************************************************************
+2017-07-11 13:47:48,574 p=53281 u=user1 |  server1                    : ok=11   changed=1    unreachable=0    failed=1   
+2017-07-11 13:47:48,574 p=53281 u=user1 |  server2                    : ok=11   changed=1    unreachable=0    failed=1   
+2017-07-11 13:47:48,574 p=53281 u=user1 |  server3                    : ok=12   changed=0    unreachable=0    failed=1   
+2017-07-11 13:47:48,574 p=53281 u=user1 |  server4                    : ok=11   changed=0    unreachable=0    failed=1   
+2017-07-11 13:49:53,293 p=53600 u=user1 |  PLAY [all] ********************************************************************************************************
+2017-07-11 13:49:53,331 p=53600 u=user1 |  TASK [install_apps : include_vars] ********************************************************************************
+2017-07-11 13:49:53,367 p=53600 u=user1 |  skipping: [server2]
+2017-07-11 13:49:53,433 p=53600 u=user1 |  ok: [server3]
+2017-07-11 13:49:53,440 p=53600 u=user1 |  ok: [server4]
+2017-07-11 13:49:53,450 p=53600 u=user1 |  ok: [server1]
+2017-07-11 13:49:53,456 p=53600 u=user1 |  TASK [install_apps : include_vars] ********************************************************************************
+2017-07-11 13:49:53,537 p=53600 u=user1 |  ok: [server2]
+2017-07-11 13:49:53,543 p=53600 u=user1 |  skipping: [server3]
+2017-07-11 13:49:53,560 p=53600 u=user1 |  skipping: [server4]
+2017-07-11 13:49:53,562 p=53600 u=user1 |  skipping: [server1]
+2017-07-11 13:49:53,568 p=53600 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 13:49:53,640 p=53600 u=user1 |  ok: [server3] => {
+    "msg": "Hallo FTP Server der Familie CentOS, Config /etc/vsftpd/vsftpd.conf "
+}
+2017-07-11 13:49:53,641 p=53600 u=user1 |  ok: [server2] => {
+    "msg": "Hallo FTP Server der Familie openSUSE Leap, Config /etc/vsftpd.conf "
+}
+2017-07-11 13:49:53,657 p=53600 u=user1 |  ok: [server4] => {
+    "msg": "Hallo FTP Server der Familie Ubuntu, Config /etc/vsftpd.conf "
+}
+2017-07-11 13:49:53,695 p=53600 u=user1 |  ok: [server1] => {
+    "msg": "Hallo FTP Server der Familie Debian, Config /etc/vsftpd.conf "
+}
+2017-07-11 13:49:53,700 p=53600 u=user1 |  TASK [install_apps : vsftpd installieren] *************************************************************************
+2017-07-11 13:49:54,680 p=53600 u=user1 |  ok: [server1]
+2017-07-11 13:49:55,032 p=53600 u=user1 |  ok: [server4]
+2017-07-11 13:49:55,117 p=53600 u=user1 |  ok: [server3]
+2017-07-11 13:49:56,082 p=53600 u=user1 |  ok: [server2]
+2017-07-11 13:49:56,087 p=53600 u=user1 |  TASK [install_apps : locate installieren] *************************************************************************
+2017-07-11 13:49:57,493 p=53600 u=user1 |  ok: [server1]
+2017-07-11 13:49:58,125 p=53600 u=user1 |  ok: [server4]
+2017-07-11 13:49:58,977 p=53600 u=user1 |  ok: [server2]
+2017-07-11 13:50:01,544 p=53600 u=user1 |  ok: [server3]
+2017-07-11 13:50:01,549 p=53600 u=user1 |  TASK [install_apps : Datenbank erstellen] *************************************************************************
+2017-07-11 13:50:02,034 p=53600 u=user1 |  changed: [server1]
+2017-07-11 13:50:02,072 p=53600 u=user1 |  ok: [server4]
+2017-07-11 13:50:02,104 p=53600 u=user1 |  ok: [server3]
+2017-07-11 13:50:02,316 p=53600 u=user1 |  changed: [server2]
+2017-07-11 13:50:02,320 p=53600 u=user1 |  TASK [install_apps : Configure firewall on RedHat systems] ********************************************************
+2017-07-11 13:50:02,359 p=53600 u=user1 |  skipping: [server2]
+2017-07-11 13:50:02,396 p=53600 u=user1 |  skipping: [server4]
+2017-07-11 13:50:02,454 p=53600 u=user1 |  skipping: [server1]
+2017-07-11 13:50:03,144 p=53600 u=user1 |  ok: [server3]
+2017-07-11 13:50:03,149 p=53600 u=user1 |  TASK [install_apps : vsftpd starten und in den Autostart setzen] **************************************************
+2017-07-11 13:50:03,653 p=53600 u=user1 |  ok: [server1]
+2017-07-11 13:50:03,744 p=53600 u=user1 |  ok: [server4]
+2017-07-11 13:50:03,773 p=53600 u=user1 |  ok: [server3]
+2017-07-11 13:50:03,900 p=53600 u=user1 |  ok: [server2]
+2017-07-11 13:50:03,905 p=53600 u=user1 |  TASK [install_apps : FTP Prozess überprüfen] **********************************************************************
+2017-07-11 13:50:04,304 p=53600 u=user1 |  ok: [server1]
+2017-07-11 13:50:04,309 p=53600 u=user1 |  ok: [server4]
+2017-07-11 13:50:04,339 p=53600 u=user1 |  ok: [server3]
+2017-07-11 13:50:04,507 p=53600 u=user1 |  ok: [server2]
+2017-07-11 13:50:04,511 p=53600 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 13:50:04,713 p=53600 u=user1 |  ok: [server3] => {
+    "psausgabe.stdout": "root     30786  0.0  0.0  54752   564 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf"
+}
+2017-07-11 13:50:04,714 p=53600 u=user1 |  ok: [server4] => {
+    "psausgabe.stdout": "root      13390  0.0  0.2  24048  2472 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:50:04,714 p=53600 u=user1 |  ok: [server2] => {
+    "psausgabe.stdout": "root      37233  0.0  0.3  21844  3948 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:50:04,715 p=53600 u=user1 |  ok: [server1] => {
+    "psausgabe.stdout": "root       9465  0.0  0.2  28424  2864 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:50:04,721 p=53600 u=user1 |  TASK [install_apps : local_umaks auf 077 setzen] ******************************************************************
+2017-07-11 13:50:05,198 p=53600 u=user1 |  ok: [server1]
+2017-07-11 13:50:05,211 p=53600 u=user1 |  ok: [server4]
+2017-07-11 13:50:05,308 p=53600 u=user1 |  ok: [server3]
+2017-07-11 13:50:05,466 p=53600 u=user1 |  ok: [server2]
+2017-07-11 13:50:05,472 p=53600 u=user1 |  TASK [install_apps : FTP Prozess überprüfen] **********************************************************************
+2017-07-11 13:50:05,911 p=53600 u=user1 |  ok: [server1]
+2017-07-11 13:50:05,939 p=53600 u=user1 |  ok: [server4]
+2017-07-11 13:50:05,986 p=53600 u=user1 |  ok: [server3]
+2017-07-11 13:50:06,086 p=53600 u=user1 |  ok: [server2]
+2017-07-11 13:50:06,091 p=53600 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 13:50:06,134 p=53600 u=user1 |  ok: [server2] => {
+    "psausgabe.stdout": "root      37233  0.0  0.3  21844  3948 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:50:06,165 p=53600 u=user1 |  ok: [server3] => {
+    "psausgabe.stdout": "root     30786  0.0  0.0  54752   564 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf"
+}
+2017-07-11 13:50:06,186 p=53600 u=user1 |  ok: [server4] => {
+    "psausgabe.stdout": "root      13390  0.0  0.2  24048  2472 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:50:06,201 p=53600 u=user1 |  ok: [server1] => {
+    "psausgabe.stdout": "root       9465  0.0  0.2  28424  2864 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:50:06,208 p=53600 u=user1 |  TASK [install_apps : Aktiviere Anonymus als User] *****************************************************************
+2017-07-11 13:50:06,582 p=53600 u=user1 |  fatal: [server1]: FAILED! => {"changed": false, "failed": true, "module_stderr": "Shared connection to 192.168.150.11 closed.\r\n", "module_stdout": "Traceback (most recent call last):\r\n  File \"/tmp/ansible_nDPyKi/ansible_module_lineinfile.py\", line 470, in <module>\r\n    main()\r\n  File \"/tmp/ansible_nDPyKi/ansible_module_lineinfile.py\", line 462, in main\r\n    ins_aft, ins_bef, create, backup, backrefs)\r\n  File \"/tmp/ansible_nDPyKi/ansible_module_lineinfile.py\", line 261, in present\r\n    bre_m = re.compile(to_bytes(regexp, errors='surrogate_or_strict'))\r\n  File \"/usr/lib/python2.7/re.py\", line 194, in compile\r\n    return _compile(pattern, flags)\r\n  File \"/usr/lib/python2.7/re.py\", line 251, in _compile\r\n    raise error, v # invalid expression\r\nsre_constants.error: nothing to repeat\r\n", "msg": "MODULE FAILURE", "rc": 0}
+2017-07-11 13:50:06,708 p=53600 u=user1 |  fatal: [server4]: FAILED! => {"changed": false, "failed": true, "module_stderr": "Shared connection to 192.168.150.14 closed.\r\n", "module_stdout": "\r\nTraceback (most recent call last):\r\n  File \"/tmp/ansible_OSoUi_/ansible_module_lineinfile.py\", line 470, in <module>\r\n    main()\r\n  File \"/tmp/ansible_OSoUi_/ansible_module_lineinfile.py\", line 462, in main\r\n    ins_aft, ins_bef, create, backup, backrefs)\r\n  File \"/tmp/ansible_OSoUi_/ansible_module_lineinfile.py\", line 261, in present\r\n    bre_m = re.compile(to_bytes(regexp, errors='surrogate_or_strict'))\r\n  File \"/usr/lib/python2.7/re.py\", line 194, in compile\r\n    return _compile(pattern, flags)\r\n  File \"/usr/lib/python2.7/re.py\", line 251, in _compile\r\n    raise error, v # invalid expression\r\nsre_constants.error: nothing to repeat\r\n", "msg": "MODULE FAILURE", "rc": 0}
+2017-07-11 13:50:06,726 p=53600 u=user1 |  fatal: [server3]: FAILED! => {"changed": false, "failed": true, "module_stderr": "Shared connection to 192.168.150.13 closed.\r\n", "module_stdout": "Traceback (most recent call last):\r\n  File \"/tmp/ansible_RBmsaX/ansible_module_lineinfile.py\", line 470, in <module>\r\n    main()\r\n  File \"/tmp/ansible_RBmsaX/ansible_module_lineinfile.py\", line 462, in main\r\n    ins_aft, ins_bef, create, backup, backrefs)\r\n  File \"/tmp/ansible_RBmsaX/ansible_module_lineinfile.py\", line 261, in present\r\n    bre_m = re.compile(to_bytes(regexp, errors='surrogate_or_strict'))\r\n  File \"/usr/lib64/python2.7/re.py\", line 190, in compile\r\n    return _compile(pattern, flags)\r\n  File \"/usr/lib64/python2.7/re.py\", line 242, in _compile\r\n    raise error, v # invalid expression\r\nsre_constants.error: nothing to repeat\r\n", "msg": "MODULE FAILURE", "rc": 0}
+2017-07-11 13:50:06,730 p=53600 u=user1 |  fatal: [server2]: FAILED! => {"changed": false, "failed": true, "module_stderr": "Shared connection to 192.168.150.12 closed.\r\n", "module_stdout": "Traceback (most recent call last):\r\n  File \"/tmp/ansible_tfMSkJ/ansible_module_lineinfile.py\", line 470, in <module>\r\n    main()\r\n  File \"/tmp/ansible_tfMSkJ/ansible_module_lineinfile.py\", line 462, in main\r\n    ins_aft, ins_bef, create, backup, backrefs)\r\n  File \"/tmp/ansible_tfMSkJ/ansible_module_lineinfile.py\", line 261, in present\r\n    bre_m = re.compile(to_bytes(regexp, errors='surrogate_or_strict'))\r\n  File \"/usr/lib64/python2.7/re.py\", line 194, in compile\r\n    return _compile(pattern, flags)\r\n  File \"/usr/lib64/python2.7/re.py\", line 251, in _compile\r\n    raise error, v # invalid expression\r\nsre_constants.error: nothing to repeat\r\n", "msg": "MODULE FAILURE", "rc": 0}
+2017-07-11 13:50:06,734 p=53600 u=user1 |  	to retry, use: --limit @/home/user1/.ansible/retry-files/rollen.retry
+
+2017-07-11 13:50:06,734 p=53600 u=user1 |  PLAY RECAP ********************************************************************************************************
+2017-07-11 13:50:06,735 p=53600 u=user1 |  server1                    : ok=11   changed=1    unreachable=0    failed=1   
+2017-07-11 13:50:06,735 p=53600 u=user1 |  server2                    : ok=11   changed=1    unreachable=0    failed=1   
+2017-07-11 13:50:06,735 p=53600 u=user1 |  server3                    : ok=12   changed=0    unreachable=0    failed=1   
+2017-07-11 13:50:06,735 p=53600 u=user1 |  server4                    : ok=11   changed=0    unreachable=0    failed=1   
+2017-07-11 13:50:21,987 p=53930 u=user1 |  server1 | SUCCESS | rc=0 >>
+anonymous_enable=NO
+#anon_upload_enable=YES
+#anon_mkdir_write_enable=YES
+
+2017-07-11 13:50:22,048 p=53930 u=user1 |  server4 | SUCCESS | rc=0 >>
+anonymous_enable=NO
+#anon_upload_enable=YES
+#anon_mkdir_write_enable=YES
+
+2017-07-11 13:50:22,110 p=53930 u=user1 |  server3 | SUCCESS | rc=0 >>
+anonymous_enable=YES
+#anon_upload_enable=YES
+#anon_mkdir_write_enable=YES
+
+2017-07-11 13:50:22,218 p=53930 u=user1 |  server2 | SUCCESS | rc=0 >>
+anonymous_enable=YES
+#anon_max_rate=7200
+anon_world_readable_only=YES
+#anon_umask=022
+#anon_upload_enable=YES
+#anon_mkdir_write_enable=YES
+#anon_other_write_enable=YES
+
+2017-07-11 13:50:33,008 p=53930 u=user1 |  server1 | SUCCESS | rc=0 >>
+anonymous_enable=NO
+
+2017-07-11 13:50:33,136 p=53930 u=user1 |  server4 | SUCCESS | rc=0 >>
+anonymous_enable=NO
+
+2017-07-11 13:50:33,166 p=53930 u=user1 |  server3 | SUCCESS | rc=0 >>
+anonymous_enable=YES
+
+2017-07-11 13:50:33,252 p=53930 u=user1 |  server2 | SUCCESS | rc=0 >>
+anonymous_enable=YES
+
+2017-07-11 13:51:25,860 p=54011 u=user1 |  PLAY [all] ********************************************************************************************************
+2017-07-11 13:51:25,902 p=54011 u=user1 |  TASK [install_apps : Aktiviere Anonymus als User] *****************************************************************
+2017-07-11 13:51:25,951 p=54011 u=user1 |  fatal: [server2]: FAILED! => {"failed": true, "msg": "the field 'args' has an invalid value, which appears to include a variable that is undefined. The error was: 'ftp_config' is undefined\n\nThe error appears to have been in '/home/user1/ansible/roles/install_apps/tasks/main.yml': line 54, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: Aktiviere Anonymus als User\n  ^ here\n"}
+2017-07-11 13:51:25,957 p=54011 u=user1 |  fatal: [server3]: FAILED! => {"failed": true, "msg": "the field 'args' has an invalid value, which appears to include a variable that is undefined. The error was: 'ftp_config' is undefined\n\nThe error appears to have been in '/home/user1/ansible/roles/install_apps/tasks/main.yml': line 54, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: Aktiviere Anonymus als User\n  ^ here\n"}
+2017-07-11 13:51:25,964 p=54011 u=user1 |  fatal: [server4]: FAILED! => {"failed": true, "msg": "the field 'args' has an invalid value, which appears to include a variable that is undefined. The error was: 'ftp_config' is undefined\n\nThe error appears to have been in '/home/user1/ansible/roles/install_apps/tasks/main.yml': line 54, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: Aktiviere Anonymus als User\n  ^ here\n"}
+2017-07-11 13:51:25,966 p=54011 u=user1 |  fatal: [server1]: FAILED! => {"failed": true, "msg": "the field 'args' has an invalid value, which appears to include a variable that is undefined. The error was: 'ftp_config' is undefined\n\nThe error appears to have been in '/home/user1/ansible/roles/install_apps/tasks/main.yml': line 54, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: Aktiviere Anonymus als User\n  ^ here\n"}
+2017-07-11 13:51:25,970 p=54011 u=user1 |  	to retry, use: --limit @/home/user1/.ansible/retry-files/rollen.retry
+
+2017-07-11 13:51:25,970 p=54011 u=user1 |  PLAY RECAP ********************************************************************************************************
+2017-07-11 13:51:25,970 p=54011 u=user1 |  server1                    : ok=0    changed=0    unreachable=0    failed=1   
+2017-07-11 13:51:25,970 p=54011 u=user1 |  server2                    : ok=0    changed=0    unreachable=0    failed=1   
+2017-07-11 13:51:25,971 p=54011 u=user1 |  server3                    : ok=0    changed=0    unreachable=0    failed=1   
+2017-07-11 13:51:25,971 p=54011 u=user1 |  server4                    : ok=0    changed=0    unreachable=0    failed=1   
+2017-07-11 13:51:29,375 p=54026 u=user1 |  PLAY [all] ********************************************************************************************************
+2017-07-11 13:51:29,409 p=54026 u=user1 |  TASK [install_apps : include_vars] ********************************************************************************
+2017-07-11 13:51:29,473 p=54026 u=user1 |  skipping: [server2]
+2017-07-11 13:51:29,481 p=54026 u=user1 |  ok: [server3]
+2017-07-11 13:51:29,503 p=54026 u=user1 |  ok: [server4]
+2017-07-11 13:51:29,504 p=54026 u=user1 |  ok: [server1]
+2017-07-11 13:51:29,508 p=54026 u=user1 |  TASK [install_apps : include_vars] ********************************************************************************
+2017-07-11 13:51:29,584 p=54026 u=user1 |  ok: [server2]
+2017-07-11 13:51:29,585 p=54026 u=user1 |  skipping: [server3]
+2017-07-11 13:51:29,602 p=54026 u=user1 |  skipping: [server4]
+2017-07-11 13:51:29,603 p=54026 u=user1 |  skipping: [server1]
+2017-07-11 13:51:29,609 p=54026 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 13:51:29,666 p=54026 u=user1 |  ok: [server2] => {
+    "msg": "Hallo FTP Server der Familie openSUSE Leap, Config /etc/vsftpd.conf "
+}
+2017-07-11 13:51:29,668 p=54026 u=user1 |  ok: [server3] => {
+    "msg": "Hallo FTP Server der Familie CentOS, Config /etc/vsftpd/vsftpd.conf "
+}
+2017-07-11 13:51:29,691 p=54026 u=user1 |  ok: [server4] => {
+    "msg": "Hallo FTP Server der Familie Ubuntu, Config /etc/vsftpd.conf "
+}
+2017-07-11 13:51:29,708 p=54026 u=user1 |  ok: [server1] => {
+    "msg": "Hallo FTP Server der Familie Debian, Config /etc/vsftpd.conf "
+}
+2017-07-11 13:51:29,714 p=54026 u=user1 |  TASK [install_apps : vsftpd installieren] *************************************************************************
+2017-07-11 13:51:30,643 p=54026 u=user1 |  ok: [server3]
+2017-07-11 13:51:30,766 p=54026 u=user1 |  ok: [server1]
+2017-07-11 13:51:30,788 p=54026 u=user1 |  ok: [server4]
+2017-07-11 13:51:31,704 p=54026 u=user1 |  ok: [server2]
+2017-07-11 13:51:31,708 p=54026 u=user1 |  TASK [install_apps : locate installieren] *************************************************************************
+2017-07-11 13:51:33,183 p=54026 u=user1 |  ok: [server1]
+2017-07-11 13:51:33,877 p=54026 u=user1 |  ok: [server4]
+2017-07-11 13:51:34,656 p=54026 u=user1 |  ok: [server2]
+2017-07-11 13:51:37,335 p=54026 u=user1 |  ok: [server3]
+2017-07-11 13:51:37,339 p=54026 u=user1 |  TASK [install_apps : Datenbank erstellen] *************************************************************************
+2017-07-11 13:51:37,796 p=54026 u=user1 |  changed: [server1]
+2017-07-11 13:51:37,807 p=54026 u=user1 |  ok: [server4]
+2017-07-11 13:51:37,948 p=54026 u=user1 |  ok: [server3]
+2017-07-11 13:51:38,055 p=54026 u=user1 |  changed: [server2]
+2017-07-11 13:51:38,059 p=54026 u=user1 |  TASK [install_apps : Configure firewall on RedHat systems] ********************************************************
+2017-07-11 13:51:38,111 p=54026 u=user1 |  skipping: [server2]
+2017-07-11 13:51:38,139 p=54026 u=user1 |  skipping: [server4]
+2017-07-11 13:51:38,192 p=54026 u=user1 |  skipping: [server1]
+2017-07-11 13:51:38,861 p=54026 u=user1 |  ok: [server3]
+2017-07-11 13:51:38,866 p=54026 u=user1 |  TASK [install_apps : vsftpd starten und in den Autostart setzen] **************************************************
+2017-07-11 13:51:39,363 p=54026 u=user1 |  ok: [server1]
+2017-07-11 13:51:39,389 p=54026 u=user1 |  ok: [server4]
+2017-07-11 13:51:39,502 p=54026 u=user1 |  ok: [server3]
+2017-07-11 13:51:39,579 p=54026 u=user1 |  ok: [server2]
+2017-07-11 13:51:39,592 p=54026 u=user1 |  TASK [install_apps : FTP Prozess überprüfen] **********************************************************************
+2017-07-11 13:51:39,995 p=54026 u=user1 |  ok: [server1]
+2017-07-11 13:51:40,007 p=54026 u=user1 |  ok: [server4]
+2017-07-11 13:51:40,140 p=54026 u=user1 |  ok: [server3]
+2017-07-11 13:51:40,188 p=54026 u=user1 |  ok: [server2]
+2017-07-11 13:51:40,193 p=54026 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 13:51:40,269 p=54026 u=user1 |  ok: [server2] => {
+    "psausgabe.stdout": "root      37233  0.0  0.3  21844  3948 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:51:40,274 p=54026 u=user1 |  ok: [server3] => {
+    "psausgabe.stdout": "root     30786  0.0  0.0  54752   564 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf"
+}
+2017-07-11 13:51:40,297 p=54026 u=user1 |  ok: [server4] => {
+    "psausgabe.stdout": "root      13390  0.0  0.2  24048  2472 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:51:40,301 p=54026 u=user1 |  ok: [server1] => {
+    "psausgabe.stdout": "root       9465  0.0  0.2  28424  2864 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:51:40,308 p=54026 u=user1 |  TASK [install_apps : local_umaks auf 077 setzen] ******************************************************************
+2017-07-11 13:51:40,895 p=54026 u=user1 |  ok: [server1]
+2017-07-11 13:51:40,942 p=54026 u=user1 |  ok: [server4]
+2017-07-11 13:51:40,998 p=54026 u=user1 |  ok: [server3]
+2017-07-11 13:51:41,109 p=54026 u=user1 |  ok: [server2]
+2017-07-11 13:51:41,114 p=54026 u=user1 |  TASK [install_apps : FTP Prozess überprüfen] **********************************************************************
+2017-07-11 13:51:41,551 p=54026 u=user1 |  ok: [server4]
+2017-07-11 13:51:41,552 p=54026 u=user1 |  ok: [server1]
+2017-07-11 13:51:41,563 p=54026 u=user1 |  ok: [server3]
+2017-07-11 13:51:41,684 p=54026 u=user1 |  ok: [server2]
+2017-07-11 13:51:41,689 p=54026 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 13:51:41,732 p=54026 u=user1 |  ok: [server2] => {
+    "psausgabe.stdout": "root      37233  0.0  0.3  21844  3948 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:51:41,753 p=54026 u=user1 |  ok: [server3] => {
+    "psausgabe.stdout": "root     30786  0.0  0.0  54752   564 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf"
+}
+2017-07-11 13:51:41,784 p=54026 u=user1 |  ok: [server4] => {
+    "psausgabe.stdout": "root      13390  0.0  0.2  24048  2472 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:51:41,819 p=54026 u=user1 |  ok: [server1] => {
+    "psausgabe.stdout": "root       9465  0.0  0.2  28424  2864 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 13:51:41,824 p=54026 u=user1 |  TASK [install_apps : Aktiviere Anonymus als User] *****************************************************************
+2017-07-11 13:51:42,228 p=54026 u=user1 |  changed: [server1]
+2017-07-11 13:51:42,339 p=54026 u=user1 |  changed: [server4]
+2017-07-11 13:51:42,364 p=54026 u=user1 |  ok: [server3]
+2017-07-11 13:51:42,493 p=54026 u=user1 |  ok: [server2]
+2017-07-11 13:51:42,497 p=54026 u=user1 |  TASK [install_apps : Überprüfe den Parameter anonymous_enabled] ***************************************************
+2017-07-11 13:51:42,858 p=54026 u=user1 |  ok: [server1]
+2017-07-11 13:51:42,892 p=54026 u=user1 |  ok: [server4]
+2017-07-11 13:51:43,001 p=54026 u=user1 |  ok: [server3]
+2017-07-11 13:51:43,055 p=54026 u=user1 |  ok: [server2]
+2017-07-11 13:51:43,061 p=54026 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 13:51:43,128 p=54026 u=user1 |  ok: [server2] => {
+    "userenableoutput.stdout": "anonymous_enable=YES"
+}
+2017-07-11 13:51:43,140 p=54026 u=user1 |  ok: [server3] => {
+    "userenableoutput.stdout": "anonymous_enable=YES"
+}
+2017-07-11 13:51:43,148 p=54026 u=user1 |  ok: [server4] => {
+    "userenableoutput.stdout": "anonymous_enable=YES"
+}
+2017-07-11 13:51:43,175 p=54026 u=user1 |  ok: [server1] => {
+    "userenableoutput.stdout": "anonymous_enable=YES"
+}
+2017-07-11 13:51:43,176 p=54026 u=user1 |  RUNNING HANDLER [install_apps : restart vsftpd] *******************************************************************
+2017-07-11 13:51:43,481 p=54026 u=user1 |  changed: [server1]
+2017-07-11 13:51:43,534 p=54026 u=user1 |  changed: [server4]
+2017-07-11 13:51:43,536 p=54026 u=user1 |  PLAY RECAP ********************************************************************************************************
+2017-07-11 13:51:43,536 p=54026 u=user1 |  server1                    : ok=15   changed=3    unreachable=0    failed=0   
+2017-07-11 13:51:43,536 p=54026 u=user1 |  server2                    : ok=14   changed=1    unreachable=0    failed=0   
+2017-07-11 13:51:43,537 p=54026 u=user1 |  server3                    : ok=15   changed=0    unreachable=0    failed=0   
+2017-07-11 13:51:43,537 p=54026 u=user1 |  server4                    : ok=15   changed=2    unreachable=0    failed=0   
+2017-07-11 13:56:17,263 p=54737 u=user1 |  server1 | FAILED | rc=1 >>
+
+
+2017-07-11 13:56:17,467 p=54737 u=user1 |  server4 | FAILED | rc=1 >>
+
+
+2017-07-11 13:56:17,533 p=54737 u=user1 |  server2 | FAILED | rc=1 >>
+
+
+2017-07-11 13:56:17,543 p=54737 u=user1 |  server3 | FAILED | rc=1 >>
+
+
+2017-07-11 13:56:24,455 p=54737 u=user1 |  server1 | FAILED | rc=123 >>
+
+
+2017-07-11 13:56:24,478 p=54737 u=user1 |  server4 | FAILED | rc=123 >>
+
+
+2017-07-11 13:56:24,610 p=54737 u=user1 |  server3 | FAILED | rc=123 >>
+
+
+2017-07-11 13:56:24,662 p=54737 u=user1 |  server2 | FAILED | rc=123 >>
+
+
+2017-07-11 13:56:32,541 p=54737 u=user1 |  server1 | SUCCESS | rc=0 >>
+anonymous_enable=YES
+#anon_upload_enable=YES
+#anon_mkdir_write_enable=YES
+
+2017-07-11 13:56:32,542 p=54737 u=user1 |  server4 | SUCCESS | rc=0 >>
+anonymous_enable=YES
+#anon_upload_enable=YES
+#anon_mkdir_write_enable=YES
+
+2017-07-11 13:56:32,663 p=54737 u=user1 |  server3 | SUCCESS | rc=0 >>
+anonymous_enable=YES
+#anon_upload_enable=YES
+#anon_mkdir_write_enable=YES
+
+2017-07-11 13:56:32,761 p=54737 u=user1 |  server2 | SUCCESS | rc=0 >>
+anonymous_enable=YES
+#anon_max_rate=7200
+anon_world_readable_only=YES
+#anon_umask=022
+#anon_upload_enable=YES
+#anon_mkdir_write_enable=YES
+#anon_other_write_enable=YES
+
+2017-07-11 13:56:54,166 p=54737 u=user1 |  server1 | SUCCESS | rc=0 >>
+/etc/passwd:ftp:x:107:111:ftp daemon,,,:/srv/ftp:/bin/false
+
+2017-07-11 13:56:54,175 p=54737 u=user1 |  server4 | SUCCESS | rc=0 >>
+/etc/passwd:ftp:x:111:118:ftp daemon,,,:/srv/ftp:/bin/false
+
+2017-07-11 13:56:54,226 p=54737 u=user1 |  server3 | SUCCESS | rc=0 >>
+/etc/passwd:ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+
+2017-07-11 13:56:54,374 p=54737 u=user1 |  server2 | SUCCESS | rc=0 >>
+/etc/passwd:ftp:x:40:49:FTP account:/srv/ftp:/bin/bash
+/etc/passwd:ftpsecure:x:489:65534:Secure FTP User:/var/lib/empty:/bin/false
+
+2017-07-11 13:57:28,736 p=54907 u=user1 |  server1 | SUCCESS | rc=0 >>
+debian-stretch
+/etc/passwd:ftp:x:107:111:ftp daemon,,,:/srv/ftp:/bin/false
+
+2017-07-11 13:57:28,746 p=54907 u=user1 |  server4 | SUCCESS | rc=0 >>
+ubuntu-1604
+/etc/passwd:ftp:x:111:118:ftp daemon,,,:/srv/ftp:/bin/false
+
+2017-07-11 13:57:28,864 p=54907 u=user1 |  server3 | SUCCESS | rc=0 >>
+centos-7.vhosts.lan
+/etc/passwd:ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+
+2017-07-11 13:57:28,954 p=54907 u=user1 |  server2 | SUCCESS | rc=0 >>
+opensuse-422
+/etc/passwd:ftp:x:40:49:FTP account:/srv/ftp:/bin/bash
+/etc/passwd:ftpsecure:x:489:65534:Secure FTP User:/var/lib/empty:/bin/false
+
+2017-07-11 14:00:31,918 p=54907 u=user1 |  server1 | SUCCESS | rc=0 >>
+debian-stretch
+/usr/sbin/update-dlocatedb
+/var/lib/dlocate/dlocatedb
+
+2017-07-11 14:00:32,071 p=54907 u=user1 |  server4 | FAILED | rc=1 >>
+ubuntu-1604
+
+2017-07-11 14:00:32,194 p=54907 u=user1 |  server2 | FAILED | rc=1 >>
+opensuse-422
+
+2017-07-11 14:00:32,205 p=54907 u=user1 |  server3 | FAILED | rc=1 >>
+centos-7.vhosts.lan
+
+2017-07-11 14:00:43,023 p=54907 u=user1 |  server3 | FAILED | rc=1 >>
+centos-7.vhosts.lan
+
+2017-07-11 14:00:43,025 p=54907 u=user1 |  server4 | FAILED | rc=1 >>
+ubuntu-1604
+
+2017-07-11 14:00:43,027 p=54907 u=user1 |  server1 | SUCCESS | rc=0 >>
+debian-stretch
+/usr/sbin/update-dlocatedb
+/usr/share/man/man5/locatedb.5.gz
+/usr/share/man/man8/update-dlocatedb.8.gz
+/var/lib/dlocate/dlocatedb
+/var/lib/dlocate/dlocatedb.stamps
+
+2017-07-11 14:00:43,067 p=54907 u=user1 |  server2 | FAILED | rc=1 >>
+opensuse-422
+
+2017-07-11 14:00:58,175 p=54907 u=user1 |  server1 | SUCCESS | rc=0 >>
+debian-stretch
+
+2017-07-11 14:00:58,290 p=54907 u=user1 |  server2 | SUCCESS | rc=0 >>
+opensuse-422
+
+2017-07-11 14:00:58,327 p=54907 u=user1 |  server3 | SUCCESS | rc=0 >>
+centos-7.vhosts.lan
+
+2017-07-11 14:00:58,864 p=54907 u=user1 |  server4 | SUCCESS | rc=0 >>
+ubuntu-1604
+
+2017-07-11 14:01:01,757 p=54907 u=user1 |  server1 | SUCCESS | rc=0 >>
+debian-stretch
+/usr/sbin/update-dlocatedb
+/usr/share/man/man5/locatedb.5.gz
+/usr/share/man/man8/update-dlocatedb.8.gz
+/var/lib/dlocate/dlocatedb
+/var/lib/dlocate/dlocatedb.stamps
+
+2017-07-11 14:01:01,769 p=54907 u=user1 |  server3 | FAILED | rc=1 >>
+centos-7.vhosts.lan
+
+2017-07-11 14:01:01,806 p=54907 u=user1 |  server4 | SUCCESS | rc=0 >>
+ubuntu-1604
+/usr/sbin/update-dlocatedb
+/usr/share/man/man5/locatedb.5.gz
+/usr/share/man/man8/update-dlocatedb.8.gz
+/var/lib/dlocate/dlocatedb
+/var/lib/dlocate/dlocatedb.stamps
+
+2017-07-11 14:01:02,000 p=54907 u=user1 |  server2 | FAILED | rc=1 >>
+opensuse-422
+
+2017-07-11 14:01:11,442 p=54907 u=user1 |  server1 | FAILED | rc=1 >>
+debian-stretch
+
+2017-07-11 14:01:11,453 p=54907 u=user1 |  server4 | FAILED | rc=1 >>
+ubuntu-1604
+
+2017-07-11 14:01:11,578 p=54907 u=user1 |  server3 | FAILED | rc=1 >>
+centos-7.vhosts.lan
+
+2017-07-11 14:01:11,684 p=54907 u=user1 |  server2 | FAILED | rc=1 >>
+opensuse-422
+
+2017-07-11 14:01:14,068 p=54907 u=user1 |  server1 | FAILED | rc=1 >>
+debian-stretch
+
+2017-07-11 14:01:14,123 p=54907 u=user1 |  server4 | FAILED | rc=1 >>
+ubuntu-1604
+
+2017-07-11 14:01:14,193 p=54907 u=user1 |  server3 | FAILED | rc=1 >>
+centos-7.vhosts.lan
+
+2017-07-11 14:01:14,318 p=54907 u=user1 |  server2 | FAILED | rc=1 >>
+opensuse-422
+
+2017-07-11 14:01:18,092 p=54907 u=user1 |  server4 | FAILED | rc=1 >>
+ubuntu-1604
+
+2017-07-11 14:01:18,157 p=54907 u=user1 |  server1 | FAILED | rc=1 >>
+debian-stretch
+
+2017-07-11 14:01:18,220 p=54907 u=user1 |  server3 | FAILED | rc=1 >>
+centos-7.vhosts.lan
+
+2017-07-11 14:01:18,293 p=54907 u=user1 |  server2 | FAILED | rc=1 >>
+opensuse-422
+
+2017-07-11 14:01:21,814 p=54907 u=user1 |  server4 | SUCCESS | rc=0 >>
+ubuntu-1604
+/usr/share/man/man5/mlocate.db.5.gz
+/var/lib/mlocate/mlocate.db
+/var/lib/mlocate/mlocate.db.eXSa4i
+
+2017-07-11 14:01:21,821 p=54907 u=user1 |  server1 | SUCCESS | rc=0 >>
+debian-stretch
+/usr/share/man/man5/mlocate.db.5.gz
+/var/lib/mlocate/mlocate.db
+/var/lib/mlocate/mlocate.db.KI0qZz
+
+2017-07-11 14:01:21,978 p=54907 u=user1 |  server3 | SUCCESS | rc=0 >>
+centos-7.vhosts.lan
+/usr/share/man/man5/mlocate.db.5.gz
+/var/lib/mlocate/mlocate.db
+/var/lib/mlocate/mlocate.db.BoZp0V
+
+2017-07-11 14:01:22,044 p=54907 u=user1 |  server2 | SUCCESS | rc=0 >>
+opensuse-422
+/usr/share/man/man5/mlocate.db.5.gz
+/var/lib/mlocate/mlocate.db
+/var/lib/mlocate/mlocate.db.LAgnir
+
+2017-07-11 14:01:37,950 p=54907 u=user1 |  server1 | SUCCESS | rc=0 >>
+debian-stretch
+/usr/share/man/man5/mlocate.db.5.gz
+/var/lib/mlocate/mlocate.db
+/var/lib/mlocate/mlocate.db.KI0qZz
+
+2017-07-11 14:01:38,011 p=54907 u=user1 |  server4 | SUCCESS | rc=0 >>
+ubuntu-1604
+/usr/share/man/man5/mlocate.db.5.gz
+/var/lib/mlocate/mlocate.db
+/var/lib/mlocate/mlocate.db.eXSa4i
+
+2017-07-11 14:01:38,075 p=54907 u=user1 |  server3 | SUCCESS | rc=0 >>
+centos-7.vhosts.lan
+/usr/share/man/man5/mlocate.db.5.gz
+/var/lib/mlocate/mlocate.db
+/var/lib/mlocate/mlocate.db.BoZp0V
+
+2017-07-11 14:01:38,184 p=54907 u=user1 |  server2 | SUCCESS | rc=0 >>
+opensuse-422
+/usr/share/man/man5/mlocate.db.5.gz
+/var/lib/mlocate/mlocate.db
+/var/lib/mlocate/mlocate.db.LAgnir
+
+2017-07-11 14:02:47,628 p=55585 u=user1 |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/home/user1/ansible/roles/install_apps/tasks/main.yml': line 75, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+    Willkommen auf dem unserem FTP-Server.
+    ^ here
+
+2017-07-11 14:03:12,986 p=55589 u=user1 |  PLAY [all] ********************************************************************************************************
+2017-07-11 14:03:13,017 p=55589 u=user1 |  TASK [install_apps : include_vars] ********************************************************************************
+2017-07-11 14:03:13,073 p=55589 u=user1 |  skipping: [server2]
+2017-07-11 14:03:13,099 p=55589 u=user1 |  ok: [server1]
+2017-07-11 14:03:13,100 p=55589 u=user1 |  ok: [server3]
+2017-07-11 14:03:13,114 p=55589 u=user1 |  ok: [server4]
+2017-07-11 14:03:13,119 p=55589 u=user1 |  TASK [install_apps : include_vars] ********************************************************************************
+2017-07-11 14:03:13,185 p=55589 u=user1 |  skipping: [server4]
+2017-07-11 14:03:13,186 p=55589 u=user1 |  skipping: [server3]
+2017-07-11 14:03:13,191 p=55589 u=user1 |  ok: [server2]
+2017-07-11 14:03:13,211 p=55589 u=user1 |  skipping: [server1]
+2017-07-11 14:03:13,216 p=55589 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 14:03:13,281 p=55589 u=user1 |  ok: [server3] => {
+    "msg": "Hallo FTP Server der Familie CentOS, Config /etc/vsftpd/vsftpd.conf "
+}
+2017-07-11 14:03:13,283 p=55589 u=user1 |  ok: [server2] => {
+    "msg": "Hallo FTP Server der Familie openSUSE Leap, Config /etc/vsftpd.conf "
+}
+2017-07-11 14:03:13,301 p=55589 u=user1 |  ok: [server4] => {
+    "msg": "Hallo FTP Server der Familie Ubuntu, Config /etc/vsftpd.conf "
+}
+2017-07-11 14:03:13,326 p=55589 u=user1 |  ok: [server1] => {
+    "msg": "Hallo FTP Server der Familie Debian, Config /etc/vsftpd.conf "
+}
+2017-07-11 14:03:13,331 p=55589 u=user1 |  TASK [install_apps : vsftpd installieren] *************************************************************************
+2017-07-11 14:03:14,333 p=55589 u=user1 |  ok: [server1]
+2017-07-11 14:03:14,764 p=55589 u=user1 |  ok: [server3]
+2017-07-11 14:03:14,781 p=55589 u=user1 |  ok: [server4]
+2017-07-11 14:03:16,124 p=55589 u=user1 |  ok: [server2]
+2017-07-11 14:03:16,128 p=55589 u=user1 |  TASK [install_apps : locate installieren] *************************************************************************
+2017-07-11 14:03:17,554 p=55589 u=user1 |  ok: [server1]
+2017-07-11 14:03:18,190 p=55589 u=user1 |  ok: [server4]
+2017-07-11 14:03:18,955 p=55589 u=user1 |  ok: [server2]
+2017-07-11 14:03:21,402 p=55589 u=user1 |  ok: [server3]
+2017-07-11 14:03:21,407 p=55589 u=user1 |  TASK [install_apps : Datenbank erstellen] *************************************************************************
+2017-07-11 14:03:21,886 p=55589 u=user1 |  ok: [server1]
+2017-07-11 14:03:21,921 p=55589 u=user1 |  ok: [server4]
+2017-07-11 14:03:22,046 p=55589 u=user1 |  ok: [server3]
+2017-07-11 14:03:22,111 p=55589 u=user1 |  ok: [server2]
+2017-07-11 14:03:22,116 p=55589 u=user1 |  TASK [install_apps : Configure firewall on RedHat systems] ********************************************************
+2017-07-11 14:03:22,183 p=55589 u=user1 |  skipping: [server2]
+2017-07-11 14:03:22,221 p=55589 u=user1 |  skipping: [server4]
+2017-07-11 14:03:22,271 p=55589 u=user1 |  skipping: [server1]
+2017-07-11 14:03:22,945 p=55589 u=user1 |  ok: [server3]
+2017-07-11 14:03:22,950 p=55589 u=user1 |  TASK [install_apps : vsftpd starten und in den Autostart setzen] **************************************************
+2017-07-11 14:03:23,477 p=55589 u=user1 |  ok: [server1]
+2017-07-11 14:03:23,478 p=55589 u=user1 |  ok: [server4]
+2017-07-11 14:03:23,578 p=55589 u=user1 |  ok: [server3]
+2017-07-11 14:03:23,683 p=55589 u=user1 |  ok: [server2]
+2017-07-11 14:03:23,687 p=55589 u=user1 |  TASK [install_apps : FTP Prozess überprüfen] **********************************************************************
+2017-07-11 14:03:24,058 p=55589 u=user1 |  ok: [server1]
+2017-07-11 14:03:24,060 p=55589 u=user1 |  ok: [server4]
+2017-07-11 14:03:24,185 p=55589 u=user1 |  ok: [server3]
+2017-07-11 14:03:24,304 p=55589 u=user1 |  ok: [server2]
+2017-07-11 14:03:24,309 p=55589 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 14:03:24,346 p=55589 u=user1 |  ok: [server2] => {
+    "psausgabe.stdout": "root      37233  0.0  0.3  21844  3948 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 14:03:24,378 p=55589 u=user1 |  ok: [server4] => {
+    "psausgabe.stdout": "root      14262  0.0  0.2  24048  2392 ?        Ss   13:51   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 14:03:24,381 p=55589 u=user1 |  ok: [server3] => {
+    "psausgabe.stdout": "root     30786  0.0  0.0  54752   564 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf"
+}
+2017-07-11 14:03:24,401 p=55589 u=user1 |  ok: [server1] => {
+    "psausgabe.stdout": "root      10230  0.0  0.2  28424  2624 ?        Ss   13:51   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 14:03:24,408 p=55589 u=user1 |  TASK [install_apps : local_umaks auf 077 setzen] ******************************************************************
+2017-07-11 14:03:24,967 p=55589 u=user1 |  ok: [server1]
+2017-07-11 14:03:24,971 p=55589 u=user1 |  ok: [server4]
+2017-07-11 14:03:25,094 p=55589 u=user1 |  ok: [server3]
+2017-07-11 14:03:25,210 p=55589 u=user1 |  ok: [server2]
+2017-07-11 14:03:25,215 p=55589 u=user1 |  TASK [install_apps : FTP Prozess überprüfen] **********************************************************************
+2017-07-11 14:03:25,582 p=55589 u=user1 |  ok: [server4]
+2017-07-11 14:03:25,628 p=55589 u=user1 |  ok: [server1]
+2017-07-11 14:03:25,689 p=55589 u=user1 |  ok: [server3]
+2017-07-11 14:03:25,798 p=55589 u=user1 |  ok: [server2]
+2017-07-11 14:03:25,802 p=55589 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 14:03:25,861 p=55589 u=user1 |  ok: [server2] => {
+    "psausgabe.stdout": "root      37233  0.0  0.3  21844  3948 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 14:03:25,875 p=55589 u=user1 |  ok: [server3] => {
+    "psausgabe.stdout": "root     30786  0.0  0.0  54752   564 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf"
+}
+2017-07-11 14:03:25,878 p=55589 u=user1 |  ok: [server4] => {
+    "psausgabe.stdout": "root      14262  0.0  0.2  24048  2392 ?        Ss   13:51   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 14:03:25,898 p=55589 u=user1 |  ok: [server1] => {
+    "psausgabe.stdout": "root      10230  0.0  0.2  28424  2624 ?        Ss   13:51   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 14:03:25,910 p=55589 u=user1 |  TASK [install_apps : Aktiviere Anonymus als User] *****************************************************************
+2017-07-11 14:03:26,330 p=55589 u=user1 |  ok: [server1]
+2017-07-11 14:03:26,394 p=55589 u=user1 |  ok: [server4]
+2017-07-11 14:03:26,426 p=55589 u=user1 |  ok: [server3]
+2017-07-11 14:03:26,610 p=55589 u=user1 |  ok: [server2]
+2017-07-11 14:03:26,616 p=55589 u=user1 |  TASK [install_apps : Überprüfe den Parameter anonymous_enabled] ***************************************************
+2017-07-11 14:03:26,973 p=55589 u=user1 |  ok: [server1]
+2017-07-11 14:03:27,067 p=55589 u=user1 |  ok: [server4]
+2017-07-11 14:03:27,138 p=55589 u=user1 |  ok: [server3]
+2017-07-11 14:03:27,224 p=55589 u=user1 |  ok: [server2]
+2017-07-11 14:03:27,228 p=55589 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 14:03:27,304 p=55589 u=user1 |  ok: [server2] => {
+    "userenableoutput.stdout": "anonymous_enable=YES"
+}
+2017-07-11 14:03:27,317 p=55589 u=user1 |  ok: [server4] => {
+    "userenableoutput.stdout": "anonymous_enable=YES"
+}
+2017-07-11 14:03:27,318 p=55589 u=user1 |  ok: [server3] => {
+    "userenableoutput.stdout": "anonymous_enable=YES"
+}
+2017-07-11 14:03:27,347 p=55589 u=user1 |  ok: [server1] => {
+    "userenableoutput.stdout": "anonymous_enable=YES"
+}
+2017-07-11 14:03:27,366 p=55589 u=user1 |  TASK [install_apps : Grussmeldung hochladen] **********************************************************************
+2017-07-11 14:03:27,458 p=55589 u=user1 |  fatal: [server4]: FAILED! => {"failed": true, "msg": "the field 'args' has an invalid value, which appears to include a variable that is undefined. The error was: 'ftp_anon_path' is undefined\n\nThe error appears to have been in '/home/user1/ansible/roles/install_apps/tasks/main.yml': line 69, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: Grussmeldung hochladen\n  ^ here\n"}
+2017-07-11 14:03:28,099 p=55589 u=user1 |  changed: [server1]
+2017-07-11 14:03:28,182 p=55589 u=user1 |  changed: [server3]
+2017-07-11 14:03:28,455 p=55589 u=user1 |  changed: [server2]
+2017-07-11 14:03:28,458 p=55589 u=user1 |  	to retry, use: --limit @/home/user1/.ansible/retry-files/rollen.retry
+
+2017-07-11 14:03:28,459 p=55589 u=user1 |  PLAY RECAP ********************************************************************************************************
+2017-07-11 14:03:28,459 p=55589 u=user1 |  server1                    : ok=15   changed=1    unreachable=0    failed=0   
+2017-07-11 14:03:28,459 p=55589 u=user1 |  server2                    : ok=15   changed=1    unreachable=0    failed=0   
+2017-07-11 14:03:28,459 p=55589 u=user1 |  server3                    : ok=16   changed=1    unreachable=0    failed=0   
+2017-07-11 14:03:28,460 p=55589 u=user1 |  server4                    : ok=14   changed=0    unreachable=0    failed=1   
+2017-07-11 14:04:32,858 p=56237 u=user1 |  PLAY [all] ********************************************************************************************************
+2017-07-11 14:04:32,887 p=56237 u=user1 |  TASK [install_apps : include_vars] ********************************************************************************
+2017-07-11 14:04:32,950 p=56237 u=user1 |  skipping: [server2]
+2017-07-11 14:04:32,956 p=56237 u=user1 |  ok: [server4]
+2017-07-11 14:04:32,959 p=56237 u=user1 |  ok: [server3]
+2017-07-11 14:04:32,983 p=56237 u=user1 |  ok: [server1]
+2017-07-11 14:04:32,987 p=56237 u=user1 |  TASK [install_apps : include_vars] ********************************************************************************
+2017-07-11 14:04:33,043 p=56237 u=user1 |  skipping: [server3]
+2017-07-11 14:04:33,044 p=56237 u=user1 |  ok: [server2]
+2017-07-11 14:04:33,055 p=56237 u=user1 |  skipping: [server4]
+2017-07-11 14:04:33,077 p=56237 u=user1 |  skipping: [server1]
+2017-07-11 14:04:33,082 p=56237 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 14:04:33,162 p=56237 u=user1 |  ok: [server2] => {
+    "msg": "Hallo FTP Server der Familie openSUSE Leap, Config /etc/vsftpd.conf "
+}
+2017-07-11 14:04:33,168 p=56237 u=user1 |  ok: [server4] => {
+    "msg": "Hallo FTP Server der Familie Ubuntu, Config /etc/vsftpd.conf "
+}
+2017-07-11 14:04:33,168 p=56237 u=user1 |  ok: [server3] => {
+    "msg": "Hallo FTP Server der Familie CentOS, Config /etc/vsftpd/vsftpd.conf "
+}
+2017-07-11 14:04:33,188 p=56237 u=user1 |  ok: [server1] => {
+    "msg": "Hallo FTP Server der Familie Debian, Config /etc/vsftpd.conf "
+}
+2017-07-11 14:04:33,193 p=56237 u=user1 |  TASK [install_apps : vsftpd installieren] *************************************************************************
+2017-07-11 14:04:34,507 p=56237 u=user1 |  ok: [server3]
+2017-07-11 14:04:34,581 p=56237 u=user1 |  ok: [server1]
+2017-07-11 14:04:35,067 p=56237 u=user1 |  ok: [server4]
+2017-07-11 14:04:35,385 p=56237 u=user1 |  ok: [server2]
+2017-07-11 14:04:35,390 p=56237 u=user1 |  TASK [install_apps : locate installieren] *************************************************************************
+2017-07-11 14:04:36,849 p=56237 u=user1 |  ok: [server1]
+2017-07-11 14:04:37,385 p=56237 u=user1 |  ok: [server4]
+2017-07-11 14:04:38,570 p=56237 u=user1 |  ok: [server2]
+2017-07-11 14:04:40,667 p=56237 u=user1 |  ok: [server3]
+2017-07-11 14:04:40,683 p=56237 u=user1 |  TASK [install_apps : Datenbank erstellen] *************************************************************************
+2017-07-11 14:04:41,212 p=56237 u=user1 |  ok: [server1]
+2017-07-11 14:04:41,284 p=56237 u=user1 |  ok: [server4]
+2017-07-11 14:04:41,354 p=56237 u=user1 |  ok: [server3]
+2017-07-11 14:04:41,412 p=56237 u=user1 |  ok: [server2]
+2017-07-11 14:04:41,417 p=56237 u=user1 |  TASK [install_apps : Configure firewall on RedHat systems] ********************************************************
+2017-07-11 14:04:41,477 p=56237 u=user1 |  skipping: [server2]
+2017-07-11 14:04:41,503 p=56237 u=user1 |  skipping: [server1]
+2017-07-11 14:04:41,508 p=56237 u=user1 |  skipping: [server4]
+2017-07-11 14:04:42,247 p=56237 u=user1 |  ok: [server3]
+2017-07-11 14:04:42,252 p=56237 u=user1 |  TASK [install_apps : vsftpd starten und in den Autostart setzen] **************************************************
+2017-07-11 14:04:42,745 p=56237 u=user1 |  ok: [server1]
+2017-07-11 14:04:42,768 p=56237 u=user1 |  ok: [server4]
+2017-07-11 14:04:42,919 p=56237 u=user1 |  ok: [server3]
+2017-07-11 14:04:42,970 p=56237 u=user1 |  ok: [server2]
+2017-07-11 14:04:42,975 p=56237 u=user1 |  TASK [install_apps : FTP Prozess überprüfen] **********************************************************************
+2017-07-11 14:04:43,507 p=56237 u=user1 |  ok: [server1]
+2017-07-11 14:04:43,530 p=56237 u=user1 |  ok: [server4]
+2017-07-11 14:04:43,671 p=56237 u=user1 |  ok: [server3]
+2017-07-11 14:04:43,773 p=56237 u=user1 |  ok: [server2]
+2017-07-11 14:04:43,777 p=56237 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 14:04:43,818 p=56237 u=user1 |  ok: [server2] => {
+    "psausgabe.stdout": "root      37233  0.0  0.3  21844  3948 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 14:04:43,849 p=56237 u=user1 |  ok: [server3] => {
+    "psausgabe.stdout": "root     30786  0.0  0.0  54752   564 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf"
+}
+2017-07-11 14:04:43,862 p=56237 u=user1 |  ok: [server4] => {
+    "psausgabe.stdout": "root      14262  0.0  0.2  24048  2392 ?        Ss   13:51   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 14:04:43,868 p=56237 u=user1 |  ok: [server1] => {
+    "psausgabe.stdout": "root      10230  0.0  0.2  28424  2624 ?        Ss   13:51   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 14:04:43,885 p=56237 u=user1 |  TASK [install_apps : local_umaks auf 077 setzen] ******************************************************************
+2017-07-11 14:04:44,418 p=56237 u=user1 |  ok: [server1]
+2017-07-11 14:04:44,440 p=56237 u=user1 |  ok: [server4]
+2017-07-11 14:04:44,590 p=56237 u=user1 |  ok: [server3]
+2017-07-11 14:04:44,628 p=56237 u=user1 |  ok: [server2]
+2017-07-11 14:04:44,634 p=56237 u=user1 |  TASK [install_apps : FTP Prozess überprüfen] **********************************************************************
+2017-07-11 14:04:45,047 p=56237 u=user1 |  ok: [server4]
+2017-07-11 14:04:45,129 p=56237 u=user1 |  ok: [server1]
+2017-07-11 14:04:45,196 p=56237 u=user1 |  ok: [server3]
+2017-07-11 14:04:45,223 p=56237 u=user1 |  ok: [server2]
+2017-07-11 14:04:45,228 p=56237 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 14:04:45,296 p=56237 u=user1 |  ok: [server3] => {
+    "psausgabe.stdout": "root     30786  0.0  0.0  54752   564 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf"
+}
+2017-07-11 14:04:45,303 p=56237 u=user1 |  ok: [server2] => {
+    "psausgabe.stdout": "root      37233  0.0  0.3  21844  3948 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 14:04:45,323 p=56237 u=user1 |  ok: [server4] => {
+    "psausgabe.stdout": "root      14262  0.0  0.2  24048  2392 ?        Ss   13:51   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 14:04:45,330 p=56237 u=user1 |  ok: [server1] => {
+    "psausgabe.stdout": "root      10230  0.0  0.2  28424  2624 ?        Ss   13:51   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 14:04:45,337 p=56237 u=user1 |  TASK [install_apps : Aktiviere Anonymus als User] *****************************************************************
+2017-07-11 14:04:45,836 p=56237 u=user1 |  ok: [server1]
+2017-07-11 14:04:45,924 p=56237 u=user1 |  ok: [server4]
+2017-07-11 14:04:45,983 p=56237 u=user1 |  ok: [server3]
+2017-07-11 14:04:46,000 p=56237 u=user1 |  ok: [server2]
+2017-07-11 14:04:46,005 p=56237 u=user1 |  TASK [install_apps : Überprüfe den Parameter anonymous_enabled] ***************************************************
+2017-07-11 14:04:46,464 p=56237 u=user1 |  ok: [server1]
+2017-07-11 14:04:46,471 p=56237 u=user1 |  ok: [server4]
+2017-07-11 14:04:46,570 p=56237 u=user1 |  ok: [server3]
+2017-07-11 14:04:46,654 p=56237 u=user1 |  ok: [server2]
+2017-07-11 14:04:46,660 p=56237 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 14:04:46,702 p=56237 u=user1 |  ok: [server2] => {
+    "userenableoutput.stdout": "anonymous_enable=YES"
+}
+2017-07-11 14:04:46,732 p=56237 u=user1 |  ok: [server3] => {
+    "userenableoutput.stdout": "anonymous_enable=YES"
+}
+2017-07-11 14:04:46,736 p=56237 u=user1 |  ok: [server4] => {
+    "userenableoutput.stdout": "anonymous_enable=YES"
+}
+2017-07-11 14:04:46,756 p=56237 u=user1 |  ok: [server1] => {
+    "userenableoutput.stdout": "anonymous_enable=YES"
+}
+2017-07-11 14:04:46,762 p=56237 u=user1 |  TASK [install_apps : Grussmeldung hochladen] **********************************************************************
+2017-07-11 14:04:47,731 p=56237 u=user1 |  ok: [server1]
+2017-07-11 14:04:47,808 p=56237 u=user1 |  changed: [server4]
+2017-07-11 14:04:47,909 p=56237 u=user1 |  ok: [server3]
+2017-07-11 14:04:48,129 p=56237 u=user1 |  ok: [server2]
+2017-07-11 14:04:48,131 p=56237 u=user1 |  PLAY RECAP ********************************************************************************************************
+2017-07-11 14:04:48,131 p=56237 u=user1 |  server1                    : ok=15   changed=0    unreachable=0    failed=0   
+2017-07-11 14:04:48,131 p=56237 u=user1 |  server2                    : ok=15   changed=0    unreachable=0    failed=0   
+2017-07-11 14:04:48,132 p=56237 u=user1 |  server3                    : ok=16   changed=0    unreachable=0    failed=0   
+2017-07-11 14:04:48,132 p=56237 u=user1 |  server4                    : ok=15   changed=1    unreachable=0    failed=0   
+2017-07-11 14:08:54,385 p=56683 u=user1 |  PLAY [all] ********************************************************************************************************
+2017-07-11 14:08:54,414 p=56683 u=user1 |  TASK [install_apps : include_vars] ********************************************************************************
+2017-07-11 14:08:54,468 p=56683 u=user1 |  skipping: [server2]
+2017-07-11 14:08:54,470 p=56683 u=user1 |  ok: [server3]
+2017-07-11 14:08:54,497 p=56683 u=user1 |  ok: [server1]
+2017-07-11 14:08:54,505 p=56683 u=user1 |  ok: [server4]
+2017-07-11 14:08:54,510 p=56683 u=user1 |  TASK [install_apps : include_vars] ********************************************************************************
+2017-07-11 14:08:54,580 p=56683 u=user1 |  skipping: [server3]
+2017-07-11 14:08:54,581 p=56683 u=user1 |  skipping: [server4]
+2017-07-11 14:08:54,582 p=56683 u=user1 |  ok: [server2]
+2017-07-11 14:08:54,598 p=56683 u=user1 |  skipping: [server1]
+2017-07-11 14:08:54,603 p=56683 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 14:08:54,664 p=56683 u=user1 |  ok: [server2] => {
+    "msg": "Hallo FTP Server der Familie openSUSE Leap, Config /etc/vsftpd.conf "
+}
+2017-07-11 14:08:54,667 p=56683 u=user1 |  ok: [server3] => {
+    "msg": "Hallo FTP Server der Familie CentOS, Config /etc/vsftpd/vsftpd.conf "
+}
+2017-07-11 14:08:54,686 p=56683 u=user1 |  ok: [server1] => {
+    "msg": "Hallo FTP Server der Familie Debian, Config /etc/vsftpd.conf "
+}
+2017-07-11 14:08:54,693 p=56683 u=user1 |  ok: [server4] => {
+    "msg": "Hallo FTP Server der Familie Ubuntu, Config /etc/vsftpd.conf "
+}
+2017-07-11 14:08:54,698 p=56683 u=user1 |  TASK [install_apps : vsftpd installieren] *************************************************************************
+2017-07-11 14:08:55,711 p=56683 u=user1 |  ok: [server1]
+2017-07-11 14:08:56,024 p=56683 u=user1 |  ok: [server4]
+2017-07-11 14:08:56,152 p=56683 u=user1 |  ok: [server3]
+2017-07-11 14:08:57,023 p=56683 u=user1 |  ok: [server2]
+2017-07-11 14:08:57,027 p=56683 u=user1 |  TASK [install_apps : locate installieren] *************************************************************************
+2017-07-11 14:08:58,407 p=56683 u=user1 |  ok: [server1]
+2017-07-11 14:08:59,135 p=56683 u=user1 |  ok: [server4]
+2017-07-11 14:09:00,125 p=56683 u=user1 |  ok: [server2]
+2017-07-11 14:09:02,235 p=56683 u=user1 |  ok: [server3]
+2017-07-11 14:09:02,240 p=56683 u=user1 |  TASK [install_apps : Datenbank erstellen] *************************************************************************
+2017-07-11 14:09:02,697 p=56683 u=user1 |  ok: [server1]
+2017-07-11 14:09:02,711 p=56683 u=user1 |  ok: [server4]
+2017-07-11 14:09:02,821 p=56683 u=user1 |  ok: [server3]
+2017-07-11 14:09:02,926 p=56683 u=user1 |  ok: [server2]
+2017-07-11 14:09:02,930 p=56683 u=user1 |  TASK [install_apps : Configure firewall on RedHat systems] ********************************************************
+2017-07-11 14:09:02,971 p=56683 u=user1 |  skipping: [server2]
+2017-07-11 14:09:03,022 p=56683 u=user1 |  skipping: [server4]
+2017-07-11 14:09:03,048 p=56683 u=user1 |  skipping: [server1]
+2017-07-11 14:09:03,729 p=56683 u=user1 |  ok: [server3]
+2017-07-11 14:09:03,734 p=56683 u=user1 |  TASK [install_apps : vsftpd starten und in den Autostart setzen] **************************************************
+2017-07-11 14:09:04,192 p=56683 u=user1 |  ok: [server1]
+2017-07-11 14:09:04,263 p=56683 u=user1 |  ok: [server4]
+2017-07-11 14:09:04,398 p=56683 u=user1 |  ok: [server3]
+2017-07-11 14:09:04,432 p=56683 u=user1 |  ok: [server2]
+2017-07-11 14:09:04,441 p=56683 u=user1 |  TASK [install_apps : FTP Prozess überprüfen] **********************************************************************
+2017-07-11 14:09:04,829 p=56683 u=user1 |  ok: [server4]
+2017-07-11 14:09:04,916 p=56683 u=user1 |  ok: [server1]
+2017-07-11 14:09:05,002 p=56683 u=user1 |  ok: [server3]
+2017-07-11 14:09:05,121 p=56683 u=user1 |  ok: [server2]
+2017-07-11 14:09:05,125 p=56683 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 14:09:05,340 p=56683 u=user1 |  ok: [server3] => {
+    "psausgabe.stdout": "root     30786  0.0  0.0  54752   564 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf"
+}
+2017-07-11 14:09:05,341 p=56683 u=user1 |  ok: [server4] => {
+    "psausgabe.stdout": "root      14262  0.0  0.2  24048  2392 ?        Ss   13:51   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 14:09:05,341 p=56683 u=user1 |  ok: [server2] => {
+    "psausgabe.stdout": "root      37233  0.0  0.3  21844  3948 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 14:09:05,356 p=56683 u=user1 |  ok: [server1] => {
+    "psausgabe.stdout": "root      10230  0.0  0.2  28424  2624 ?        Ss   13:51   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 14:09:05,362 p=56683 u=user1 |  TASK [install_apps : local_umaks auf 077 setzen] ******************************************************************
+2017-07-11 14:09:05,793 p=56683 u=user1 |  ok: [server1]
+2017-07-11 14:09:05,853 p=56683 u=user1 |  ok: [server4]
+2017-07-11 14:09:05,977 p=56683 u=user1 |  ok: [server3]
+2017-07-11 14:09:06,023 p=56683 u=user1 |  ok: [server2]
+2017-07-11 14:09:06,028 p=56683 u=user1 |  TASK [install_apps : FTP Prozess überprüfen] **********************************************************************
+2017-07-11 14:09:06,417 p=56683 u=user1 |  ok: [server1]
+2017-07-11 14:09:06,442 p=56683 u=user1 |  ok: [server4]
+2017-07-11 14:09:06,557 p=56683 u=user1 |  ok: [server3]
+2017-07-11 14:09:06,673 p=56683 u=user1 |  ok: [server2]
+2017-07-11 14:09:06,678 p=56683 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 14:09:06,726 p=56683 u=user1 |  ok: [server2] => {
+    "psausgabe.stdout": "root      37233  0.0  0.3  21844  3948 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 14:09:06,754 p=56683 u=user1 |  ok: [server3] => {
+    "psausgabe.stdout": "root     30786  0.0  0.0  54752   564 ?        Ss   13:43   0:00 /usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf"
+}
+2017-07-11 14:09:06,775 p=56683 u=user1 |  ok: [server1] => {
+    "psausgabe.stdout": "root      10230  0.0  0.2  28424  2624 ?        Ss   13:51   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 14:09:06,779 p=56683 u=user1 |  ok: [server4] => {
+    "psausgabe.stdout": "root      14262  0.0  0.2  24048  2392 ?        Ss   13:51   0:00 /usr/sbin/vsftpd /etc/vsftpd.conf"
+}
+2017-07-11 14:09:06,784 p=56683 u=user1 |  TASK [install_apps : Aktiviere Anonymus als User] *****************************************************************
+2017-07-11 14:09:07,179 p=56683 u=user1 |  ok: [server1]
+2017-07-11 14:09:07,203 p=56683 u=user1 |  ok: [server4]
+2017-07-11 14:09:07,311 p=56683 u=user1 |  ok: [server3]
+2017-07-11 14:09:07,403 p=56683 u=user1 |  ok: [server2]
+2017-07-11 14:09:07,408 p=56683 u=user1 |  TASK [install_apps : Überprüfe den Parameter anonymous_enabled] ***************************************************
+2017-07-11 14:09:07,775 p=56683 u=user1 |  ok: [server1]
+2017-07-11 14:09:07,780 p=56683 u=user1 |  ok: [server4]
+2017-07-11 14:09:07,916 p=56683 u=user1 |  ok: [server3]
+2017-07-11 14:09:07,992 p=56683 u=user1 |  ok: [server2]
+2017-07-11 14:09:07,997 p=56683 u=user1 |  TASK [install_apps : debug] ***************************************************************************************
+2017-07-11 14:09:08,052 p=56683 u=user1 |  ok: [server2] => {
+    "userenableoutput.stdout": "anonymous_enable=YES"
+}
+2017-07-11 14:09:08,078 p=56683 u=user1 |  ok: [server3] => {
+    "userenableoutput.stdout": "anonymous_enable=YES"
+}
+2017-07-11 14:09:08,082 p=56683 u=user1 |  ok: [server4] => {
+    "userenableoutput.stdout": "anonymous_enable=YES"
+}
+2017-07-11 14:09:08,103 p=56683 u=user1 |  ok: [server1] => {
+    "userenableoutput.stdout": "anonymous_enable=YES"
+}
+2017-07-11 14:09:08,116 p=56683 u=user1 |  TASK [install_apps : Grussmeldung hochladen] **********************************************************************
+2017-07-11 14:09:09,359 p=56683 u=user1 |  changed: [server4]
+2017-07-11 14:09:09,382 p=56683 u=user1 |  changed: [server1]
+2017-07-11 14:09:09,659 p=56683 u=user1 |  changed: [server3]
+2017-07-11 14:09:09,815 p=56683 u=user1 |  changed: [server2]
+2017-07-11 14:09:09,817 p=56683 u=user1 |  PLAY RECAP ********************************************************************************************************
+2017-07-11 14:09:09,817 p=56683 u=user1 |  server1                    : ok=15   changed=1    unreachable=0    failed=0   
+2017-07-11 14:09:09,818 p=56683 u=user1 |  server2                    : ok=15   changed=1    unreachable=0    failed=0   
+2017-07-11 14:09:09,818 p=56683 u=user1 |  server3                    : ok=16   changed=1    unreachable=0    failed=0   
+2017-07-11 14:09:09,818 p=56683 u=user1 |  server4                    : ok=15   changed=1    unreachable=0    failed=0   
