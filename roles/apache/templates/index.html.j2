@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- {{ansible_managed}} -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Welcome to {{inventory_hostname}}</title>
+
+<style>
+h1 {
+    background-color: {{apache_color}};
+}
+</style>
+</head>
+
+<body>
+<h1>Welcome to {{inventory_hostname}} at {{ansible_default_ipv4.address}}!</h1>
+
+<h3>
+This is a {{ansible_os_family}} system
+({{ansible_distribution}} {{ansible_distribution_major_version}}).
+</h3>
+
+<p>
+Our team:
+<ul>
+{% for i in range(11,15) %}
+<li><a href="http://192.168.150.{{i}}">192.168.150.{{i}}</a></li>
+{% endfor %}
+</ul>
+</p>
+</body>
+
+</html>

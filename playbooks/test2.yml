@@ -1,0 +1,8 @@
+---
+- hosts: server1
+
+  gather_facts: yes
+  
+  tasks:
+    - name: Sag hallo
+      debug: msg="Hallo Ansible!"

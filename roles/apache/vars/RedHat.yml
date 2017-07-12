@@ -1,0 +1,6 @@
+---
+
+apache_pkg_name: httpd
+apache_service_name: httpd
+apache_docroot: /var/www/html
+apache_color: red

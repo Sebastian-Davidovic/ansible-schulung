@@ -1,0 +1,6 @@
+---
+
+apache_pkg_name: apache2
+apache_service_name: apache2
+apache_docroot: /srv/www/htdocs
+apache_color: green

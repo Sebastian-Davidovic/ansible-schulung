@@ -1,4 +1,16 @@
+http://www.am42.de/gfu/ansible/download
+
 aptitude -y install whois
 mkpasswd -m sha-512 geheim1
 
+block modul task gruppieren
+gather_facts cache
+fork mechanismus
+shell oder command geht immer auf changed
+damit das nicht passiert, weil ja nicht immer ein change passiert mit einer ps abfrage zum beispiel dann kann man dden wert changed_when: false setzen
+no_log: true egal wo block , play , task usw. einbauen
+
+http://www.am42.de/gfu/ansible/
+
+ansible-playable testen im docker
 

@@ -1,0 +1,42 @@
+---
+
+- name: Include OS-specific settings
+  include_vars: "{{ ansible_os_family }}.yml"
+
+   
+- name: Update apt cache if needed (Debian only)
+  apt: update_cache=yes cache_valid_time=3600
+  when: ansible_os_family == 'Debian'
+
+   
+- block:
+    - name: Test if firewalld is running (RedHat)
+      command: systemctl is-active firewalld
+      changed_when: false
+      failed_when: false
+      register: firewalld_running
+
+    - name: Configure firewall when active (RedHat)
+      firewalld:
+        state: "{{item.state}}"
+        port:  "{{item.port}}"
+        zone:  public
+        immediate: yes
+        permanent: yes
+      with_items:
+        - { state: enabled, port: 80/tcp }
+        - { state: enabled, port: 443/tcp }
+      when: firewalld_running.rc == 0
+
+  when: ansible_os_family == 'RedHat'
+
+  
+- name: Install apache
+  package: name={{apache_pkg_name}} state=latest
+
+- name: Start and enable apache
+  service: name={{apache_service_name}} state=started enabled=yes
+
+
+- name: Install example Homepage
+  template: src=index.html.j2 dest={{apache_docroot}}/index.html

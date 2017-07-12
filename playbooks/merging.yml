@@ -1,0 +1,27 @@
+---
+- hosts: server1
+
+  vars:
+    tiere:
+      Hund: Wuff
+      Katze: Miau
+      Maus: Fiep
+
+    tiere_spezial:
+      Hund: Knurr
+      Vogel: Piep
+
+    zahlen: [11, 22, 33]
+    zahlen_spezial: [44, 55]
+
+  tasks:
+
+    - set_fact:
+        tiere: "{{ tiere | combine(tiere_spezial | default({}) ) }}"
+
+    - set_fact:
+        zahlen: "{{ zahlen + zahlen_spezial | default([]) }}"
+
+    - debug: var=tiere
+
+    - debug: var=zahlen
